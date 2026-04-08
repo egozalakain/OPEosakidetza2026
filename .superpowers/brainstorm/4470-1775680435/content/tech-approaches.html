@@ -1,0 +1,76 @@
+<h2>Enfoque Tecnológico — OPE Quiz App</h2>
+<p class="subtitle">3 opciones con diferentes trade-offs. Haz clic en la que prefieras.</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Next.js + Supabase (Vercel)</h3>
+      <p><strong>Stack:</strong> React/Next.js frontend + Supabase (PostgreSQL + Auth)</p>
+      <p><strong>Hosting:</strong> Vercel (gratis) + Supabase free tier (500MB DB)</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Ecosistema maduro, muchos componentes listos</li>
+          <li>Auth integrada en Supabase (sin código extra)</li>
+          <li>Despliegue automático con git push</li>
+          <li>Charts/gráficos fácil con Recharts</li>
+          <li>Gratis para uso personal</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Más pesado (React + framework)</li>
+          <li>Supabase free tier puede dormir la DB tras inactividad</li>
+          <li>Dos servicios que gestionar</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Astro + Cloudflare D1 (Cloudflare Pages)</h3>
+      <p><strong>Stack:</strong> Astro (con islas React para interactividad) + D1 (SQLite en edge)</p>
+      <p><strong>Hosting:</strong> Cloudflare Pages (gratis) + D1 free tier (5GB)</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Ultrarrápido: páginas estáticas + interactividad donde hace falta</li>
+          <li>D1 no duerme — siempre disponible, 5GB gratis</li>
+          <li>Todo en un solo proveedor (Cloudflare)</li>
+          <li>SQLite es simple y predecible</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Astro menos popular que Next.js</li>
+          <li>D1 aún relativamente nuevo</li>
+          <li>Auth hay que implementarla manual</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Next.js Full-Stack (Vercel + Vercel Postgres)</h3>
+      <p><strong>Stack:</strong> Next.js con Server Actions + Vercel Postgres (Neon)</p>
+      <p><strong>Hosting:</strong> Vercel (gratis) + Vercel Postgres free tier (256MB)</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Todo integrado: un solo framework, un solo proveedor</li>
+          <li>Server Actions = API sin boilerplate</li>
+          <li>ORM con Drizzle/Prisma para esquema tipado</li>
+          <li>Despliegue git push, cero config</li>
+          <li>Gran comunidad y documentación</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>256MB en free tier (suficiente para 200 preguntas)</li>
+          <li>Cold starts en serverless</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 2rem; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+  <h3>💡 Mi recomendación: Opción C</h3>
+  <p>Next.js full-stack con Vercel Postgres es la opción más equilibrada: un solo proveedor, despliegue trivial, framework maduro con Server Actions (sin API separada), y 256MB de DB es más que suficiente para 200 preguntas + tu historial de exámenes. Tailwind CSS para el diseño y Recharts para los gráficos.</p>
+</div>

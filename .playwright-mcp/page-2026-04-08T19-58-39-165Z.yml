@@ -1,0 +1,260 @@
+- generic [active] [ref=e1]:
+  - banner "Cabecera principal" [ref=e2]:
+    - paragraph:
+      - link "Ir al contenido" [ref=e3] [cursor=pointer]:
+        - /url: "#main"
+    - navigation "Navegación principal de Euskadi.eus" [ref=e4]:
+      - generic [ref=e7]:
+        - button "Euskadi.eus - Abrir menú principal" [ref=e8] [cursor=pointer]:
+          - img "Euskadi.eus - Abrir menú principal" [ref=e9]
+        - list "Opciones principales" [ref=e10]:
+          - listitem [ref=e11]:
+            - strong [ref=e12]: euskadi.eus
+            - list [ref=e13]:
+              - listitem [ref=e14]:
+                - link "Página de inicio" [ref=e15] [cursor=pointer]:
+                  - /url: /inicio/
+              - listitem [ref=e16]:
+                - link "Temas" [ref=e17] [cursor=pointer]:
+                  - /url: /temas/
+              - listitem [ref=e18]:
+                - link "Gobierno Vasco" [ref=e19] [cursor=pointer]:
+                  - /url: /gobierno-vasco/inicio/
+              - listitem [ref=e20]:
+                - link "Trámites" [ref=e21] [cursor=pointer]:
+                  - /url: /gobierno-vasco/tramites-servicios/
+          - listitem [ref=e22]:
+            - strong [ref=e23]: Herramientas
+            - list [ref=e24]:
+              - listitem [ref=e25]:
+                - link "Contacto" [ref=e26] [cursor=pointer]:
+                  - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+              - listitem [ref=e27]:
+                - link "Buscador" [ref=e28] [cursor=pointer]:
+                  - /url: /busqueda/
+              - listitem [ref=e29]:
+                - link "Mapa web" [ref=e30] [cursor=pointer]:
+                  - /url: /informacion/-/mapa-web-euskadieus/
+          - listitem [ref=e31]:
+            - strong [ref=e32]: Información general
+            - list [ref=e33]:
+              - listitem [ref=e34]:
+                - link "Accesibilidad" [ref=e35] [cursor=pointer]:
+                  - /url: /informacion/-/accesibilidad-euskadieus/
+              - listitem [ref=e36]:
+                - link "Información legal" [ref=e37] [cursor=pointer]:
+                  - /url: /informacion/-/informacion-legal/
+              - listitem [ref=e38]:
+                - link "Política de cookies" [ref=e39] [cursor=pointer]:
+                  - /url: /informacion/-/politica-cookies-euskadieus/
+              - listitem [ref=e40]:
+                - link "Sede Electrónica" [ref=e41] [cursor=pointer]:
+                  - /url: /sede-electronica/
+      - generic "Cambio de idioma" [ref=e42]:
+        - list:
+          - listitem [ref=e43]:
+            - link "Euskara" [ref=e44] [cursor=pointer]:
+              - /url: /euskadiko-osasun-ituna/web01-a2salpol/eu/
+              - text: eu
+              - generic [ref=e45]: Euskara
+          - listitem [ref=e46]:
+            - generic [ref=e47]:
+              - text: es
+              - generic [ref=e48]: Español
+      - generic "Enlaces rápidos" [ref=e49]:
+        - list:
+          - listitem [ref=e50]:
+            - generic [ref=e51]:
+              - generic [ref=e52]: Buscar en euskadi.eus
+              - searchbox "Buscar en euskadi.eus" [ref=e53]
+              - generic [ref=e54] [cursor=pointer]: Buscar
+          - listitem [ref=e55]:
+            - link "Contacto" [ref=e56] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e57]:
+            - link "Mi carpeta" [ref=e58] [cursor=pointer]:
+              - /url: /mi-carpeta/web01-sede/es/
+  - main [ref=e59]:
+    - generic:
+      - generic [ref=e61]:
+        - paragraph:
+          - link "Departamento de Salud" [ref=e62] [cursor=pointer]:
+            - /url: /gobierno-vasco/departamento-salud/
+        - paragraph [ref=e63]:
+          - link "Salud en todas las políticas" [ref=e64] [cursor=pointer]:
+            - /url: /gobierno-vasco/salud-todas-las-politicas/inicio
+      - paragraph [ref=e65]:
+        - link "Departamento de Salud" [ref=e66] [cursor=pointer]:
+          - /url: /gobierno-vasco/departamento-salud/
+    - navigation [ref=e67]:
+      - list [ref=e68]:
+        - listitem [ref=e69]:
+          - link "Pacto Vasco de Salud de Euskadi" [ref=e70] [cursor=pointer]:
+            - /url: /pacto-vasco-de-salud-de-euskadi/web01-a2salpol/es/
+        - listitem [ref=e71]:
+          - link "Mostrar submenu Plan de Salud" [ref=e73] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e74]: Mostrar submenu
+            - text: Plan de Salud
+        - listitem [ref=e75]:
+          - link "Acción Intersectorial en Salud" [ref=e76] [cursor=pointer]:
+            - /url: http://www.euskadi.eus/accion-intersectorial-en-salud-accion-intersectorial-en-salud/web01-a2salpol/es/
+            - generic [ref=e77]: Acción Intersectorial
+            - text: en Salud
+        - listitem [ref=e78]:
+          - link "Análisis de la Lente de la Salud" [ref=e79] [cursor=pointer]:
+            - /url: /analisis-de-la-lente-de-la-salud-del-iv-programa-marco-ambiental/web01-a2salpol/es/
+            - generic [ref=e80]: Análisis de la Lente
+            - text: de la Salud
+        - listitem [ref=e81]:
+          - link "Evaluación de Impacto en Salud" [ref=e82] [cursor=pointer]:
+            - /url: /informacion/salud-en-todas-las-politicas/web01-a2salpol/es/
+            - generic [ref=e83]: Evaluación de Impacto
+            - text: en Salud
+    - article [ref=e86]:
+      - heading "Pacto Vasco de Salud de Euskadi" [level=1] [ref=e88]
+      - generic [ref=e89]:
+        - tablist [ref=e90]:
+          - tab "¿Qué es?" [selected] [ref=e91] [cursor=pointer]
+          - tab "Objetivos" [ref=e92] [cursor=pointer]
+          - tab "Fases del proyecto" [ref=e93] [cursor=pointer]
+          - tab "Líneas estratégicas" [ref=e94] [cursor=pointer]
+          - tab "Participación de agentes" [ref=e95] [cursor=pointer]
+          - tab "Notas de prensa" [ref=e96] [cursor=pointer]
+          - tab "Documentos" [ref=e97] [cursor=pointer]
+        - tabpanel "¿Qué es?" [ref=e99]:
+          - heading "¿Qué es el Pacto Vasco de Salud?" [level=3] [ref=e100]
+          - separator [ref=e101]
+          - paragraph [ref=e102]:
+            - text: El Pacto Vasco de Salud es un
+            - strong [ref=e103]: acuerdo estratégico impulsado por el Gobierno Vasco
+            - text: en septiembre de 2024, promovido por el Lehendakari Imanol Pradales y coordinado por el Departamento de Salud, con el fin de
+            - strong [ref=e104]: transformar el sistema sanitario público de Euskadi y garantizar una atención de calidad, sostenible y equitativa a medio y largo plazo.
+          - paragraph [ref=e105]:
+            - img "Pacto Vasco de Salud" [ref=e106]
+      - paragraph [ref=e108]:
+        - text: "Fecha de última modificación:"
+        - time [ref=e109]: 12/09/2025
+  - contentinfo "Pie de página" [ref=e110]:
+    - generic [ref=e111]:
+      - heading "Servicios mas demandados en Euskadi.eus" [level=2] [ref=e112]
+      - generic [ref=e113]:
+        - heading "Información general" [level=3] [ref=e114]
+        - list [ref=e115]:
+          - listitem [ref=e116]:
+            - link "Contacto" [ref=e117] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e118]:
+            - link "Mapa web" [ref=e119] [cursor=pointer]:
+              - /url: /informacion/-/mapa-web-euskadieus/
+          - listitem [ref=e120]:
+            - link "Accesibilidad" [ref=e121] [cursor=pointer]:
+              - /url: /informacion/-/accesibilidad-euskadieus/
+          - listitem [ref=e122]:
+            - link "Sede Electrónica" [ref=e123] [cursor=pointer]:
+              - /url: /sede-electronica/
+          - listitem [ref=e124]:
+            - link "Información Legal" [ref=e125] [cursor=pointer]:
+              - /url: /informacion/-/informacion-legal/
+          - listitem [ref=e126]:
+            - link "Política de cookies" [ref=e127] [cursor=pointer]:
+              - /url: /informacion/-/politica-cookies-euskadieus/
+      - generic [ref=e128]:
+        - heading "Gobierno Vasco" [level=3] [ref=e129]
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - link "Página de inicio" [ref=e132] [cursor=pointer]:
+              - /url: /gobierno-vasco/inicio/
+          - listitem [ref=e133]:
+            - link "Conoce el Gobierno" [ref=e134] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/conoce-el-gobierno-vasco/
+          - listitem [ref=e135]:
+            - link "Departamentos y entidades" [ref=e136] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/departamentos-y-entidades-del-gobierno-vasco/
+          - listitem [ref=e137]:
+            - link "Atención ciudadana" [ref=e138] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e139]:
+            - link "Gobierno abierto" [ref=e140] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/gobierno-abierto/
+          - listitem [ref=e141]:
+            - link "Gardena, portal de transparencia" [ref=e142] [cursor=pointer]:
+              - /url: https://www.gardena.euskadi.eus/inicio/
+      - generic [ref=e143]:
+        - heading "Trámites y servicios" [level=3] [ref=e144]
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - link "Mi carpeta" [ref=e147] [cursor=pointer]:
+              - /url: /micarpeta/
+          - listitem [ref=e148]:
+            - link "Ayudas y subvenciones" [ref=e149] [cursor=pointer]:
+              - /url: /gobierno-vasco/tramites-servicios/?r01kQry=tT:ayuda_subvencion;cO:r01epd0122e4ed314423e0db04c97a47b5baa317f,r01epd0122e4edf39923e0db0b11fff216b637726;mA:documentLanguage.EQ.es,procedureCollection.EQ.0,procedureStatus.EQ.16;pp:r01PageSize.20;p:Inter,Inter_portal&r01SearchEngine=meta
+          - listitem [ref=e150]:
+            - link "Contrataciones" [ref=e151] [cursor=pointer]:
+              - /url: https://www.contratacion.euskadi.eus/inicio/
+          - listitem [ref=e152]:
+            - link "Mi pago" [ref=e153] [cursor=pointer]:
+              - /url: /mipago/
+          - listitem [ref=e154]:
+            - link "Meteorología" [ref=e155] [cursor=pointer]:
+              - /url: https://www.euskalmet.euskadi.eus/inicio/
+          - listitem [ref=e156]:
+            - link "Estado del tráfico" [ref=e157] [cursor=pointer]:
+              - /url: https://www.trafikoa.eus/
+          - listitem [ref=e158]:
+            - link "Estadística" [ref=e159] [cursor=pointer]:
+              - /url: /gobierno-vasco/estadistica/
+      - generic [ref=e160]:
+        - heading "Boletines oficiales" [level=3] [ref=e161]
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - link "Boletín Oficial del País Vasco" [ref=e164] [cursor=pointer]:
+              - /url: https://www.euskadi.eus/bopv
+          - listitem [ref=e165]:
+            - link "Boletín Oficial de Álava" [ref=e166] [cursor=pointer]:
+              - /url: http://www.araba.eus/botha/
+          - listitem [ref=e167]:
+            - link "Boletín Oficial de Bizkaia" [ref=e168] [cursor=pointer]:
+              - /url: http://apps.bizkaia.eus/BT00/
+          - listitem [ref=e169]:
+            - link "Boletín Oficial de Gipuzkoa" [ref=e170] [cursor=pointer]:
+              - /url: https://egoitza.gipuzkoa.eus/es/BOG
+          - listitem [ref=e171]:
+            - link "Boletín Oficial del Estado" [ref=e172] [cursor=pointer]:
+              - /url: http://www.boe.es/
+          - listitem [ref=e173]:
+            - link "Diario Oficial de la Unión Europea" [ref=e174] [cursor=pointer]:
+              - /url: http://eur-lex.europa.eu/oj/direct-access.html?locale=es
+    - generic [ref=e175]:
+      - img [ref=e176]
+      - paragraph [ref=e178]:
+        - text: Sitio web desarrollado y gestionado por el
+        - link "Servicio Web del Gobierno Vasco" [ref=e179] [cursor=pointer]:
+          - /url: /gobierno-vasco/servicio-web/inicio/
+      - heading "Gizarte sareak" [level=3] [ref=e180]
+      - list [ref=e182]:
+        - listitem [ref=e183]:
+          - link "X - Twitter (se abre en nueva ventana)" [ref=e184] [cursor=pointer]:
+            - /url: https://twitter.com/Gob_eus
+            - generic [ref=e185]: X - Twitter (se abre en nueva ventana)
+            - img [ref=e186]
+        - listitem [ref=e188]:
+          - link "Facebook (se abre en nueva ventana)" [ref=e189] [cursor=pointer]:
+            - /url: https://www.facebook.com/EuskoJaurlaritza
+            - generic [ref=e190]: Facebook (se abre en nueva ventana)
+            - img [ref=e191]
+        - listitem [ref=e193]:
+          - link "Linkedin (se abre en nueva ventana)" [ref=e194] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/eusko-jaurlaritza-gobierno-vasco
+            - generic [ref=e195]: Linkedin (se abre en nueva ventana)
+            - img [ref=e196]
+      - generic [ref=e198]:
+        - heading "Contacto" [level=3] [ref=e199]
+        - list [ref=e200]:
+          - listitem [ref=e201]:
+            - link "Euskarazko bertsioa" [ref=e202] [cursor=pointer]:
+              - /url: /euskadiko-osasun-ituna/web01-a2salpol/eu/
+          - listitem [ref=e203]:
+            - link "Contacto" [ref=e204] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem

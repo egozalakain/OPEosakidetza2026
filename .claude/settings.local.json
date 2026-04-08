@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "allow all actions, commands and tools, except delete without explicit permission"
+    ]
+  }
+}

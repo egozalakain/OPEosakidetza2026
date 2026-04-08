@@ -1,0 +1,310 @@
+- generic [active] [ref=e1]:
+  - banner "Cabecera principal" [ref=e2]:
+    - paragraph:
+      - link "Ir al contenido" [ref=e3] [cursor=pointer]:
+        - /url: "#main"
+    - navigation "Navegación principal de Euskadi.eus" [ref=e4]:
+      - button "Euskadi.eus - Abrir menú principal" [ref=e8] [cursor=pointer]:
+        - img "Euskadi.eus - Abrir menú principal" [ref=e9]
+      - generic "Cambio de idioma" [ref=e10]:
+        - list:
+          - listitem [ref=e11]:
+            - link "Euskara" [ref=e12] [cursor=pointer]:
+              - /url: /euskadiko-osasun-plana-2030/web01-a2salpol/eu/
+              - text: eu
+              - generic [ref=e13]: Euskara
+          - listitem [ref=e14]:
+            - generic [ref=e15]:
+              - text: es
+              - generic [ref=e16]: Español
+      - generic "Enlaces rápidos" [ref=e17]:
+        - list:
+          - listitem [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]: Buscar en euskadi.eus
+              - searchbox "Buscar en euskadi.eus" [ref=e21]
+              - generic [ref=e22] [cursor=pointer]: Buscar
+          - listitem [ref=e23]:
+            - link "Contacto" [ref=e24] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e25]:
+            - link "Mi carpeta" [ref=e26] [cursor=pointer]:
+              - /url: /mi-carpeta/web01-sede/es/
+  - main [ref=e27]:
+    - generic:
+      - generic [ref=e29]:
+        - paragraph:
+          - link "Departamento de Salud" [ref=e30] [cursor=pointer]:
+            - /url: /gobierno-vasco/departamento-salud/
+        - paragraph [ref=e31]:
+          - link "Salud en todas las políticas" [ref=e32] [cursor=pointer]:
+            - /url: /gobierno-vasco/salud-todas-las-politicas/inicio
+      - paragraph [ref=e33]:
+        - link "Departamento de Salud" [ref=e34] [cursor=pointer]:
+          - /url: /gobierno-vasco/departamento-salud/
+    - navigation [ref=e35]:
+      - list [ref=e36]:
+        - listitem [ref=e37]:
+          - link "Pacto Vasco de Salud de Euskadi" [ref=e38] [cursor=pointer]:
+            - /url: /pacto-vasco-de-salud-de-euskadi/web01-a2salpol/es/
+        - listitem [ref=e39]:
+          - link "Mostrar submenu Plan de Salud" [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e42]: Mostrar submenu
+            - text: Plan de Salud
+        - listitem [ref=e43]:
+          - link "Acción Intersectorial en Salud" [ref=e44] [cursor=pointer]:
+            - /url: http://www.euskadi.eus/accion-intersectorial-en-salud-accion-intersectorial-en-salud/web01-a2salpol/es/
+            - generic [ref=e45]: Acción Intersectorial
+            - text: en Salud
+        - listitem [ref=e46]:
+          - link "Análisis de la Lente de la Salud" [ref=e47] [cursor=pointer]:
+            - /url: /analisis-de-la-lente-de-la-salud-del-iv-programa-marco-ambiental/web01-a2salpol/es/
+            - generic [ref=e48]: Análisis de la Lente
+            - text: de la Salud
+        - listitem [ref=e49]:
+          - link "Evaluación de Impacto en Salud" [ref=e50] [cursor=pointer]:
+            - /url: /informacion/salud-en-todas-las-politicas/web01-a2salpol/es/
+            - generic [ref=e51]: Evaluación de Impacto
+            - text: en Salud
+    - article [ref=e54]:
+      - heading "Plan de Salud de Euskadi 2030" [level=1] [ref=e56]
+      - generic [ref=e57]:
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link "Descargar documento (PDF, 8 MB) (abre en nueva ventana)" [ref=e60] [cursor=pointer]:
+              - /url: /contenidos/informacion/plan_salud_2030/es_def/adjuntos/plan-salud-2030.pdf
+              - text: Descargar documento (PDF, 8 MB)
+              - img "(abre en nueva ventana)" [ref=e62]
+        - heading "Plan de Actuaciones 2024-2026" [level=2] [ref=e63]
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - link "Descargar documento (PDF, 1 MB) (abre en nueva ventana)" [ref=e66] [cursor=pointer]:
+              - /url: /contenidos/informacion/plan_salud_2030/es_def/adjuntos/plan-actuaciones-2024-2026.pdf
+              - text: Descargar documento (PDF, 1 MB)
+              - img "(abre en nueva ventana)" [ref=e68]
+        - heading "¿Qué es el Plan de Salud de Euskadi?" [level=2] [ref=e69]
+        - separator [ref=e70]
+        - paragraph [ref=e71]: Es la hoja de ruta que define las políticas sanitarias que desarrollará el Gobierno Vasco en los próximos años con el propósito de liderar una Euskadi más saludable, garantizando la salud de la población y sin dejar a nadie atrás.
+        - paragraph [ref=e72]:
+          - text: El Plan se enmarca en dos principios rectores
+          - strong [ref=e73]: del Programa de Gobierno 2020- 2024
+          - text: "de la XII Legislatura (PG): Garantizar la salud de la población, principio que ha adquirido aún más preeminencia a partir de la pandemia del COVID-19; y que renueva la voluntad de avanzar un marco de colaboración con los múltiples sectores cuya acción contribuye a la salud desde una óptica de Salud en Todas las Políticas. El Plan de Salud contribuye a sentar unas bases sólidas para establecer dicho marco. Precisamente, aspira a facilitar la orientación y el diseño de políticas que lleven a conseguir una"
+          - strong [ref=e74]: Euskadi más saludable.
+        - generic [ref=e78]:
+          - img "Estrategia de investigación e innovación en Salud 2022-2025" [ref=e79]
+          - link "Plan de Salud 2030" [ref=e81] [cursor=pointer]:
+            - /url: /contenidos/informacion/plan_salud_2030/es_def/adjuntos/plan-salud-2030.pdf
+            - generic [ref=e82]: Plan de Salud 2030
+        - heading "Objetivos del Plan" [level=2] [ref=e83]
+        - separator [ref=e84]
+        - paragraph [ref=e85]:
+          - strong [ref=e86]: "Entre los objetivos que define para lograr ese fin, destacan cuatro principales:"
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - img "potenciar el desarrollo en salud de los niños, niñas y adolescentes" [ref=e90]
+            - paragraph [ref=e91]: Potenciar el desarrollo en salud de los niños, niñas y adolescentes
+          - generic [ref=e92]:
+            - img "fomentar el envejecimiento activoy de vida plena" [ref=e93]
+            - paragraph [ref=e94]: Fomentar el envejecimiento activoy de vida plena
+          - generic [ref=e95]:
+            - img "disminuir la morbi-mortalidadevitable en la población vasca" [ref=e96]
+            - paragraph [ref=e97]: Disminuir la morbi-mortalidadevitable en la población vasca
+          - generic [ref=e98]:
+            - img "Imagen 4" [ref=e99]
+            - paragraph [ref=e100]: Reducir las desigualdadesen salud.
+        - paragraph [ref=e101]:
+          - text: El Plan persigue también, y de manera instrumental en relación con los objetivos anteriores,
+          - strong [ref=e102]: fortalecer la calidad de los sistemas asistenciales, social y sanitario, y el sistema de salud pública
+          - text: ; fomentar la
+          - strong [ref=e103]: salud del medio ambiente desde un enfoque de Una Sola Salud
+          - text: y propiciar entornos urbanos y sociales saludables; y el
+          - strong [ref=e104]: protagonismo de las personas en su salud
+          - text: . Sin olvidar la apuesta por la
+          - strong [ref=e105]: investigación e innovación en salud
+          - text: .
+        - paragraph [ref=e106]:
+          - text: El Plan de Salud establece
+          - strong [ref=e107]: 10 objetivos que engloban más de 70 líneas estratégicas
+          - text: ". Del total de 10 objetivos definidos, 3 tienen un carácter transversal:"
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - list [ref=e111]:
+              - listitem [ref=e112]: Reducir las desigualdades de salud.
+              - listitem [ref=e113]: Conseguir que las personas sean protagonistas y agentes activos de su salud y bienestar.
+              - listitem [ref=e114]: Mejorar la coordinación y colaboración institucional y con todos los agentes y en todos los niveles, de cara a asegurar la salud en todas las políticas.
+            - paragraph [ref=e115]:
+              - text: El resto de
+              - strong [ref=e116]: objetivos,
+              - text: "en síntesis, son los siguientes:"
+            - list [ref=e117]:
+              - listitem [ref=e118]: Lograr que las niñas, niños y adolescentes nazcan, crezcan y se desarrollen con todo su potencial de salud.
+              - listitem [ref=e119]: Mejorar la salud y reducir la morbimortalidad.
+              - listitem [ref=e120]: Conseguir un envejecimiento orientado al enfoque de vida plena.
+              - listitem [ref=e121]: Lograr la sostenibilidad y excelencia en términos de calidad, humanización y seguridad en los sistemas asistenciales sanitarios y sociosanitarios de Euskadi.
+              - listitem [ref=e122]: Fortalecer el Sistema de Salud Pública para hacer frente a los actuales y nuevos retos.
+              - listitem [ref=e123]: Crear y desarrollar entornos y comunidades saludables, sostenibles y resilientes y responder al cambio climático.
+              - listitem [ref=e124]: Invertir en la investigación y la innovación en Euskadi y su aplicación para la mejora de los sistemas que inciden en la salud.
+          - img "otros objetivos del Plan de Saud 2030" [ref=e126]
+        - heading "Cuadro de mando" [level=2] [ref=e127]
+        - separator [ref=e128]
+        - paragraph [ref=e129]:
+          - text: El
+          - strong [ref=e130]: Plan de Salud Euskadi 2030
+          - text: contempla un modelo para la monitorización y seguimiento de su despliegue, así como para la evaluación de los logros obtenidos a través de su implementación. Se trata de una herramienta imprescindible para la gestión y mejora del despliegue del Plan de Salud Euskadi 2030, al identificar sus factores de éxito y barreras. También es fundamental para la rendición de cuentas ante la ciudadanía.
+        - paragraph [ref=e131]:
+          - text: El
+          - strong [ref=e132]: Cuadro de mando
+          - text: es uno de los pilares del modelo de evaluación, el cual se completará con evaluaciones temáticas del avance y consecución de los objetivos del Plan de Salud Euskadi 2030. Está compuesto por un conjunto de indicadores, ordenados por los objetivos del Plan de Salud, dirigidos a proporcionar una visión cuantitativa de aspectos relacionados con los logros esperados.
+        - paragraph [ref=e133]: Es necesario utilizar los datos proporcionados por el cuadro de mando de manera conjunta con los resultados de las evaluaciones temáticas para proporcionar una información más sólida sobre el alcance de los logros obtenidos por las actuaciones enmarcadas en el Plan de Salud Euskadi 2030.
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - link "Cuadro de mando (PDF, 2 MB) (abre en nueva ventana)" [ref=e136] [cursor=pointer]:
+              - /url: /contenidos/informacion/plan_salud_2030/es_def/adjuntos/cuadro-mando-plan-salud-2030.pdf
+              - text: Cuadro de mando (PDF, 2 MB)
+              - img "(abre en nueva ventana)" [ref=e138]
+        - heading "Objetivos de desarrollo sostenible (ODS)" [level=2] [ref=e139]
+        - separator [ref=e140]
+        - generic [ref=e142]:
+          - link "Objetivos de desarrollo sostenible (ODS)" [ref=e144] [cursor=pointer]:
+            - /url: https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+            - img "Objetivos de desarrollo sostenible (ODS)" [ref=e145]
+          - generic [ref=e146]:
+            - paragraph [ref=e147]:
+              - text: Los objetivos planteados en el
+              - strong [ref=e148]: Plan de Salud Euskadi 2030
+              - text: están íntimamente relacionados con los objetivos de desarrollo sostenible (ODS), lo que implica un ámbito de actuación compartido. Los ODS son condiciones y prerrequisitos para la salud, y la salud lo es para el desarrollo. Así, más allá del ODS número 3, Garantizar una vida sana y promover el bienestar para todos en todas las edades, los ODS inciden en determinantes directos de la salud y de las desigualdades en salud, como son acabar con el hambre y la pobreza, el acceso a un empleo, asegurar una educación inclusiva, equitativa y de calidad, lograr la igualdad de género, mejorar el medio ambiente y combatir el cambio climático, entre otros.
+            - list [ref=e149]:
+              - listitem [ref=e150]:
+                - link "Objetivos de desarrollo sostenible (ODS) (abre en nueva ventana)" [ref=e151] [cursor=pointer]:
+                  - /url: https://www.un.org/sustainabledevelopment/es/objetivos-de-desarrollo-sostenible/
+                  - text: Objetivos de desarrollo sostenible (ODS)
+                  - img "(abre en nueva ventana)" [ref=e153]
+        - paragraph [ref=e154]:
+          - img "Plan de Salud de Euskadi 2030" [ref=e155]
+      - paragraph [ref=e157]:
+        - text: "Fecha de última modificación:"
+        - time [ref=e158]: 02/07/2024
+  - contentinfo "Pie de página" [ref=e159]:
+    - generic [ref=e160]:
+      - heading "Servicios mas demandados en Euskadi.eus" [level=2] [ref=e161]
+      - generic [ref=e162]:
+        - heading "Información general" [level=3] [ref=e163]
+        - list [ref=e164]:
+          - listitem [ref=e165]:
+            - link "Contacto" [ref=e166] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e167]:
+            - link "Mapa web" [ref=e168] [cursor=pointer]:
+              - /url: /informacion/-/mapa-web-euskadieus/
+          - listitem [ref=e169]:
+            - link "Accesibilidad" [ref=e170] [cursor=pointer]:
+              - /url: /informacion/-/accesibilidad-euskadieus/
+          - listitem [ref=e171]:
+            - link "Sede Electrónica" [ref=e172] [cursor=pointer]:
+              - /url: /sede-electronica/
+          - listitem [ref=e173]:
+            - link "Información Legal" [ref=e174] [cursor=pointer]:
+              - /url: /informacion/-/informacion-legal/
+          - listitem [ref=e175]:
+            - link "Política de cookies" [ref=e176] [cursor=pointer]:
+              - /url: /informacion/-/politica-cookies-euskadieus/
+      - generic [ref=e177]:
+        - heading "Gobierno Vasco" [level=3] [ref=e178]
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - link "Página de inicio" [ref=e181] [cursor=pointer]:
+              - /url: /gobierno-vasco/inicio/
+          - listitem [ref=e182]:
+            - link "Conoce el Gobierno" [ref=e183] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/conoce-el-gobierno-vasco/
+          - listitem [ref=e184]:
+            - link "Departamentos y entidades" [ref=e185] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/departamentos-y-entidades-del-gobierno-vasco/
+          - listitem [ref=e186]:
+            - link "Atención ciudadana" [ref=e187] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem [ref=e188]:
+            - link "Gobierno abierto" [ref=e189] [cursor=pointer]:
+              - /url: /gobierno-vasco/-/gobierno-abierto/
+          - listitem [ref=e190]:
+            - link "Gardena, portal de transparencia" [ref=e191] [cursor=pointer]:
+              - /url: https://www.gardena.euskadi.eus/inicio/
+      - generic [ref=e192]:
+        - heading "Trámites y servicios" [level=3] [ref=e193]
+        - list [ref=e194]:
+          - listitem [ref=e195]:
+            - link "Mi carpeta" [ref=e196] [cursor=pointer]:
+              - /url: /micarpeta/
+          - listitem [ref=e197]:
+            - link "Ayudas y subvenciones" [ref=e198] [cursor=pointer]:
+              - /url: /gobierno-vasco/tramites-servicios/?r01kQry=tT:ayuda_subvencion;cO:r01epd0122e4ed314423e0db04c97a47b5baa317f,r01epd0122e4edf39923e0db0b11fff216b637726;mA:documentLanguage.EQ.es,procedureCollection.EQ.0,procedureStatus.EQ.16;pp:r01PageSize.20;p:Inter,Inter_portal&r01SearchEngine=meta
+          - listitem [ref=e199]:
+            - link "Contrataciones" [ref=e200] [cursor=pointer]:
+              - /url: https://www.contratacion.euskadi.eus/inicio/
+          - listitem [ref=e201]:
+            - link "Mi pago" [ref=e202] [cursor=pointer]:
+              - /url: /mipago/
+          - listitem [ref=e203]:
+            - link "Meteorología" [ref=e204] [cursor=pointer]:
+              - /url: https://www.euskalmet.euskadi.eus/inicio/
+          - listitem [ref=e205]:
+            - link "Estado del tráfico" [ref=e206] [cursor=pointer]:
+              - /url: https://www.trafikoa.eus/
+          - listitem [ref=e207]:
+            - link "Estadística" [ref=e208] [cursor=pointer]:
+              - /url: /gobierno-vasco/estadistica/
+      - generic [ref=e209]:
+        - heading "Boletines oficiales" [level=3] [ref=e210]
+        - list [ref=e211]:
+          - listitem [ref=e212]:
+            - link "Boletín Oficial del País Vasco" [ref=e213] [cursor=pointer]:
+              - /url: https://www.euskadi.eus/bopv
+          - listitem [ref=e214]:
+            - link "Boletín Oficial de Álava" [ref=e215] [cursor=pointer]:
+              - /url: http://www.araba.eus/botha/
+          - listitem [ref=e216]:
+            - link "Boletín Oficial de Bizkaia" [ref=e217] [cursor=pointer]:
+              - /url: http://apps.bizkaia.eus/BT00/
+          - listitem [ref=e218]:
+            - link "Boletín Oficial de Gipuzkoa" [ref=e219] [cursor=pointer]:
+              - /url: https://egoitza.gipuzkoa.eus/es/BOG
+          - listitem [ref=e220]:
+            - link "Boletín Oficial del Estado" [ref=e221] [cursor=pointer]:
+              - /url: http://www.boe.es/
+          - listitem [ref=e222]:
+            - link "Diario Oficial de la Unión Europea" [ref=e223] [cursor=pointer]:
+              - /url: http://eur-lex.europa.eu/oj/direct-access.html?locale=es
+    - generic [ref=e224]:
+      - img [ref=e225]
+      - paragraph [ref=e227]:
+        - text: Sitio web desarrollado y gestionado por el
+        - link "Servicio Web del Gobierno Vasco" [ref=e228] [cursor=pointer]:
+          - /url: /gobierno-vasco/servicio-web/inicio/
+      - heading "Gizarte sareak" [level=3] [ref=e229]
+      - list [ref=e231]:
+        - listitem [ref=e232]:
+          - link "X - Twitter (se abre en nueva ventana)" [ref=e233] [cursor=pointer]:
+            - /url: https://twitter.com/Gob_eus
+            - generic [ref=e234]: X - Twitter (se abre en nueva ventana)
+            - img [ref=e235]
+        - listitem [ref=e237]:
+          - link "Facebook (se abre en nueva ventana)" [ref=e238] [cursor=pointer]:
+            - /url: https://www.facebook.com/EuskoJaurlaritza
+            - generic [ref=e239]: Facebook (se abre en nueva ventana)
+            - img [ref=e240]
+        - listitem [ref=e242]:
+          - link "Linkedin (se abre en nueva ventana)" [ref=e243] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/eusko-jaurlaritza-gobierno-vasco
+            - generic [ref=e244]: Linkedin (se abre en nueva ventana)
+            - img [ref=e245]
+      - generic [ref=e247]:
+        - heading "Contacto" [level=3] [ref=e248]
+        - list [ref=e249]:
+          - listitem [ref=e250]:
+            - link "Euskarazko bertsioa" [ref=e251] [cursor=pointer]:
+              - /url: /euskadiko-osasun-plana-2030/web01-a2salpol/eu/
+          - listitem [ref=e252]:
+            - link "Contacto" [ref=e253] [cursor=pointer]:
+              - /url: /gobierno-vasco/zuzenean-atencion-ciudadana/
+          - listitem

@@ -1,0 +1,104 @@
+<h2>Sección 1: Arquitectura y Modelo de Datos</h2>
+<p class="subtitle">Estructura general de la app y cómo se almacenan los datos</p>
+
+<div class="section">
+  <h3>Stack Tecnológico</h3>
+  <div class="mockup">
+    <div class="mockup-header">Tecnologías</div>
+    <div class="mockup-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; padding: 1.5rem;">
+      <div>
+        <p class="label">Frontend</p>
+        <p><strong>Next.js 15</strong> (App Router)</p>
+        <p><strong>Tailwind CSS</strong> (estilos)</p>
+        <p><strong>Recharts</strong> (gráficos)</p>
+        <p><strong>next-themes</strong> (modo claro/oscuro)</p>
+      </div>
+      <div>
+        <p class="label">Backend</p>
+        <p><strong>Server Actions</strong> (lógica servidor)</p>
+        <p><strong>Drizzle ORM</strong> (acceso a datos)</p>
+        <p><strong>Vercel Postgres</strong> (base de datos)</p>
+        <p><strong>NextAuth.js</strong> (login con credentials)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Modelo de Datos (5 tablas)</h3>
+  <div class="mockup">
+    <div class="mockup-header">Esquema de Base de Datos</div>
+    <div class="mockup-body" style="padding: 1.5rem; font-family: monospace; font-size: 0.85rem; line-height: 1.6;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div>
+          <p style="color: #60a5fa; font-weight: bold;">📋 questions</p>
+          <p>&nbsp; id (PK)</p>
+          <p>&nbsp; number (1-200)</p>
+          <p>&nbsp; topic (ej: "Ley 44/2003")</p>
+          <p>&nbsp; text (enunciado)</p>
+          <p>&nbsp; option_a, option_b, option_c, option_d</p>
+          <p>&nbsp; correct_answer (a/b/c/d)</p>
+          <p>&nbsp; explanation (justificación)</p>
+          <br/>
+          <p style="color: #60a5fa; font-weight: bold;">📝 exams</p>
+          <p>&nbsp; id (PK)</p>
+          <p>&nbsp; started_at, finished_at</p>
+          <p>&nbsp; mode (exam | study)</p>
+          <p>&nbsp; timer_mode (countdown | stopwatch | none)</p>
+          <p>&nbsp; timer_seconds (límite si countdown)</p>
+          <p>&nbsp; correction_mode (immediate | end)</p>
+          <p>&nbsp; question_selection (random | weak | topic)</p>
+          <p>&nbsp; topic_filter (nullable)</p>
+          <p>&nbsp; total_questions</p>
+          <p>&nbsp; score, correct_count, wrong_count, blank_count</p>
+          <p>&nbsp; penalized_score</p>
+        </div>
+        <div>
+          <p style="color: #60a5fa; font-weight: bold;">✏️ exam_answers</p>
+          <p>&nbsp; id (PK)</p>
+          <p>&nbsp; exam_id (FK → exams)</p>
+          <p>&nbsp; question_id (FK → questions)</p>
+          <p>&nbsp; selected_answer (a/b/c/d | null)</p>
+          <p>&nbsp; is_correct (boolean)</p>
+          <p>&nbsp; flagged (boolean - "no estoy seguro")</p>
+          <p>&nbsp; time_spent_seconds</p>
+          <br/>
+          <p style="color: #60a5fa; font-weight: bold;">📊 question_stats</p>
+          <p>&nbsp; question_id (PK, FK → questions)</p>
+          <p>&nbsp; times_shown</p>
+          <p>&nbsp; times_correct</p>
+          <p>&nbsp; times_wrong</p>
+          <p>&nbsp; times_blank</p>
+          <p>&nbsp; error_rate (calculado)</p>
+          <p>&nbsp; last_answered_at</p>
+          <br/>
+          <p style="color: #60a5fa; font-weight: bold;">⚙️ user_settings</p>
+          <p>&nbsp; key (PK)</p>
+          <p>&nbsp; value</p>
+          <p>&nbsp; <em>(preferencias: tema, idioma, etc.)</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Temas de Preguntas (extraídos del PDF)</h3>
+  <div class="mockup">
+    <div class="mockup-header">10 bloques temáticos</div>
+    <div class="mockup-body" style="padding: 1rem; font-size: 0.9rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+        <p>1. Ley 44/2003 — Profesiones Sanitarias (1-10)</p>
+        <p>2. Ley 16/2003 — Cohesión y Calidad SNS (11-20)</p>
+        <p>3. Ley 55/2003 — Estatuto Marco (21-35)</p>
+        <p>4. Ley 8/1997 — Ordenación Sanitaria Euskadi (36-50)</p>
+        <p>5. D. 38/2012 — Historia Clínica Euskadi (51-60)</p>
+        <p>6. Ley 41/2002 — Autonomía del Paciente (61-80)</p>
+        <p>7. Ley Orgánica 3/2018 — Protección de Datos (81-95)</p>
+        <p>8. Ley 4/2005 — Igualdad Mujeres/Hombres (96-120)</p>
+        <p>9. Normalización Uso Euskera (121-140)</p>
+        <p>10. Seguridad del Paciente / Plan Salud (141-200)</p>
+      </div>
+    </div>
+  </div>
+</div>

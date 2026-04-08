@@ -1,0 +1,230 @@
+<h2>Seccion 3: Estadisticas e Informes</h2>
+<p class="subtitle">Dashboard analitico, evolucion temporal e informes detallados</p>
+
+<div class="section">
+  <h3>1. Dashboard de Estadisticas</h3>
+  <div class="mockup">
+    <div class="mockup-header">Vista general — /estadisticas</div>
+    <div class="mockup-body" style="padding: 1.5rem; background: #f8fafc; color: #1e293b;">
+      <!-- KPIs row -->
+      <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8rem; margin-bottom: 1.5rem;">
+        <div style="background: white; padding: 0.8rem; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 1.8rem; font-weight: bold; color: #2563eb;">18</p>
+          <p style="font-size: 0.75rem; color: #64748b;">Examenes</p>
+        </div>
+        <div style="background: white; padding: 0.8rem; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 1.8rem; font-weight: bold; color: #059669;">72%</p>
+          <p style="font-size: 0.75rem; color: #64748b;">Tasa acierto global</p>
+        </div>
+        <div style="background: white; padding: 0.8rem; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 1.8rem; font-weight: bold; color: #d97706;">342</p>
+          <p style="font-size: 0.75rem; color: #64748b;">Respuestas totales</p>
+        </div>
+        <div style="background: white; padding: 0.8rem; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 1.8rem; font-weight: bold; color: #7c3aed;">164</p>
+          <p style="font-size: 0.75rem; color: #64748b;">Preguntas vistas (de 200)</p>
+        </div>
+        <div style="background: white; padding: 0.8rem; border-radius: 8px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 1.8rem; font-weight: bold; color: #dc2626;">31</p>
+          <p style="font-size: 0.75rem; color: #64748b;">Preguntas debiles</p>
+        </div>
+      </div>
+
+      <!-- Charts row -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <!-- Evolution chart -->
+        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 0.85rem; font-weight: bold; margin-bottom: 0.8rem; color: #1e293b;">Evolucion tasa de acierto</p>
+          <div style="display: flex; align-items: flex-end; gap: 0.3rem; height: 100px;">
+            <div style="flex:1; background: #f87171; height: 45%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #f87171; height: 52%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #fbbf24; height: 58%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #fbbf24; height: 55%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #fbbf24; height: 63%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #34d399; height: 68%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #34d399; height: 65%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #34d399; height: 72%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #34d399; height: 70%; border-radius: 3px 3px 0 0;"></div>
+            <div style="flex:1; background: #34d399; height: 78%; border-radius: 3px 3px 0 0;"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #64748b; margin-top: 0.3rem;">
+            <span>Mar 1</span><span>Mar 15</span><span>Abr 1</span><span>Abr 8</span>
+          </div>
+        </div>
+
+        <!-- Topic breakdown -->
+        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <p style="font-size: 0.85rem; font-weight: bold; margin-bottom: 0.8rem; color: #1e293b;">Rendimiento por tema</p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8rem;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ley 44/2003</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 85%; background: #059669; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #059669; font-weight: bold;">85%</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ley 16/2003</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 70%; background: #d97706; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #d97706; font-weight: bold;">70%</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Estatuto Marco</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 78%; background: #059669; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #059669; font-weight: bold;">78%</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Ord. Sanitaria Euskadi</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 62%; background: #d97706; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #d97706; font-weight: bold;">62%</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Proteccion Datos</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 45%; background: #dc2626; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #dc2626; font-weight: bold;">45%</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="width: 150px; color: #334155; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Igualdad</span>
+              <div style="flex: 1; background: #e2e8f0; border-radius: 4px; height: 18px; overflow: hidden;">
+                <div style="width: 80%; background: #059669; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <span style="width: 35px; text-align: right; color: #059669; font-weight: bold;">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>2. Informe de Preguntas</h3>
+  <div class="mockup">
+    <div class="mockup-header">Listado detallado — /estadisticas/preguntas</div>
+    <div class="mockup-body" style="padding: 1.5rem; background: #f8fafc; color: #1e293b;">
+      <!-- Filters -->
+      <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem; flex-wrap: wrap; font-size: 0.85rem;">
+        <div style="background: #2563eb; color: white; padding: 0.4rem 0.8rem; border-radius: 6px;">Todas</div>
+        <div style="background: #e2e8f0; color: #334155; padding: 0.4rem 0.8rem; border-radius: 6px;">Solo debiles</div>
+        <div style="background: #e2e8f0; color: #334155; padding: 0.4rem 0.8rem; border-radius: 6px;">Nunca vistas</div>
+        <div style="background: #e2e8f0; color: #334155; padding: 0.4rem 0.8rem; border-radius: 6px;">Por tema &#9662;</div>
+        <div style="margin-left: auto; background: #e2e8f0; color: #334155; padding: 0.4rem 0.8rem; border-radius: 6px;">Ordenar: Mas falladas &#9662;</div>
+      </div>
+      <!-- Table -->
+      <div style="font-size: 0.8rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.7rem 0.8rem; background: #f1f5f9; border-bottom: 2px solid #e2e8f0; font-weight: bold; color: #475569;">
+          <span>#</span><span>Pregunta</span><span>Veces</span><span>Bien</span><span>Mal</span><span>% Error</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; color: #334155;">
+          <span style="font-weight:bold;">83</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Segun la LOPDGDD, el responsable del trat...</span><span>8</span><span style="color:#059669;font-weight:bold;">2</span><span style="color:#dc2626;font-weight:bold;">6</span><span style="color:#dc2626; font-weight:bold; background:#fef2f2; padding:0.1rem 0.4rem; border-radius:4px;">75%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; color: #334155;">
+          <span style="font-weight:bold;">47</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">En relacion con las funciones del Consejo...</span><span>6</span><span style="color:#059669;font-weight:bold;">2</span><span style="color:#dc2626;font-weight:bold;">4</span><span style="color:#dc2626; font-weight:bold; background:#fef2f2; padding:0.1rem 0.4rem; border-radius:4px;">67%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; color: #334155;">
+          <span style="font-weight:bold;">122</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">El III Plan de Normalizacion del Uso del E...</span><span>5</span><span style="color:#059669;font-weight:bold;">2</span><span style="color:#dc2626;font-weight:bold;">3</span><span style="color:#d97706; font-weight:bold; background:#fffbeb; padding:0.1rem 0.4rem; border-radius:4px;">60%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; color: #334155;">
+          <span style="font-weight:bold;">15</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">La cartera comun suplementaria del SNS inc...</span><span>7</span><span style="color:#059669;font-weight:bold;">5</span><span style="color:#dc2626;font-weight:bold;">2</span><span style="color:#d97706; font-weight:bold; background:#fffbeb; padding:0.1rem 0.4rem; border-radius:4px;">29%</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 50px 1fr 60px 60px 60px 70px; gap: 0.5rem; padding: 0.6rem 0.8rem; color: #334155;">
+          <span style="font-weight:bold;">1</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Para ejercer una profesion sanitaria sera...</span><span>10</span><span style="color:#059669;font-weight:bold;">9</span><span style="color:#dc2626;font-weight:bold;">1</span><span style="color:#059669; font-weight:bold; background:#f0fdf4; padding:0.1rem 0.4rem; border-radius:4px;">10%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>3. Historial de Examenes</h3>
+  <div class="mockup">
+    <div class="mockup-header">Todos los examenes — /historial</div>
+    <div class="mockup-body" style="padding: 1.5rem; background: #f8fafc; color: #1e293b;">
+      <div style="font-size: 0.8rem; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+        <div style="display: grid; grid-template-columns: 140px 70px 60px 90px 80px 70px 1fr; gap: 0.5rem; padding: 0.7rem 0.8rem; background: #f1f5f9; border-bottom: 2px solid #e2e8f0; font-weight: bold; color: #475569;">
+          <span>Fecha</span><span>Modo</span><span>Pregs.</span><span>Aciertos</span><span>Nota pen.</span><span>Tiempo</span><span></span>
+        </div>
+        <div style="display: grid; grid-template-columns: 140px 70px 60px 90px 80px 70px 1fr; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; align-items: center; color: #334155;">
+          <span>08/04/2026 19:30</span>
+          <span style="background:#059669;color:white;padding:0.2rem 0.5rem;border-radius:4px;text-align:center;font-size:0.75rem;">Examen</span>
+          <span>20</span>
+          <span style="color:#059669;font-weight:bold;">14/20 (70%)</span>
+          <span style="font-weight:bold;">12.67</span>
+          <span>18:45</span>
+          <span style="color:#2563eb;cursor:pointer;text-decoration:underline;">Ver detalle</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 140px 70px 60px 90px 80px 70px 1fr; gap: 0.5rem; padding: 0.6rem 0.8rem; border-bottom: 1px solid #f1f5f9; align-items: center; color: #334155;">
+          <span>07/04/2026 21:15</span>
+          <span style="background:#2563eb;color:white;padding:0.2rem 0.5rem;border-radius:4px;text-align:center;font-size:0.75rem;">Estudio</span>
+          <span>35</span>
+          <span style="color:#059669;font-weight:bold;">26/35 (74%)</span>
+          <span style="color:#94a3b8;">—</span>
+          <span style="color:#94a3b8;">—</span>
+          <span style="color:#2563eb;cursor:pointer;text-decoration:underline;">Ver detalle</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 140px 70px 60px 90px 80px 70px 1fr; gap: 0.5rem; padding: 0.6rem 0.8rem; align-items: center; color: #334155;">
+          <span>06/04/2026 18:00</span>
+          <span style="background:#059669;color:white;padding:0.2rem 0.5rem;border-radius:4px;text-align:center;font-size:0.75rem;">Examen</span>
+          <span>30</span>
+          <span style="color:#d97706;font-weight:bold;">18/30 (60%)</span>
+          <span style="font-weight:bold;">15.33</span>
+          <span>28:12</span>
+          <span style="color:#2563eb;cursor:pointer;text-decoration:underline;">Ver detalle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>4. Heatmap de Actividad</h3>
+  <div class="mockup">
+    <div class="mockup-header">Calendario de estudio (estilo GitHub)</div>
+    <div class="mockup-body" style="padding: 1.5rem; background: #f8fafc; color: #1e293b;">
+      <p style="font-size: 0.85rem; margin-bottom: 1rem; color: #475569;">Cuadricula de los ultimos 3 meses — intensidad = n° preguntas respondidas ese dia</p>
+      <div style="display: flex; gap: 3px; flex-wrap: wrap; max-width: 500px;">
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;" title="Sin actividad"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#bbf7d0;border-radius:2px;" title="5 preguntas"></div>
+        <div style="width:14px;height:14px;background:#6ee7b7;border-radius:2px;" title="15 preguntas"></div>
+        <div style="width:14px;height:14px;background:#34d399;border-radius:2px;" title="30 preguntas"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#bbf7d0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#6ee7b7;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#34d399;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#059669;border-radius:2px;" title="50+ preguntas"></div>
+        <div style="width:14px;height:14px;background:#6ee7b7;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#bbf7d0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#6ee7b7;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#34d399;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#34d399;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#059669;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#6ee7b7;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#bbf7d0;border-radius:2px;"></div>
+        <div style="width:14px;height:14px;background:#e2e8f0;border-radius:2px;"></div>
+      </div>
+      <div style="display:flex;gap:0.5rem;align-items:center;margin-top:0.8rem;font-size:0.75rem;color:#64748b;">
+        <span>Menos</span>
+        <div style="width:12px;height:12px;background:#e2e8f0;border-radius:2px;"></div>
+        <div style="width:12px;height:12px;background:#bbf7d0;border-radius:2px;"></div>
+        <div style="width:12px;height:12px;background:#6ee7b7;border-radius:2px;"></div>
+        <div style="width:12px;height:12px;background:#34d399;border-radius:2px;"></div>
+        <div style="width:12px;height:12px;background:#059669;border-radius:2px;"></div>
+        <span>Mas</span>
+      </div>
+    </div>
+  </div>
+</div>
