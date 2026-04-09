@@ -6,6 +6,7 @@ interface QuickActionsProps {
     examId: number;
     answered: number;
     total: number;
+    currentBlock: number;
   } | null;
 }
 
