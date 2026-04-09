@@ -282,6 +282,7 @@ export function ExamClient({
     });
 
     if (!isExam) {
+      if (answer === currentAnswer?.selected) return; // Don't re-submit same answer
       // Study mode: immediately submit and show feedback
       const result = await submitAnswer(
         examId,
@@ -622,10 +623,10 @@ export function ExamClient({
       {/* Controls */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {(isExam || isSequential) && (
+          {isExam && (
             <button
               onClick={() => handleNavigate(state.currentIndex - 1)}
-              disabled={isSequential ? state.currentIndex === blockStart : state.currentIndex === 0}
+              disabled={state.currentIndex === 0}
               className="px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Anterior

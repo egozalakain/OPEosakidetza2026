@@ -68,9 +68,7 @@ export default async function ExamPage({
       questions={questions}
       initialIndex={initialIndex}
       questionSelection={exam.questionSelection}
-      // @ts-ignore
       initialBlock={initialBlock}
-      // @ts-ignore
       shuffleOptions={exam.shuffleOptions}
     />
   );
