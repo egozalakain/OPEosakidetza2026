@@ -11,7 +11,9 @@
       "WebFetch(*)",
       "mcp__playwright__*",
       "mcp__BBDD_ideiatek__*",
-      "mcp__sequential-thinking__*"
+      "mcp__sequential-thinking__*",
+      "Skill(commit-commands:commit)",
+      "Skill(commit-commands:commit:*)"
     ],
     "deny": []
   }
