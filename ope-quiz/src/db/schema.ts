@@ -45,6 +45,7 @@ export const exams = pgTable("exams", {
   blankCount: integer("blank_count").default(0),
   rawScore: decimal("raw_score"),
   penalizedScore: decimal("penalized_score"),
+  shuffleOptions: boolean("shuffle_options").notNull().default(false),
 });
 
 export const examAnswers = pgTable(

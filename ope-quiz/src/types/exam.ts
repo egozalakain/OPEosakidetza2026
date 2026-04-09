@@ -9,6 +9,7 @@ export interface ExamConfig {
   topicFilter: string | null;
   timerMode: TimerMode;
   timerSeconds: number | null;
+  shuffleOptions: boolean;
 }
 
 export interface AnswerState {
