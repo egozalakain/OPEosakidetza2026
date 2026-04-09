@@ -20,6 +20,7 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
   const [topicFilter, setTopicFilter] = useState<string | null>(null);
   const [timerMode, setTimerMode] = useState<TimerMode>("countdown");
   const [timerMinutes, setTimerMinutes] = useState(30);
+  const [shuffleOptions, setShuffleOptions] = useState(false);
   const [isPending, setIsPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -45,6 +46,7 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
           timerMode: effectiveTimerMode,
           timerSeconds:
             effectiveTimerMode === "countdown" ? timerMinutes * 60 : null,
+          shuffleOptions: isStudy ? true : shuffleOptions,
         }),
       });
       const data = await res.json();
@@ -162,6 +164,20 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
               />
             </div>
           )}
+        </Section>
+      )}
+
+      {/* Shuffle options */}
+      {!isStudy && (
+        <Section title="Opciones de respuesta">
+          <ToggleGroup
+            options={[
+              { value: "false", label: "Orden original" },
+              { value: "true", label: "Mezclar opciones" },
+            ]}
+            selected={String(shuffleOptions)}
+            onChange={(v) => setShuffleOptions(v === "true")}
+          />
         </Section>
       )}
 
