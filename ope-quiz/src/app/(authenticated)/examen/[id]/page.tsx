@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { getExamWithAnswers } from "@/queries/exams";
+import { getSequentialStudyStatus } from "@/actions/exam";
 import { ExamClient } from "./exam-client";
 
 export default async function ExamPage({
@@ -45,11 +46,17 @@ export default async function ExamPage({
     explanation: row.question.explanation,
   }));
 
-  // For sequential study, resume from first unanswered question
+  // For sequential study, resume from first unanswered question within current block
   let initialIndex = 0;
+  let initialBlock = 0;
   if (exam.questionSelection === "sequential") {
-    const firstUnanswered = questions.findIndex((q) => q.selectedAnswer === null);
-    initialIndex = firstUnanswered === -1 ? questions.length - 1 : firstUnanswered;
+    const seqStatus = await getSequentialStudyStatus();
+    const currentBlock = seqStatus?.currentBlock ?? 0;
+    const blockStart = currentBlock * 20;
+    const blockEnd = Math.min(blockStart + 19, questions.length - 1);
+    const firstUnansweredInBlock = questions.slice(blockStart, blockEnd + 1).findIndex(q => q.selectedAnswer === null);
+    initialIndex = firstUnansweredInBlock === -1 ? blockStart : blockStart + firstUnansweredInBlock;
+    initialBlock = currentBlock;
   }
 
   return (
@@ -61,6 +68,10 @@ export default async function ExamPage({
       questions={questions}
       initialIndex={initialIndex}
       questionSelection={exam.questionSelection}
+      // @ts-ignore
+      initialBlock={initialBlock}
+      // @ts-ignore
+      shuffleOptions={exam.shuffleOptions}
     />
   );
 }
