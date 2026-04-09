@@ -356,9 +356,10 @@ export function ExamClient({
     ? optionShuffles[currentQuestion.questionId]
     : ["a", "b", "c", "d"];
 
-  const options = optionOrder.map(key => ({
+  const displayLabels = ["A", "B", "C", "D"];
+  const options = optionOrder.map((key, idx) => ({
     key,
-    label: key.toUpperCase(),
+    label: displayLabels[idx],
     text: currentQuestion[`option${key.toUpperCase()}` as keyof QuestionData] as string,
   }));
 
@@ -609,7 +610,7 @@ export function ExamClient({
             >
               {currentAnswer?.isCorrect
                 ? "Correcto"
-                : `Incorrecto — La respuesta correcta es: ${currentQuestion.correctAnswer.toUpperCase()})`}
+                : `Incorrecto — La respuesta correcta es: ${displayLabels[optionOrder.indexOf(currentQuestion.correctAnswer.toLowerCase())] ?? currentQuestion.correctAnswer.toUpperCase()})`}
             </p>
             {currentQuestion.explanation && (
               <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
