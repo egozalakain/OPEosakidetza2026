@@ -573,7 +573,7 @@ export function ExamClient({
               <button
                 key={opt.key}
                 onClick={() => handleSelectAnswer(opt.key)}
-                disabled={state.showFeedback || state.finishing || (studyAnswered && !state.showFeedback)}
+                disabled={state.finishing || (!isSequential && (state.showFeedback || studyAnswered))}
                 className={cn(
                   "w-full text-left px-4 py-3 rounded-lg border-2 transition-colors",
                   optionStyle,
