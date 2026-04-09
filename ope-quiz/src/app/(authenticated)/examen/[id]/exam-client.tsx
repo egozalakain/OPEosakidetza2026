@@ -2,7 +2,7 @@
 
 import { useReducer, useEffect, useRef, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { submitAnswer, flagQuestion, finishExam } from "@/actions/exam";
+import { submitAnswer, flagQuestion, finishExam, setSequentialBlock, resetBlock } from "@/actions/exam";
 import { cn } from "@/lib/utils";
 import { formatTime } from "@/lib/utils";
 
@@ -31,6 +31,8 @@ interface ExamClientProps {
   questions: QuestionData[];
   initialIndex?: number;
   questionSelection?: "random" | "weak" | "topic" | "sequential";
+  initialBlock?: number;
+  shuffleOptions?: boolean;
 }
 
 // State and reducer
@@ -45,15 +47,18 @@ interface ExamState {
   answers: Record<number, AnswerRecord>;
   showFeedback: boolean;
   finishing: boolean;
+  currentBlock: number;
 }
 
 type ExamAction =
   | { type: "SELECT_ANSWER"; questionId: number; answer: string }
   | { type: "FLAG"; questionId: number; flagged: boolean }
-  | { type: "NAVIGATE"; index: number }
+  | { type: "NAVIGATE"; index: number; hasAnswer?: boolean }
   | { type: "SHOW_FEEDBACK"; questionId: number; isCorrect: boolean }
   | { type: "NEXT_AFTER_FEEDBACK" }
-  | { type: "SET_FINISHING"; finishing: boolean };
+  | { type: "SET_FINISHING"; finishing: boolean }
+  | { type: "SET_BLOCK"; block: number; firstIndex: number }
+  | { type: "RESET_BLOCK_ANSWERS"; questionIds: number[] };
 
 function examReducer(state: ExamState, action: ExamAction): ExamState {
   switch (action.type) {
@@ -80,7 +85,7 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
         },
       };
     case "NAVIGATE":
-      return { ...state, currentIndex: action.index, showFeedback: false };
+      return { ...state, currentIndex: action.index, showFeedback: action.hasAnswer ?? false };
     case "SHOW_FEEDBACK":
       return {
         ...state,
@@ -100,6 +105,18 @@ function examReducer(state: ExamState, action: ExamAction): ExamState {
         currentIndex: state.currentIndex + 1,
       };
     }
+    case "SET_BLOCK":
+      return { ...state, currentBlock: action.block, currentIndex: action.firstIndex, showFeedback: false };
+    case "RESET_BLOCK_ANSWERS":
+      return {
+        ...state,
+        answers: {
+          ...state.answers,
+          ...Object.fromEntries(
+            action.questionIds.map(id => [id, { ...state.answers[id], selected: null, isCorrect: null }])
+          ),
+        },
+      };
     case "SET_FINISHING":
       return { ...state, finishing: action.finishing };
     default:
@@ -115,6 +132,8 @@ export function ExamClient({
   questions,
   initialIndex = 0,
   questionSelection,
+  initialBlock = 0,
+  shuffleOptions,
 }: ExamClientProps) {
   const router = useRouter();
   const isExam = mode === "exam";
@@ -136,10 +155,43 @@ export function ExamClient({
     answers: initialAnswers,
     showFeedback: false,
     finishing: false,
+    currentBlock: initialBlock,
   });
+
+  // Block constants
+  const BLOCK_SIZE = 20;
+  const totalBlocks = isSequential ? Math.ceil(questions.length / BLOCK_SIZE) : 1;
+  const blockStart = isSequential ? state.currentBlock * BLOCK_SIZE : 0;
+  const blockEnd = isSequential ? Math.min(blockStart + BLOCK_SIZE - 1, questions.length - 1) : questions.length - 1;
+  const blockQuestions = isSequential ? questions.slice(blockStart, blockEnd + 1) : questions;
+  const blockAnswered = blockQuestions.filter(q => {
+    const a = state.answers[q.questionId];
+    return a?.selected !== null && a?.selected !== undefined;
+  }).length;
 
   const currentQuestion = questions[state.currentIndex];
   const currentAnswer = state.answers[currentQuestion.questionId];
+
+  // Option shuffle
+  const shouldShuffle = !isExam || (shuffleOptions ?? false);
+
+  function shuffle<T>(arr: T[]): T[] {
+    const result = [...arr];
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
+  const [optionShuffles] = useState<Record<number, string[]>>(() => {
+    if (!shouldShuffle) return {};
+    const shuffles: Record<number, string[]> = {};
+    for (const q of questions) {
+      shuffles[q.questionId] = shuffle(["a", "b", "c", "d"]);
+    }
+    return shuffles;
+  });
 
   // Timer
   const [elapsed, setElapsed] = useState(0);
@@ -198,13 +250,30 @@ export function ExamClient({
     router.push("/");
   }
 
+  // Block navigation handlers
+  async function handleBlockNavigate(newBlock: number) {
+    if (newBlock < 0 || newBlock >= totalBlocks) return;
+    await setSequentialBlock(newBlock);
+    const newBlockStart = newBlock * BLOCK_SIZE;
+    const firstUnanswered = questions.slice(newBlockStart, newBlockStart + BLOCK_SIZE)
+      .findIndex(q => state.answers[q.questionId]?.selected == null);
+    const newIndex = firstUnanswered === -1 ? newBlockStart : newBlockStart + firstUnanswered;
+    dispatch({ type: "SET_BLOCK", block: newBlock, firstIndex: newIndex });
+  }
+
+  async function handleResetBlock() {
+    await resetBlock(examId, state.currentBlock);
+    dispatch({ type: "RESET_BLOCK_ANSWERS", questionIds: blockQuestions.map(q => q.questionId) });
+    dispatch({ type: "NAVIGATE", index: blockStart, hasAnswer: false });
+  }
+
   // Show finish confirmation dialog
   const [showFinishDialog, setShowFinishDialog] = useState(false);
 
   // Handle answer selection
   async function handleSelectAnswer(answer: string) {
-    if (state.showFeedback) return;
-    if (!isExam && currentAnswer?.selected) return; // Study mode: can't change answer
+    if (!isSequential && state.showFeedback) return;
+    if (!isExam && !isSequential && currentAnswer?.selected) return;
 
     dispatch({
       type: "SELECT_ANSWER",
@@ -240,24 +309,35 @@ export function ExamClient({
 
   // Navigate
   function handleNavigate(index: number) {
-    if (index < 0 || index >= totalQuestions) return;
+    if (isSequential) {
+      if (index < blockStart || index > blockEnd) return;
+    } else {
+      if (index < 0 || index >= totalQuestions) return;
+    }
 
     // In exam mode, save current answer to server when navigating away
     if (isExam && currentAnswer?.selected) {
       submitAnswer(examId, currentQuestion.questionId, currentAnswer.selected);
     }
 
-    dispatch({ type: "NAVIGATE", index });
+    const hasAnswer = !!(state.answers[questions[index]?.questionId]?.selected);
+    dispatch({ type: "NAVIGATE", index, hasAnswer });
   }
 
   // Next after study feedback
   function handleNextAfterFeedback() {
-    if (state.currentIndex >= totalQuestions - 1) {
-      // Last question in study mode - finish
-      handleFinishExam();
-      return;
+    if (isSequential) {
+      if (state.currentIndex < blockEnd) {
+        dispatch({ type: "NEXT_AFTER_FEEDBACK" });
+      }
+      // At end of block: do nothing (user uses block navigation)
+    } else {
+      if (state.currentIndex >= totalQuestions - 1) {
+        handleFinishExam();
+        return;
+      }
+      dispatch({ type: "NEXT_AFTER_FEEDBACK" });
     }
-    dispatch({ type: "NEXT_AFTER_FEEDBACK" });
   }
 
   // Timer display
@@ -271,12 +351,15 @@ export function ExamClient({
   const timerUrgent = timerMode === "countdown" && remaining !== null && remaining < 60;
   const timerWarning = timerMode === "countdown" && remaining !== null && remaining < 120 && remaining >= 60;
 
-  const options = [
-    { key: "a", label: "A", text: currentQuestion.optionA },
-    { key: "b", label: "B", text: currentQuestion.optionB },
-    { key: "c", label: "C", text: currentQuestion.optionC },
-    { key: "d", label: "D", text: currentQuestion.optionD },
-  ];
+  const optionOrder = shouldShuffle && optionShuffles[currentQuestion.questionId]
+    ? optionShuffles[currentQuestion.questionId]
+    : ["a", "b", "c", "d"];
+
+  const options = optionOrder.map(key => ({
+    key,
+    label: key.toUpperCase(),
+    text: currentQuestion[`option${key.toUpperCase()}` as keyof QuestionData] as string,
+  }));
 
   const isLastQuestion = state.currentIndex === totalQuestions - 1;
   const studyAnswered = !isExam && currentAnswer?.selected !== null && currentAnswer?.selected !== undefined;
@@ -286,7 +369,9 @@ export function ExamClient({
       {/* Header */}
       <div className="flex items-center justify-between flex-wrap gap-2">
         <h1 className="text-lg font-bold text-gray-900 dark:text-white">
-          Pregunta {state.currentIndex + 1} / {totalQuestions}
+          {isSequential
+            ? `Pregunta ${currentQuestion.number}`
+            : `Pregunta ${state.currentIndex + 1} / ${totalQuestions}`}
         </h1>
 
         <div className="flex items-center gap-3">
@@ -320,51 +405,96 @@ export function ExamClient({
         </div>
       </div>
 
-      {/* Sequential progress bar */}
+      {/* Sequential block navigation */}
       {isSequential && (
-        <div className="space-y-1">
-          <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">
-            <span>Progreso</span>
-            <span>
-              {Object.values(state.answers).filter((a) => a.selected).length} / {totalQuestions}
+        <div className="space-y-3">
+          {/* Block navigation header */}
+          <div className="flex items-center justify-between bg-gray-100 dark:bg-gray-700 rounded-lg px-3 py-2">
+            <button
+              onClick={() => handleBlockNavigate(state.currentBlock - 1)}
+              disabled={state.currentBlock === 0}
+              className="px-3 py-1 text-sm font-medium rounded bg-white dark:bg-gray-600 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              ← Bloque anterior
+            </button>
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+              Bloque {state.currentBlock + 1} / {totalBlocks}
+              <span className="ml-1 text-gray-500 dark:text-gray-400 font-normal">
+                (Q{blockStart + 1}–Q{blockEnd + 1})
+              </span>
             </span>
+            <button
+              onClick={() => handleBlockNavigate(state.currentBlock + 1)}
+              disabled={state.currentBlock >= totalBlocks - 1}
+              className="px-3 py-1 text-sm font-medium rounded bg-white dark:bg-gray-600 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              Bloque siguiente →
+            </button>
           </div>
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
-            <div
-              className="bg-green-500 h-2.5 rounded-full transition-all"
-              style={{
-                width: `${(Object.values(state.answers).filter((a) => a.selected).length / totalQuestions) * 100}%`,
-              }}
-            />
+
+          {/* Block progress bar */}
+          <div className="space-y-1">
+            <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">
+              <span>Progreso del bloque</span>
+              <span>{blockAnswered} / {blockQuestions.length}</span>
+            </div>
+            <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+              <div
+                className="bg-green-500 h-2.5 rounded-full transition-all"
+                style={{ width: `${(blockAnswered / blockQuestions.length) * 100}%` }}
+              />
+            </div>
+          </div>
+
+          {/* Question navigation within block */}
+          <div className="flex items-center justify-between">
+            <button
+              onClick={() => handleNavigate(state.currentIndex - 1)}
+              disabled={state.currentIndex === blockStart}
+              className="px-3 py-2 text-sm font-medium rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              ← Anterior
+            </button>
+            <span className="text-sm text-gray-600 dark:text-gray-400">
+              Pregunta {state.currentIndex - blockStart + 1} de {blockQuestions.length}
+            </span>
+            <button
+              onClick={() => handleNavigate(state.currentIndex + 1)}
+              disabled={state.currentIndex === blockEnd}
+              className="px-3 py-2 text-sm font-medium rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            >
+              Siguiente →
+            </button>
           </div>
         </div>
       )}
 
-      {/* Navigation grid (hidden by default for sequential, collapsible) */}
+      {/* Navigation grid */}
       {isSequential ? (
         <details className="group">
           <summary className="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300">
-            Ver mapa de preguntas
+            Ver mapa del bloque
           </summary>
           <div className="flex flex-wrap gap-1.5 mt-2">
-            {questions.map((q, idx) => {
+            {blockQuestions.map((q, idx) => {
               const ans = state.answers[q.questionId];
-              const isCurrent = idx === state.currentIndex;
+              const globalIdx = blockStart + idx;
+              const isCurrent = globalIdx === state.currentIndex;
               let bgColor = "bg-gray-200 dark:bg-gray-700";
               if (isCurrent) bgColor = "bg-blue-500 text-white";
               else if (ans?.isCorrect === true) bgColor = "bg-green-500 text-white";
               else if (ans?.isCorrect === false) bgColor = "bg-red-500 text-white";
               return (
-                <span
+                <button
                   key={q.questionId}
+                  onClick={() => handleNavigate(globalIdx)}
                   className={cn(
-                    "w-6 h-6 rounded text-[10px] font-medium flex items-center justify-center",
+                    "w-8 h-8 rounded text-xs font-medium flex items-center justify-center transition-colors hover:opacity-80",
                     bgColor
                   )}
-                  style={{ minWidth: "1.5rem" }}
                 >
                   {q.number}
-                </span>
+                </button>
               );
             })}
           </div>
@@ -492,10 +622,10 @@ export function ExamClient({
       {/* Controls */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          {isExam && (
+          {(isExam || isSequential) && (
             <button
               onClick={() => handleNavigate(state.currentIndex - 1)}
-              disabled={state.currentIndex === 0}
+              disabled={isSequential ? state.currentIndex === blockStart : state.currentIndex === 0}
               className="px-4 py-2 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Anterior
@@ -535,16 +665,31 @@ export function ExamClient({
           ) : state.showFeedback ? (
             <button
               onClick={
-                isLastQuestion ? () => handleFinishExam() : handleNextAfterFeedback
+                isSequential
+                  ? (state.currentIndex < blockEnd ? handleNextAfterFeedback : undefined)
+                  : (isLastQuestion ? () => handleFinishExam() : handleNextAfterFeedback)
               }
-              disabled={state.finishing}
+              disabled={state.finishing || (isSequential && state.currentIndex >= blockEnd)}
               className="px-4 py-2 rounded-lg text-sm font-medium bg-blue-600 hover:bg-blue-700 text-white transition-colors disabled:opacity-50"
             >
-              {isLastQuestion ? "Terminar" : "Siguiente"}
+              {!isSequential && isLastQuestion ? "Terminar" : "Siguiente"}
             </button>
           ) : null}
         </div>
       </div>
+
+      {/* Rehacer bloque button */}
+      {isSequential && (
+        <div className="flex justify-start mt-2">
+          <button
+            onClick={handleResetBlock}
+            disabled={state.finishing}
+            className="px-4 py-2 rounded-lg text-sm font-medium bg-amber-100 dark:bg-amber-900/30 border border-amber-400 text-amber-700 dark:text-amber-300 hover:bg-amber-200 dark:hover:bg-amber-900/50 transition-colors disabled:opacity-50"
+          >
+            Rehacer bloque
+          </button>
+        </div>
+      )}
 
       {/* Finish confirmation dialog */}
       {showFinishDialog && (
