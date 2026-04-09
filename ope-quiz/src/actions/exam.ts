@@ -2,7 +2,7 @@
 
 import { db } from "@/db";
 import { exams, examAnswers, questionStats, userSettings } from "@/db/schema";
-import { eq, and, sql, isNull } from "drizzle-orm";
+import { eq, and, sql, isNull, gte, lte } from "drizzle-orm";
 import { getAllQuestionIds, getQuestionsByNumbers, getQuestionById, getWeakQuestionStats } from "@/queries/questions";
 import { selectRandom, selectWeakPoints, selectByTopic } from "@/lib/question-selection";
 import { calculatePenalizedScore } from "@/lib/scoring";
@@ -45,6 +45,7 @@ export async function createExam(config: ExamConfig) {
       questionSelection: config.questionSelection,
       topicFilter: config.topicFilter,
       totalQuestions: selectedQuestions.length,
+      shuffleOptions: config.shuffleOptions,
     })
     .returning({ id: exams.id });
 
@@ -209,6 +210,7 @@ export async function getSequentialStudyStatus(): Promise<{
   examId: number;
   answered: number;
   total: number;
+  currentBlock: number;
 } | null> {
   // Read active sequential exam ID from userSettings
   const rows = await db
@@ -241,7 +243,15 @@ export async function getSequentialStudyStatus(): Promise<{
 
   const { answered, total } = countRows[0] ?? { answered: 0, total: 0 };
 
-  return { examId, answered, total };
+  // Read current block from userSettings
+  const blockRows = await db
+    .select({ value: userSettings.value })
+    .from(userSettings)
+    .where(eq(userSettings.key, "sequential_block"));
+
+  const currentBlock = blockRows.length > 0 ? parseInt(blockRows[0].value, 10) || 0 : 0;
+
+  return { examId, answered, total, currentBlock };
 }
 
 export async function createSequentialExam(): Promise<{ examId: number }> {
@@ -307,6 +317,15 @@ export async function createSequentialExam(): Promise<{ examId: number }> {
       set: { value: String(exam.id) },
     });
 
+  // Reset block to 0 for new sequential session
+  await db
+    .insert(userSettings)
+    .values({ key: "sequential_block", value: "0" })
+    .onConflictDoUpdate({
+      target: userSettings.key,
+      set: { value: "0" },
+    });
+
   return { examId: exam.id };
 }
 
@@ -317,11 +336,41 @@ export async function resetSequentialExam(): Promise<{ examId: number }> {
     await finishExam(existing.examId);
   }
 
-  // Clear the setting so createSequentialExam creates a fresh one
+  // Clear the settings so createSequentialExam creates a fresh one
   await db
     .delete(userSettings)
     .where(eq(userSettings.key, "sequential_exam_id"));
 
+  await db
+    .delete(userSettings)
+    .where(eq(userSettings.key, "sequential_block"));
+
   // Create new sequential exam
   return createSequentialExam();
+}
+
+export async function setSequentialBlock(block: number): Promise<void> {
+  await db
+    .insert(userSettings)
+    .values({ key: "sequential_block", value: String(block) })
+    .onConflictDoUpdate({
+      target: userSettings.key,
+      set: { value: String(block) },
+    });
+}
+
+export async function resetBlock(examId: number, block: number): Promise<void> {
+  const blockStart = block * 20;
+  const blockEnd = blockStart + 19;
+
+  await db
+    .update(examAnswers)
+    .set({ selectedAnswer: null, isCorrect: null })
+    .where(
+      and(
+        eq(examAnswers.examId, examId),
+        gte(examAnswers.questionOrder, blockStart),
+        lte(examAnswers.questionOrder, blockEnd)
+      )
+    );
 }
