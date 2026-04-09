@@ -1,9 +1,13 @@
 import { getDashboardKPIs } from "@/actions/stats";
+import { getSequentialStudyStatus } from "@/actions/exam";
 import { KPICards } from "@/components/dashboard/kpi-cards";
 import { QuickActions } from "@/components/dashboard/quick-actions";
 
 export default async function DashboardPage() {
-  const kpis = await getDashboardKPIs();
+  const [kpis, sequentialStatus] = await Promise.all([
+    getDashboardKPIs(),
+    getSequentialStudyStatus(),
+  ]);
 
   return (
     <div className="space-y-8">
@@ -22,7 +26,7 @@ export default async function DashboardPage() {
         <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
           Acciones rapidas
         </h2>
-        <QuickActions />
+        <QuickActions sequentialStatus={sequentialStatus} />
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 "use server";
 
 import { db } from "@/db";
-import { exams, examAnswers, questionStats } from "@/db/schema";
-import { eq, and, sql } from "drizzle-orm";
+import { exams, examAnswers, questionStats, userSettings } from "@/db/schema";
+import { eq, and, sql, isNull } from "drizzle-orm";
 import { getAllQuestionIds, getQuestionsByNumbers, getQuestionById, getWeakQuestionStats } from "@/queries/questions";
 import { selectRandom, selectWeakPoints, selectByTopic } from "@/lib/question-selection";
 import { calculatePenalizedScore } from "@/lib/scoring";
@@ -201,4 +201,127 @@ export async function updateTimeSpent(
     .update(examAnswers)
     .set({ timeSpentSeconds: seconds })
     .where(and(eq(examAnswers.examId, examId), eq(examAnswers.questionId, questionId)));
+}
+
+// --- Sequential study mode ---
+
+export async function getSequentialStudyStatus(): Promise<{
+  examId: number;
+  answered: number;
+  total: number;
+} | null> {
+  // Read active sequential exam ID from userSettings
+  const rows = await db
+    .select({ value: userSettings.value })
+    .from(userSettings)
+    .where(eq(userSettings.key, "sequential_exam_id"));
+
+  if (rows.length === 0) return null;
+
+  const examId = parseInt(rows[0].value, 10);
+  if (isNaN(examId)) return null;
+
+  // Verify the exam exists, is sequential study, and not finished
+  const examRows = await db
+    .select()
+    .from(exams)
+    .where(eq(exams.id, examId));
+
+  const exam = examRows[0];
+  if (!exam || exam.finishedAt || exam.questionSelection !== "sequential") return null;
+
+  // Count answered questions
+  const countRows = await db
+    .select({
+      answered: sql<number>`count(case when ${examAnswers.selectedAnswer} is not null then 1 end)::int`,
+      total: sql<number>`count(*)::int`,
+    })
+    .from(examAnswers)
+    .where(eq(examAnswers.examId, examId));
+
+  const { answered, total } = countRows[0] ?? { answered: 0, total: 0 };
+
+  return { examId, answered, total };
+}
+
+export async function createSequentialExam(): Promise<{ examId: number }> {
+  // Check if there's already an active sequential session
+  const existing = await getSequentialStudyStatus();
+  if (existing) return { examId: existing.examId };
+
+  // Get all question numbers and sort sequentially
+  const allIds = await getAllQuestionIds();
+  const sortedIds = [...allIds].sort((a, b) => a - b);
+
+  // Get full question data
+  const selectedQuestions = await getQuestionsByNumbers(sortedIds);
+  selectedQuestions.sort((a, b) => a.number - b.number);
+
+  // Create exam record
+  const [exam] = await db
+    .insert(exams)
+    .values({
+      mode: "study",
+      timerMode: "none",
+      timerSeconds: null,
+      questionSelection: "sequential",
+      topicFilter: null,
+      totalQuestions: selectedQuestions.length,
+    })
+    .returning({ id: exams.id });
+
+  // Insert exam_answers for all questions in order
+  await db.insert(examAnswers).values(
+    selectedQuestions.map((q, index) => ({
+      examId: exam.id,
+      questionId: q.id,
+      questionOrder: index,
+    }))
+  );
+
+  // Update times_shown in question_stats
+  for (const q of selectedQuestions) {
+    await db
+      .insert(questionStats)
+      .values({
+        questionId: q.id,
+        timesShown: 1,
+        timesCorrect: 0,
+        timesWrong: 0,
+        timesBlank: 0,
+      })
+      .onConflictDoUpdate({
+        target: questionStats.questionId,
+        set: {
+          timesShown: sql`${questionStats.timesShown} + 1`,
+        },
+      });
+  }
+
+  // Save active session ID in userSettings
+  await db
+    .insert(userSettings)
+    .values({ key: "sequential_exam_id", value: String(exam.id) })
+    .onConflictDoUpdate({
+      target: userSettings.key,
+      set: { value: String(exam.id) },
+    });
+
+  return { examId: exam.id };
+}
+
+export async function resetSequentialExam(): Promise<{ examId: number }> {
+  // Finish current sequential exam if exists
+  const existing = await getSequentialStudyStatus();
+  if (existing) {
+    await finishExam(existing.examId);
+  }
+
+  // Clear the setting so createSequentialExam creates a fresh one
+  await db
+    .delete(userSettings)
+    .where(eq(userSettings.key, "sequential_exam_id"));
+
+  // Create new sequential exam
+  return createSequentialExam();
 }

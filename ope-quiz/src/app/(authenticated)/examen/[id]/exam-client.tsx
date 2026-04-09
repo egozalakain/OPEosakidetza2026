@@ -29,6 +29,8 @@ interface ExamClientProps {
   timerMode: "countdown" | "stopwatch" | "none";
   timerSeconds: number | null;
   questions: QuestionData[];
+  initialIndex?: number;
+  questionSelection?: "random" | "weak" | "topic" | "sequential";
 }
 
 // State and reducer
@@ -111,9 +113,12 @@ export function ExamClient({
   timerMode,
   timerSeconds,
   questions,
+  initialIndex = 0,
+  questionSelection,
 }: ExamClientProps) {
   const router = useRouter();
   const isExam = mode === "exam";
+  const isSequential = questionSelection === "sequential";
   const totalQuestions = questions.length;
 
   // Initialize answers from existing data
@@ -127,7 +132,7 @@ export function ExamClient({
   }
 
   const [state, dispatch] = useReducer(examReducer, {
-    currentIndex: 0,
+    currentIndex: initialIndex,
     answers: initialAnswers,
     showFeedback: false,
     finishing: false,
@@ -175,16 +180,23 @@ export function ExamClient({
 
     if (isExam) {
       router.push(`/examen/${examId}/resultados`);
+    } else if (isSequential) {
+      router.push(`/examen/${examId}/revision`);
     } else {
       router.push("/");
     }
-  }, [examId, isExam, questions, state.answers, router]);
+  }, [examId, isExam, isSequential, questions, state.answers, router]);
 
   useEffect(() => {
     if (remaining === 0 && !finishedRef.current) {
       handleFinishExam();
     }
   }, [remaining, handleFinishExam]);
+
+  // Pause handler for sequential mode (just go home, progress is auto-saved)
+  function handlePause() {
+    router.push("/");
+  }
 
   // Show finish confirmation dialog
   const [showFinishDialog, setShowFinishDialog] = useState(false);
@@ -260,10 +272,10 @@ export function ExamClient({
   const timerWarning = timerMode === "countdown" && remaining !== null && remaining < 120 && remaining >= 60;
 
   const options = [
-    { key: "A", text: currentQuestion.optionA },
-    { key: "B", text: currentQuestion.optionB },
-    { key: "C", text: currentQuestion.optionC },
-    { key: "D", text: currentQuestion.optionD },
+    { key: "a", label: "A", text: currentQuestion.optionA },
+    { key: "b", label: "B", text: currentQuestion.optionB },
+    { key: "c", label: "C", text: currentQuestion.optionC },
+    { key: "d", label: "D", text: currentQuestion.optionD },
   ];
 
   const isLastQuestion = state.currentIndex === totalQuestions - 1;
@@ -294,52 +306,107 @@ export function ExamClient({
           )}
 
           <button
-            onClick={() => setShowFinishDialog(true)}
+            onClick={isSequential ? handlePause : () => setShowFinishDialog(true)}
             disabled={state.finishing}
-            className="px-4 py-2 rounded-lg text-sm font-medium bg-red-600 hover:bg-red-700 text-white transition-colors disabled:opacity-50"
+            className={cn(
+              "px-4 py-2 rounded-lg text-sm font-medium transition-colors disabled:opacity-50",
+              isSequential
+                ? "bg-gray-600 hover:bg-gray-700 text-white"
+                : "bg-red-600 hover:bg-red-700 text-white"
+            )}
           >
-            Finalizar
+            {isSequential ? "Pausar" : "Finalizar"}
           </button>
         </div>
       </div>
 
-      {/* Navigation grid */}
-      <div className="flex flex-wrap gap-1.5">
-        {questions.map((q, idx) => {
-          const ans = state.answers[q.questionId];
-          const isCurrent = idx === state.currentIndex;
-          let bgColor = "bg-gray-200 dark:bg-gray-700"; // unanswered
-
-          if (isCurrent) {
-            bgColor = "bg-blue-500 text-white";
-          } else if (isExam) {
-            if (ans?.flagged) bgColor = "bg-amber-400 dark:bg-amber-500 text-white";
-            else if (ans?.selected) bgColor = "bg-green-500 text-white";
-          } else {
-            // Study mode
-            if (ans?.isCorrect === true) bgColor = "bg-green-500 text-white";
-            else if (ans?.isCorrect === false) bgColor = "bg-red-500 text-white";
-          }
-
-          return (
-            <button
-              key={q.questionId}
-              onClick={() => {
-                if (isExam) handleNavigate(idx);
-                // Study mode: no free navigation
+      {/* Sequential progress bar */}
+      {isSequential && (
+        <div className="space-y-1">
+          <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">
+            <span>Progreso</span>
+            <span>
+              {Object.values(state.answers).filter((a) => a.selected).length} / {totalQuestions}
+            </span>
+          </div>
+          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+            <div
+              className="bg-green-500 h-2.5 rounded-full transition-all"
+              style={{
+                width: `${(Object.values(state.answers).filter((a) => a.selected).length / totalQuestions) * 100}%`,
               }}
-              className={cn(
-                "w-8 h-8 rounded text-xs font-medium flex items-center justify-center transition-colors",
-                bgColor,
-                !isExam && "cursor-default",
-                isExam && "hover:opacity-80 cursor-pointer"
-              )}
-            >
-              {idx + 1}
-            </button>
-          );
-        })}
-      </div>
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Navigation grid (hidden by default for sequential, collapsible) */}
+      {isSequential ? (
+        <details className="group">
+          <summary className="text-sm text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-300">
+            Ver mapa de preguntas
+          </summary>
+          <div className="flex flex-wrap gap-1.5 mt-2">
+            {questions.map((q, idx) => {
+              const ans = state.answers[q.questionId];
+              const isCurrent = idx === state.currentIndex;
+              let bgColor = "bg-gray-200 dark:bg-gray-700";
+              if (isCurrent) bgColor = "bg-blue-500 text-white";
+              else if (ans?.isCorrect === true) bgColor = "bg-green-500 text-white";
+              else if (ans?.isCorrect === false) bgColor = "bg-red-500 text-white";
+              return (
+                <span
+                  key={q.questionId}
+                  className={cn(
+                    "w-6 h-6 rounded text-[10px] font-medium flex items-center justify-center",
+                    bgColor
+                  )}
+                  style={{ minWidth: "1.5rem" }}
+                >
+                  {q.number}
+                </span>
+              );
+            })}
+          </div>
+        </details>
+      ) : (
+        <div className="flex flex-wrap gap-1.5">
+          {questions.map((q, idx) => {
+            const ans = state.answers[q.questionId];
+            const isCurrent = idx === state.currentIndex;
+            let bgColor = "bg-gray-200 dark:bg-gray-700"; // unanswered
+
+            if (isCurrent) {
+              bgColor = "bg-blue-500 text-white";
+            } else if (isExam) {
+              if (ans?.flagged) bgColor = "bg-amber-400 dark:bg-amber-500 text-white";
+              else if (ans?.selected) bgColor = "bg-green-500 text-white";
+            } else {
+              // Study mode
+              if (ans?.isCorrect === true) bgColor = "bg-green-500 text-white";
+              else if (ans?.isCorrect === false) bgColor = "bg-red-500 text-white";
+            }
+
+            return (
+              <button
+                key={q.questionId}
+                onClick={() => {
+                  if (isExam) handleNavigate(idx);
+                  // Study mode: no free navigation
+                }}
+                className={cn(
+                  "w-8 h-8 rounded text-xs font-medium flex items-center justify-center transition-colors",
+                  bgColor,
+                  !isExam && "cursor-default",
+                  isExam && "hover:opacity-80 cursor-pointer"
+                )}
+              >
+                {idx + 1}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Question display */}
       <div className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 p-6">
@@ -384,7 +451,7 @@ export function ExamClient({
                     "cursor-default"
                 )}
               >
-                <span className="font-semibold mr-2">{opt.key})</span>
+                <span className="font-semibold mr-2">{opt.label})</span>
                 {opt.text}
               </button>
             );
@@ -411,7 +478,7 @@ export function ExamClient({
             >
               {currentAnswer?.isCorrect
                 ? "Correcto"
-                : `Incorrecto — La respuesta correcta es: ${currentQuestion.correctAnswer})`}
+                : `Incorrecto — La respuesta correcta es: ${currentQuestion.correctAnswer.toUpperCase()})`}
             </p>
             {currentQuestion.explanation && (
               <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">

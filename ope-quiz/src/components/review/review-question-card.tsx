@@ -35,10 +35,10 @@ export function ReviewQuestionCard({
       : "border-l-red-500";
 
   const options = [
-    { key: "A", text: optionA },
-    { key: "B", text: optionB },
-    { key: "C", text: optionC },
-    { key: "D", text: optionD },
+    { key: "a", label: "A", text: optionA },
+    { key: "b", label: "B", text: optionB },
+    { key: "c", label: "C", text: optionC },
+    { key: "d", label: "D", text: optionD },
   ];
 
   return (
@@ -81,7 +81,7 @@ export function ReviewQuestionCard({
                     : "text-gray-700 dark:text-gray-300"
               )}
             >
-              <span className="font-semibold mr-2">{opt.key})</span>
+              <span className="font-semibold mr-2">{opt.label})</span>
               {opt.text}
               {isThisCorrect && (
                 <span className="ml-2 text-green-600 dark:text-green-400">

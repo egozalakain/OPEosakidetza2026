@@ -20,6 +20,8 @@ export default async function ExamPage({
   if (exam.finishedAt) {
     if (exam.mode === "exam") {
       redirect(`/examen/${id}/resultados`);
+    } else if (exam.questionSelection === "sequential") {
+      redirect(`/examen/${id}/revision`);
     } else {
       redirect("/");
     }
@@ -43,6 +45,13 @@ export default async function ExamPage({
     explanation: row.question.explanation,
   }));
 
+  // For sequential study, resume from first unanswered question
+  let initialIndex = 0;
+  if (exam.questionSelection === "sequential") {
+    const firstUnanswered = questions.findIndex((q) => q.selectedAnswer === null);
+    initialIndex = firstUnanswered === -1 ? questions.length - 1 : firstUnanswered;
+  }
+
   return (
     <ExamClient
       examId={exam.id}
@@ -50,6 +59,8 @@ export default async function ExamPage({
       timerMode={exam.timerMode}
       timerSeconds={exam.timerSeconds}
       questions={questions}
+      initialIndex={initialIndex}
+      questionSelection={exam.questionSelection}
     />
   );
 }

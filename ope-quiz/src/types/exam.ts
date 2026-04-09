@@ -1,6 +1,6 @@
 export type ExamMode = "exam" | "study";
 export type TimerMode = "countdown" | "stopwatch" | "none";
-export type QuestionSelection = "random" | "weak" | "topic";
+export type QuestionSelection = "random" | "weak" | "topic" | "sequential";
 
 export interface ExamConfig {
   mode: ExamMode;

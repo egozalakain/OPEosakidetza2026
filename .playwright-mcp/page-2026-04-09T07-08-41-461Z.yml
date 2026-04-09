@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - heading "OPE Osakidetza Quiz" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Inicia sesión para continuar
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: Usuario
+        - textbox "Usuario" [ref=e11]:
+          - /placeholder: admin
+          - text: admin
+      - generic [ref=e12]:
+        - generic [ref=e13]: Contraseña
+        - textbox "Contraseña" [ref=e14]:
+          - /placeholder: ••••••••
+          - text: admin123
+      - paragraph [ref=e17]: Usuario o contrasena incorrectos
+      - button "Iniciar sesión" [ref=e15]
+  - alert [ref=e16]

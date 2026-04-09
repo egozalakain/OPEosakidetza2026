@@ -1,8 +1,19 @@
 import Link from "next/link";
+import { SequentialStudyCard } from "./sequential-study-card";
 
-export function QuickActions() {
+interface QuickActionsProps {
+  sequentialStatus: {
+    examId: number;
+    answered: number;
+    total: number;
+  } | null;
+}
+
+export function QuickActions({ sequentialStatus }: QuickActionsProps) {
   return (
-    <div className="flex flex-col sm:flex-row gap-4">
+    <div className="flex flex-col gap-4">
+      <SequentialStudyCard status={sequentialStatus} />
+      <div className="flex flex-col sm:flex-row gap-4">
       <Link
         href="/examen/nuevo"
         className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-sm transition-colors text-center"
@@ -43,6 +54,7 @@ export function QuickActions() {
         </svg>
         Reforzar Puntos Debiles
       </Link>
+      </div>
     </div>
   );
 }

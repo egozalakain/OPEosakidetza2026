@@ -1,0 +1,50 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e16]
+  - generic [ref=e17]:
+    - navigation [ref=e18]:
+      - generic [ref=e20]:
+        - link "OPE Quiz" [ref=e21] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e22]:
+          - link "Inicio" [ref=e23] [cursor=pointer]:
+            - /url: /
+          - link "Nuevo Examen" [ref=e24] [cursor=pointer]:
+            - /url: /examen/nuevo
+          - link "Estadisticas" [ref=e25] [cursor=pointer]:
+            - /url: /estadisticas
+          - link "Historial" [ref=e26] [cursor=pointer]:
+            - /url: /historial
+        - generic [ref=e27]:
+          - button "Cambiar a modo oscuro" [ref=e28]:
+            - img [ref=e29]
+          - button "Salir" [ref=e31]
+    - main [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - heading "Panel de Control" [level=1] [ref=e35]
+          - paragraph [ref=e36]: Bienvenido a tu preparacion OPE Osakidetza
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: Examenes realizados
+            - paragraph [ref=e40]: "0"
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Tasa de acierto
+            - paragraph [ref=e43]: 0%
+          - generic [ref=e44]:
+            - paragraph [ref=e45]: Preguntas respondidas
+            - paragraph [ref=e46]: "0"
+          - generic [ref=e47]:
+            - paragraph [ref=e48]: Preguntas debiles
+            - paragraph [ref=e49]: "0"
+            - paragraph [ref=e50]: Error > 50%
+        - generic [ref=e51]:
+          - heading "Acciones rapidas" [level=2] [ref=e52]
+          - generic [ref=e53]:
+            - link "Nuevo Examen" [ref=e54] [cursor=pointer]:
+              - /url: /examen/nuevo
+              - img [ref=e55]
+              - text: Nuevo Examen
+            - link "Reforzar Puntos Debiles" [ref=e57] [cursor=pointer]:
+              - /url: /examen/nuevo?mode=weak
+              - img [ref=e58]
+              - text: Reforzar Puntos Debiles

@@ -63,7 +63,8 @@ export function AccuracyChart({ data }: AccuracyChartProps) {
               tickFormatter={(v) => `${v}%`}
             />
             <Tooltip
-              formatter={(value: number) => [`${value}%`, "Acierto"]}
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
+              formatter={(value: any) => [`${value}%`, "Acierto"]}
               labelFormatter={(label) => `Fecha: ${label}`}
               contentStyle={{
                 backgroundColor: "var(--color-gray-800, #1f2937)",
