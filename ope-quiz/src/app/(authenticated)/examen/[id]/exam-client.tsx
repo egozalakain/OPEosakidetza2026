@@ -184,7 +184,7 @@ export function ExamClient({
     return result;
   }
 
-  const [optionShuffles] = useState<Record<number, string[]>>(() => {
+  const [optionShuffles, setOptionShuffles] = useState<Record<number, string[]>>(() => {
     if (!shouldShuffle) return {};
     const shuffles: Record<number, string[]> = {};
     for (const q of questions) {
@@ -265,6 +265,15 @@ export function ExamClient({
     await resetBlock(examId, state.currentBlock);
     dispatch({ type: "RESET_BLOCK_ANSWERS", questionIds: blockQuestions.map(q => q.questionId) });
     dispatch({ type: "NAVIGATE", index: blockStart, hasAnswer: false });
+    if (shouldShuffle) {
+      setOptionShuffles(prev => {
+        const updated = { ...prev };
+        for (const q of blockQuestions) {
+          updated[q.questionId] = shuffle(["a", "b", "c", "d"]);
+        }
+        return updated;
+      });
+    }
   }
 
   // Show finish confirmation dialog
