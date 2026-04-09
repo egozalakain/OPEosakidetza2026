@@ -10,6 +10,7 @@ interface SequentialStudyCardProps {
     examId: number;
     answered: number;
     total: number;
+    currentBlock: number;
   } | null;
 }
 
@@ -19,7 +20,6 @@ export function SequentialStudyCard({ status }: SequentialStudyCardProps) {
 
   if (status) {
     const percent = Math.round((status.answered / status.total) * 100);
-    const nextQuestion = Math.min(status.answered + 1, status.total);
     return (
       <Link
         href={`/examen/${status.examId}`}
@@ -44,7 +44,7 @@ export function SequentialStudyCard({ status }: SequentialStudyCardProps) {
         </div>
         <div className="space-y-2">
           <div className="flex justify-between text-sm text-green-100">
-            <span>Pregunta {nextQuestion} de {status.total}</span>
+            <span>Bloque {status.currentBlock + 1}/10 — {status.answered}/{status.total} respondidas</span>
             <span>{percent}% completado</span>
           </div>
           <div className="w-full bg-green-800/40 rounded-full h-2.5">
