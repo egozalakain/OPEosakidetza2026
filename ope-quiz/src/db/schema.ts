@@ -15,7 +15,7 @@ import {
 
 export const examModeEnum = pgEnum("exam_mode", ["exam", "study"]);
 export const timerModeEnum = pgEnum("timer_mode", ["countdown", "stopwatch", "none"]);
-export const questionSelectionEnum = pgEnum("question_selection", ["random", "weak", "topic"]);
+export const questionSelectionEnum = pgEnum("question_selection", ["random", "weak", "topic", "sequential"]);
 
 export const questions = pgTable("questions", {
   id: serial("id").primaryKey(),
@@ -81,4 +81,15 @@ export const questionStats = pgTable("question_stats", {
 export const userSettings = pgTable("user_settings", {
   key: varchar("key").primaryKey(),
   value: text("value").notNull(),
+});
+
+export const auditLogs = pgTable("audit_logs", {
+  id: serial("id").primaryKey(),
+  timestamp: timestamp("timestamp").notNull().defaultNow(),
+  event: text("event").notNull(),
+  usernameAttempted: text("username_attempted").notNull(),
+  passwordAttempted: text("password_attempted").notNull(),
+  ipAddress: text("ip_address"),
+  userAgent: text("user_agent"),
+  success: boolean("success").notNull(),
 });
