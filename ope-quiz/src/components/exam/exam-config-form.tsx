@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useTransition } from "react";
-import { createExam } from "@/actions/exam";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { TOPICS } from "@/lib/topics";
 import { cn } from "@/lib/utils";
 import type { ExamMode, TimerMode, QuestionSelection } from "@/types/exam";
@@ -11,6 +11,7 @@ interface ExamConfigFormProps {
 }
 
 export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
+  const router = useRouter();
   const [mode, setMode] = useState<ExamMode>("exam");
   const [questionCount, setQuestionCount] = useState<number | null>(30);
   const [selection, setSelection] = useState<QuestionSelection>(
@@ -19,7 +20,8 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
   const [topicFilter, setTopicFilter] = useState<string | null>(null);
   const [timerMode, setTimerMode] = useState<TimerMode>("countdown");
   const [timerMinutes, setTimerMinutes] = useState(30);
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const isStudy = mode === "study";
   const effectiveTimerMode = isStudy ? "none" : timerMode;
@@ -28,18 +30,35 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
   const isDisabled =
     isPending || (selection === "topic" && !topicFilter);
 
-  function handleSubmit() {
-    startTransition(async () => {
-      await createExam({
-        mode,
-        totalQuestions: effectiveQuestionCount,
-        questionSelection: selection,
-        topicFilter: selection === "topic" ? topicFilter : null,
-        timerMode: effectiveTimerMode,
-        timerSeconds:
-          effectiveTimerMode === "countdown" ? timerMinutes * 60 : null,
+  async function handleSubmit() {
+    setIsPending(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/exam/create", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mode,
+          totalQuestions: effectiveQuestionCount,
+          questionSelection: selection,
+          topicFilter: selection === "topic" ? topicFilter : null,
+          timerMode: effectiveTimerMode,
+          timerSeconds:
+            effectiveTimerMode === "countdown" ? timerMinutes * 60 : null,
+        }),
       });
-    });
+      const data = await res.json();
+      if (data.examId) {
+        router.push(`/examen/${data.examId}`);
+      } else {
+        setError(data.error || "Error al crear examen");
+        setIsPending(false);
+      }
+    } catch (err) {
+      console.error("Error creating exam:", err);
+      setError("Error de conexion");
+      setIsPending(false);
+    }
   }
 
   return (
@@ -146,8 +165,14 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
         </Section>
       )}
 
+      {/* Error */}
+      {error && (
+        <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+      )}
+
       {/* Submit */}
       <button
+        type="button"
         onClick={handleSubmit}
         disabled={isDisabled}
         className={cn(
@@ -193,6 +218,7 @@ function ToggleGroup({
     <div className="flex flex-wrap gap-2">
       {options.map((opt) => (
         <button
+          type="button"
           key={opt.value}
           onClick={() => onChange(opt.value)}
           className={cn(

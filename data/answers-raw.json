@@ -1,0 +1,1202 @@
+[
+  {
+    "number": 1,
+    "correct_answer": "d",
+    "explanation": "Los tres requisitos del art. 4.2 de la Ley 44/2003 (reformada) son imprescindibles: colegiacion cuando la ley lo establezca, inexistencia de inhabilitacion, y seguro/aval/garantia financiera. La reforma por RDL 7/2023 actualizo estos requisitos.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 2,
+    "correct_answer": "b",
+    "explanation": "Art. 4.2.c de la Ley 44/2003 establece este requisito especificamente para el ejercicio en el ambito privado. La opcion a) es incorrecta porque excluye el aval y la garantia colectiva.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 3,
+    "correct_answer": "a",
+    "explanation": "Art. 5.4 de la Ley 44/2003 faculta al organo encargado del Registro Estatal para consultar los datos sin requerir consentimiento expreso ni oposicion de la persona titular.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 4,
+    "correct_answer": "a",
+    "explanation": "Art. 4.2.e de la Ley 44/2003 reconoce este derecho en ambos ambitos, publico y privado.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 5,
+    "correct_answer": "c",
+    "explanation": "Art. 4.2.d de la Ley 44/2003. No incluye la \"hoja de servicios\" (opcion a), y si incluye tanto la categoria como la funcion (descartando opciones b y d).",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 6,
+    "correct_answer": "c",
+    "explanation": "Art. 4.7 de la Ley 44/2003 exige que la renuncia quede con constancia formal, no informal. La expresion \"aunque no sea formal\" hace esta opcion incorrecta.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 7,
+    "correct_answer": "b",
+    "explanation": "Art. 4.6 de la Ley 44/2003 establece que los centros sanitarios revisaran el cumplimiento de requisitos del personal \"cada tres anos como minimo.\"",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 8,
+    "correct_answer": "a",
+    "explanation": "Art. 9.1 de la Ley 44/2003 dice \"de forma jerarquizada o colegiada\" sin establecer preferencia por ninguna de las dos formas. Anadir \"preferentemente\" distorsiona el texto legal.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 9,
+    "correct_answer": "c",
+    "explanation": "Art. 5 de la Ley 44/2003 no incluye como principio general el deber de informar sobre \"demandas de responsabilidad que hayan derivado en responsabilidades administrativas.\" Los deberes reales son: atencion adecuada, uso racional de recursos, respeto a dignidad e intimidad.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 10,
+    "correct_answer": "c",
+    "explanation": "Art. 20 de la Ley 44/2003 (reformada) exige todos estos elementos para los centros acreditados: comision de docencia, defensoria del alumnado, jefaturas de estudios, coordinacion docente y personal tutor.",
+    "topic": "LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS"
+  },
+  {
+    "number": 11,
+    "correct_answer": "b",
+    "explanation": "Art. 1 de la Ley 16/2003. Se aplica a servicios publicos y, respecto a los privados, solo en materia de salud publica e informacion/seguridad/calidad.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 12,
+    "correct_answer": "a",
+    "explanation": "Art. 4.a de la Ley 16/2003 reconoce el derecho a recibir asistencia sanitaria en la comunidad autonoma de residencia.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 13,
+    "correct_answer": "a",
+    "explanation": "Art. 8.1 de la Ley 16/2003 articula la cartera comun en estas tres modalidades.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 14,
+    "correct_answer": "d",
+    "explanation": "Art. 8bis de la Ley 16/2003. La cartera basica NO incluye la prestacion farmaceutica ni la ortoprotesica (que son suplementarias).",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 15,
+    "correct_answer": "d",
+    "explanation": "Art. 8ter de la Ley 16/2003 incluye las tres prestaciones en la cartera suplementaria.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 16,
+    "correct_answer": "d",
+    "explanation": "Art. 12 de la Ley 16/2003: la atencion primaria SI comprende la atencion bucodental (a), la atencion paliativa (b) y la rehabilitacion basica (c). Todas estan incluidas.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 17,
+    "correct_answer": "b",
+    "explanation": "Art. 11.2 de la Ley 16/2003. Se dice \"se contara con la participacion\" (no \"informe favorable preceptivo\"), y corresponde a la Red Espanola de Agencias (no a sociedades cientificas).",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 18,
+    "correct_answer": "a",
+    "explanation": "Art. 11.3 de la Ley 16/2003 establece este criterio para la exclusion.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 19,
+    "correct_answer": "c",
+    "explanation": "Art. 42 de la Ley 16/2003 define asi la competencia profesional.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 20,
+    "correct_answer": "d",
+    "explanation": "Art. 65 de la Ley 16/2003: los supuestos son responder a situaciones de riesgo/alarma (a) y establecer planes preventivos (b). Los analisis epidemiologicos (c) no son un supuesto de actuacion coordinada.",
+    "topic": "LEY 16/2003, DE 28 DE MAYO, DE COHESION Y CALIDAD DEL SISTEMA NACIONAL DE SALUD"
+  },
+  {
+    "number": 21,
+    "correct_answer": "b",
+    "explanation": "Art. 4 de la Ley 55/2003 dice \"igualdad, merito, capacidad y publicidad\" en el acceso. \"Promocion\" sustituye incorrectamente a \"publicidad.\"",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 22,
+    "correct_answer": "c",
+    "explanation": "Art. 12 de la Ley 55/2003 exige los tres requisitos, incluyendo el cumplimiento de requisitos formales en cada caso.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 23,
+    "correct_answer": "a",
+    "explanation": "Art. 12.3 de la Ley 55/2003: la acreditacion de requisitos debe verificarse una vez superado el proceso selectivo.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 24,
+    "correct_answer": "c",
+    "explanation": "Art. 14.1 de la Ley 55/2003. La inhabilitacion especial para la profesion debe exceder de 6 anos (no 3). La inhabilitacion absoluta debe ser firme. La especial para empleo/cargo debe afectar al nombramiento.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 25,
+    "correct_answer": "b",
+    "explanation": "Art. 26.2 de la Ley 55/2003 establece condiciones adicionales para la prolongacion (como que el servicio de salud lo autorice), no basta la mera solicitud.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 26,
+    "correct_answer": "d",
+    "explanation": "Art. 14 de la Ley 55/2003 contempla como causas de extincion: la perdida de nacionalidad, la sancion firme de separacion del servicio, y la inhabilitacion especial para empleo/cargo publico o profesion.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 27,
+    "correct_answer": "d",
+    "explanation": "Arts. 41-43 de la Ley 55/2003: el sistema es basicas + complementarias (a); la evaluacion se rige por igualdad, objetividad y transparencia (b); y el sistema responde a cualificacion tecnica y profesional (c).",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 28,
+    "correct_answer": "a",
+    "explanation": "Art. 42 de la Ley 55/2003 define las retribuciones basicas exactamente asi. La opcion b) es incorrecta porque pueden variar por anualidad; d) confunde el complemento de atencion continuada.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 29,
+    "correct_answer": "d",
+    "explanation": "Art. 14.1 de la Ley 55/2003: la perdida de condicion se produce en los tres grados de incapacidad permanente (total, absoluta y gran invalidez).",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 30,
+    "correct_answer": "b",
+    "explanation": "Art. 48.2 de la Ley 55/2003 define el periodo de descanso exactamente con esta formulacion.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 31,
+    "correct_answer": "a",
+    "explanation": "Art. 54 de la Ley 55/2003 establece que el periodo nocturno tendra una duracion minima de 7 horas e incluira necesariamente el periodo entre las 00:00 y las 05:00.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 32,
+    "correct_answer": "c",
+    "explanation": "Art. 71 de la Ley 55/2003 permite la compatibilidad entre funciones sanitarias y docentes, atendiendo a la legislacion vigente.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 33,
+    "correct_answer": "a",
+    "explanation": "Art. 52 de la Ley 55/2003 no dice \"siempre sera fijo\"; el descanso semanal se calcula como media sobre un periodo de referencia de dos meses, pudiendo acumularse.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 34,
+    "correct_answer": "d",
+    "explanation": "Art. 53 de la Ley 55/2003 establece el derecho a 30 dias naturales o la parte proporcional. No puede sustituirse por compensacion economica.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 35,
+    "correct_answer": "a",
+    "explanation": "Art. 66.2 de la Ley 55/2003 exige cinco anos de servicios efectivos para solicitar excedencia voluntaria por interes particular.",
+    "topic": "LEY 55/2003, DE 16 DE DICIEMBRE, DEL ESTATUTO MARCO DEL PERSONAL ESTATUTARIO"
+  },
+  {
+    "number": 36,
+    "correct_answer": "d",
+    "explanation": "Art. 2 de la Ley 8/1997: la tutela de la salud publica se garantiza a traves de medidas preventivas, promocion de la salud y prestaciones sanitarias individuales.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 37,
+    "correct_answer": "a",
+    "explanation": "Art. 2 de la Ley 8/1997 reconoce la universalidad del derecho para residentes en Euskadi y personas transeuntes.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 38,
+    "correct_answer": "b",
+    "explanation": "Art. 2 de la Ley 8/1997 enumera los principios informadores: universalidad, equidad, calidad de los servicios, entre otros. \"Solidaridad ciudadana\" no se incluye expresamente como principio informador del sistema sanitario.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 39,
+    "correct_answer": "c",
+    "explanation": "Art. 15 de la Ley 8/1997. La opcion a) es incorrecta (las areas se dividen segun criterios sanitarios, no socioeconomicos); la b) es incorrecta (no se limita a la atencion primaria exclusivamente).",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 40,
+    "correct_answer": "b",
+    "explanation": "Art. 22 de la Ley 8/1997: los datos de salud pueden tratarse con consentimiento previo O, en su defecto, con autorizacion y procedimiento de disociacion.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 41,
+    "correct_answer": "a",
+    "explanation": "Art. 10 de la Ley 8/1997 establece la obligacion de dejar constancia ESCRITA (no \"por cualquier medio\") de todo proceso diagnostico o terapeutico.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 42,
+    "correct_answer": "c",
+    "explanation": "Art. 17 de la Ley 8/1997 articula las relaciones entre el Departamento (no el Gobierno directamente) y las organizaciones de Osakidetza, y tiene naturaleza de convenio de caracter especial.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 43,
+    "correct_answer": "a",
+    "explanation": "Art. 23 del Decreto 255/1997 (desarrollando la Ley 8/1997) establece la composicion del consejo de administracion.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 44,
+    "correct_answer": "d",
+    "explanation": "Art. 14 de la Ley 8/1997: el Plan de Salud de Euskadi es aprobado por el Parlamento Vasco (a) y el Departamento elabora un informe ANUAL de evaluacion (c), no semestral.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 45,
+    "correct_answer": "b",
+    "explanation": "Art. 26 de la Ley 8/1997 define las plantillas como el numero de efectivos estructurales del ente publico.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 46,
+    "correct_answer": "c",
+    "explanation": "Art. 34 de la Ley 8/1997 atribuye la funcion inspectora al Departamento competente en materia de sanidad.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 47,
+    "correct_answer": "a",
+    "explanation": "Art. 37 de la Ley 8/1997 lista como criterios de clasificacion: riesgos para la salud, grado de intencionalidad y gravedad de la alteracion sanitaria y social. La cuantia de la indemnizacion NO es un criterio.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 48,
+    "correct_answer": "b",
+    "explanation": "Art. 38 de la Ley 8/1997 permite al Gobierno Vasco acordar el cierre temporal por un plazo maximo de cinco anos en caso de infracciones muy graves.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 49,
+    "correct_answer": "a",
+    "explanation": "Art. 20 de la Ley 8/1997 establece este principio fundamental para las organizaciones de servicios.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 50,
+    "correct_answer": "c",
+    "explanation": "Art. 26 de la Ley 8/1997 establece estos cuatro instrumentos de clasificacion del personal estatutario.",
+    "topic": "LEY 8/1997, DE 26 DE JUNIO, DE ORDENACION SANITARIA DE EUSKADI"
+  },
+  {
+    "number": 51,
+    "correct_answer": "d",
+    "explanation": "Art. 5 del Decreto 255/1997: la presidencia del ente publico corresponde al/la titular del Departamento de Sanidad.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 52,
+    "correct_answer": "c",
+    "explanation": "Art. 8 del Decreto 255/1997 atribuye a la Presidencia la funcion de nombrar y separar a las Direcciones de Division de la organizacion central.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 53,
+    "correct_answer": "a",
+    "explanation": "Art. 10 del Decreto 255/1997 establece esta composicion del Consejo, nombrados por el Gobierno.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 54,
+    "correct_answer": "d",
+    "explanation": "Art. 13 del Decreto 255/1997: el Plan Estrategico es formulado por la Direccion General (a), aprobado por la Presidencia (b), y sometido a informe del Consejo (c).",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 55,
+    "correct_answer": "b",
+    "explanation": "Art. 8 del Decreto 255/1997: corresponde a la Presidencia convocar, presidir, suspender y levantar las sesiones del Consejo de Administracion y decidir empates con voto de calidad.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 56,
+    "correct_answer": "d",
+    "explanation": "Art. 12 del Decreto 255/1997: la persona titular de la Direccion General asiste al Consejo con voz pero sin derecho a voto.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 57,
+    "correct_answer": "b",
+    "explanation": "Art. 18 del Decreto 255/1997: la politica de precios de servicios incluidos en cobertura publica no es una funcion de gestion asistencial sino de gestion economica.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 58,
+    "correct_answer": "b",
+    "explanation": "Art. 18 del Decreto 255/1997: la promocion de acuerdos con la sanidad privada no es una funcion de gestion de recursos humanos sino de gestion asistencial.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 59,
+    "correct_answer": "a",
+    "explanation": "Art. 24 del Decreto 255/1997 establece que las organizaciones de servicios ejercen todas las facultades excepto las atribuidas a la organizacion central.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 60,
+    "correct_answer": "b",
+    "explanation": "Art. 28 del Decreto 255/1997 establece que el equipo directivo de las organizaciones de servicios oscilara entre tres y cuatro integrantes.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 61,
+    "correct_answer": "a",
+    "explanation": "Art. 18 del Decreto 255/1997 atribuye a la organizacion central la representacion del ente publico en la negociacion colectiva del Acuerdo Marco.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 62,
+    "correct_answer": "a",
+    "explanation": "Art. 29 del Decreto 255/1997 establece esta composicion del Consejo de Direccion, sin incluir representantes sindicales.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 63,
+    "correct_answer": "c",
+    "explanation": "Art. 32 del Decreto 255/1997 permite la descentralizacion en ambas materias (economica y de personal), de acuerdo con el marco estrategico y el contrato-programa.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 64,
+    "correct_answer": "b",
+    "explanation": "Art. 18 del Decreto 255/1997: las compras centralizadas y suministros integrados corresponden a la organizacion central.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 65,
+    "correct_answer": "b",
+    "explanation": "Art. 30 del Decreto 255/1997 atribuye a la Direccion-Gerencia de cada organizacion la presidencia de los Consejos Tecnicos de participacion profesional.",
+    "topic": "DECRETO 255/1997, DE 11 DE NOVIEMBRE - ESTATUTOS SOCIALES DE OSAKIDETZA"
+  },
+  {
+    "number": 66,
+    "correct_answer": "d",
+    "explanation": "Art. 1 del Decreto 100/2018 define las OSI como la integracion de estos dos niveles asistenciales.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 67,
+    "correct_answer": "b",
+    "explanation": "Art. 2.1 del Decreto 100/2018 establece este objetivo centrado en la persona.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 68,
+    "correct_answer": "c",
+    "explanation": "Art. 1 del Decreto 100/2018 establece este como principio fundamental de actuacion de las OSI.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 69,
+    "correct_answer": "b",
+    "explanation": "Art. 3 del Decreto 100/2018 define asi las OSI de clase monografica.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 70,
+    "correct_answer": "c",
+    "explanation": "Art. 3 del Decreto 100/2018: las OSI de Tipo I tienen hospitales universitarios y unidades/servicios de referencia para todo el sistema vasco.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 71,
+    "correct_answer": "b",
+    "explanation": "Art. 3 del Decreto 100/2018: las OSI de Tipo III integran un hospital de caracter general con una base poblacional inferior a 200.000 habitantes.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 72,
+    "correct_answer": "b",
+    "explanation": "Art. 5 del Decreto 100/2018 establece estos tres organos de participacion en la estructura organizativa de las OSI.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 73,
+    "correct_answer": "b",
+    "explanation": "Art. 5.2 del Decreto 100/2018 detalla la composicion del equipo directivo de las OSI con estas direcciones funcionales.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 74,
+    "correct_answer": "a",
+    "explanation": "Art. 6 del Decreto 100/2018: en las OSI de Tipo IV, la Direccion Gerencia asume las funciones de Personas y Economico-Financiera con apoyo de puestos funcionales asistenciales.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 75,
+    "correct_answer": "b",
+    "explanation": "Art. 5 del Decreto 100/2018: el Consejo Clinico Asistencial es un organo de PARTICIPACION, no de direccion. Los organos de direccion son las diversas Direcciones funcionales.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 76,
+    "correct_answer": "b",
+    "explanation": "Art. 7.3 del Decreto 100/2018 atribuye la competencia de nombramiento y cese de la Direccion Gerencia a la Direccion General de Osakidetza.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 77,
+    "correct_answer": "c",
+    "explanation": "Arts. 7 y 9 del Decreto 100/2018 exigen convocatoria publica con acreditacion de titulacion, capacidad y experiencia.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 78,
+    "correct_answer": "b",
+    "explanation": "Art. 8.m del Decreto 100/2018 atribuye a la Direccion Gerencia la funcion de \"orientar la gestion desde una vision integradora empoderando la atencion primaria.\"",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 79,
+    "correct_answer": "b",
+    "explanation": "Art. 12 del Decreto 100/2018: la Direccion de Atencion Integrada coordina, ademas de con primaria y hospitalaria, con el ambito comunitario y sociosanitario.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 80,
+    "correct_answer": "a",
+    "explanation": "Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asistencial a la Direccion Gerencia.",
+    "topic": "DECRETO 100/2018 - ORGANIZACIONES SANITARIAS INTEGRADAS (OSI)"
+  },
+  {
+    "number": 81,
+    "correct_answer": "a",
+    "explanation": "Art. 1 del Decreto 147/2015: la titularidad no se limita a nacidos o empadronados, sino a toda persona que acceda al sistema.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 82,
+    "correct_answer": "b",
+    "explanation": "Art. 2 del Decreto 147/2015: los derechos son exigibles en centros publicos y concertados (no en todos los privados), incluye docencia pero excluye investigacion biomedica.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 83,
+    "correct_answer": "d",
+    "explanation": "Art. 3 del Decreto 147/2015 enumera como principios: respeto a la libertad/dignidad/autonomia, respeto al personal profesional, y promocion de la investigacion cientifica.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 84,
+    "correct_answer": "d",
+    "explanation": "Art. 4 del Decreto 147/2015 configura estas cuatro fases de la vida con necesidades especificas.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 85,
+    "correct_answer": "d",
+    "explanation": "Art. 24 del Decreto 147/2015: los derechos al final de la vida incluyen acompanamiento de familiares, habitacion individual y acompanamiento espiritual.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 86,
+    "correct_answer": "a",
+    "explanation": "Art. 32 del Decreto 147/2015 establece este deber vinculado a la exigibilidad legal o la recomendacion.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 87,
+    "correct_answer": "b",
+    "explanation": "Art. 36 del Decreto 147/2015: los Servicios de Atencion a Pacientes y Personas Usuarias se preveen en Osakidetza, concertados y Departamento, pero no se regula para centros privados no concertados.",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 88,
+    "correct_answer": "a",
+    "explanation": "Art. 37 del Decreto 147/2015 establece la resolucion mediante normas disciplinarias especificas (no generales) y expediente informativo (sin mencion a expediente de mediacion).",
+    "topic": "DECRETO 147/2015, DE 21 DE JULIO - DERECHOS Y DEBERES EN EL SISTEMA SANITARIO DE EUSKADI"
+  },
+  {
+    "number": 89,
+    "correct_answer": "d",
+    "explanation": "Art. 3 de la Ley 41/2002 define la documentacion clinica sin incluir voluntades anticipadas ni investigacion biomedica en la definicion.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 90,
+    "correct_answer": "a",
+    "explanation": "Art. 4.1 de la Ley 41/2002: la informacion asistencial se proporciona verbalmente como regla general, dejando constancia en la historia clinica.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 91,
+    "correct_answer": "c",
+    "explanation": "Art. 4.1 de la Ley 41/2002 establece este contenido minimo de la informacion asistencial.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 92,
+    "correct_answer": "b",
+    "explanation": "Art. 4.3 de la Ley 41/2002 establece esta doble garantia de informacion.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 93,
+    "correct_answer": "a",
+    "explanation": "Art. 5.1 de la Ley 41/2002: el titular es el paciente, y personas vinculadas seran informadas con permiso expreso O tacito.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 94,
+    "correct_answer": "d",
+    "explanation": "Art. 9.2.b de la Ley 41/2002: ante riesgo inmediato grave y sin posibilidad de obtener autorizacion, se puede actuar sin consentimiento.",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 95,
+    "correct_answer": "c",
+    "explanation": "Art. 10.1 de la Ley 41/2002 establece que se informara de los riesgos \"probables\" (no todos los posibles ni solo los graves).",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 96,
+    "correct_answer": "c",
+    "explanation": "Art. 21.1 de la Ley 41/2002: es la DIRECCION del centro (no el facultativo) quien gestiona el rechazo al alta y recurre a la autoridad judicial (no administrativa).",
+    "topic": "LEY 41/2002, DE 14 DE NOVIEMBRE - AUTONOMIA DEL PACIENTE"
+  },
+  {
+    "number": 97,
+    "correct_answer": "c",
+    "explanation": "Art. 2 de la Ley 7/2002: la expresion de objetivos vitales y valores personales tiene esta finalidad interpretativa y orientadora.",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 98,
+    "correct_answer": "a",
+    "explanation": "Art. 3 de la Ley 7/2002 permite designar una o varias personas representantes, sin limitacion a una sola ni a supuestos de incapacidad o minoria de edad.",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 99,
+    "correct_answer": "a",
+    "explanation": "Art. 3.4 de la Ley 7/2002: la extincion opera desde la INTERPOSICION de la demanda (no desde la sentencia), y el mantenimiento requiere resolucion judicial expresa.",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 100,
+    "correct_answer": "a",
+    "explanation": "Art. 2.b de la Ley 7/2002 permite instrucciones tanto para enfermedades actuales como futuras.",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 101,
+    "correct_answer": "b",
+    "explanation": "Art. 5 de la Ley 7/2002 establece tres procedimientos: notaria, funcionario/a del Registro, o tres testigos (no dos).",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 102,
+    "correct_answer": "d",
+    "explanation": "Art. 7 de la Ley 7/2002: se requieren ambas condiciones simultaneamente (capacidad Y libertad).",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 103,
+    "correct_answer": "b",
+    "explanation": "Art. 8 de la Ley 7/2002: la voluntad actual prevalece sobre las instrucciones previas cuando la persona puede expresarse (capacidad + libertad + expresion).",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 104,
+    "correct_answer": "a",
+    "explanation": "Art. 9 de la Ley 7/2002: la evaluacion de conformidad con el ordenamiento juridico se realiza en el momento de la APLICACION.",
+    "topic": "LEY 7/2002, DE 12 DE DICIEMBRE - VOLUNTADES ANTICIPADAS"
+  },
+  {
+    "number": 105,
+    "correct_answer": "c",
+    "explanation": "Art. 3 de la LO 3/2018: se permite el acceso salvo prohibicion expresa de la persona fallecida.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 106,
+    "correct_answer": "b",
+    "explanation": "Art. 6 de la LO 3/2018 (en linea con el RGPD art. 4.11): el consentimiento debe ser libre, especifico, informado e inequivoco. \"Verbal\" no es una caracteristica definitoria.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 107,
+    "correct_answer": "c",
+    "explanation": "Art. 7 de la LO 3/2018 fija la edad minima en 14 anos (no 16) para que el consentimiento del menor sea valido.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 108,
+    "correct_answer": "d",
+    "explanation": "Art. 9 de la LO 3/2018: las categorias especiales incluyen ideologia, afiliacion sindical, religion, orientacion sexual, creencias, origen racial o etnico, datos geneticos, biometricos y de salud.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 109,
+    "correct_answer": "b",
+    "explanation": "Art. 10 de la LO 3/2018 permite el tratamiento de datos penales por abogados/as y procuradores/as para el ejercicio de sus funciones.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 110,
+    "correct_answer": "b",
+    "explanation": "Art. 14 de la LO 3/2018: no siempre es obligatorio aportar documentacion, solo \"cuando sea preciso.\"",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 111,
+    "correct_answer": "c",
+    "explanation": "Art. 22.3 de la LO 3/2018: la excepcion permite conservar datos mas alla del mes cuando sea necesario acreditar hechos delictivos.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 112,
+    "correct_answer": "a",
+    "explanation": "Art. 24 de la LO 3/2018: el plazo es de tres meses (no seis) con la salvedad del modelo de prevencion de delitos.",
+    "topic": "LEY ORGANICA 3/2018, DE 5 DE DICIEMBRE - PROTECCION DE DATOS PERSONALES"
+  },
+  {
+    "number": 113,
+    "correct_answer": "c",
+    "explanation": "Art. 1 del DL 1/2023 anade este concepto especifico al objeto de la ley, reforzando su fin ultimo.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 114,
+    "correct_answer": "c",
+    "explanation": "Art. 2 del DL 1/2023 extiende la obligatoriedad a estas entidades privadas durante su relacion con la administracion.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 115,
+    "correct_answer": "b",
+    "explanation": "Art. 3 del DL 1/2023 incorpora este principio general de actuacion de los poderes publicos vascos.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 116,
+    "correct_answer": "c",
+    "explanation": "Art. 20 del DL 1/2023 permite excepcionalmente superar el 60% de mujeres cuando sea una medida correctora de la infrarrepresentacion historica.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 117,
+    "correct_answer": "b",
+    "explanation": "Art. 19 del DL 1/2023 somete obligatoriamente estos planes a evaluacion previa de impacto de genero.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 118,
+    "correct_answer": "b",
+    "explanation": "Art. 21 del DL 1/2023 establece este requisito especifico para empresas de mas de 50 personas trabajadoras.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 119,
+    "correct_answer": "b",
+    "explanation": "Art. 54 del DL 1/2023 define asi la violencia machista contra las mujeres.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 120,
+    "correct_answer": "b",
+    "explanation": "Art. 54.3 del DL 1/2023 incorpora expresamente estas formas como constitutivas de violencia machista.",
+    "topic": "DECRETO LEGISLATIVO 1/2023, DE 16 DE MARZO - IGUALDAD Y VIDAS LIBRES DE VIOLENCIA MACHISTA"
+  },
+  {
+    "number": 121,
+    "correct_answer": "c",
+    "explanation": "El Plan de Salud Euskadi 2030 define 7 Objetivos Generales, clasificados en finalistas (5) e instrumentales (2).",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 122,
+    "correct_answer": "b",
+    "explanation": "La Vision del Plan de Salud Euskadi 2030 aspira a \"liderar una Euskadi mas saludable.\"",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 123,
+    "correct_answer": "c",
+    "explanation": "Los principios rectores incluyen coordinacion interinstitucional, Salud en Todas las Politicas, One Health y Desarrollo Sostenible. La \"autosuficiencia presupuestaria\" NO es un principio rector.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 124,
+    "correct_answer": "b",
+    "explanation": "El OG1 del Plan de Salud Euskadi 2030 se centra en la infancia y adolescencia.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 125,
+    "correct_answer": "b",
+    "explanation": "El OG4 define la sostenibilidad y excelencia en terminos de estos tres conceptos clave del ambito asistencial.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 126,
+    "correct_answer": "d",
+    "explanation": "AVAD es el equivalente en castellano de DALY (Disability-Adjusted Life Years).",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 127,
+    "correct_answer": "c",
+    "explanation": "Este objetivo se reitera en multiples secciones del Plan como eje central.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 128,
+    "correct_answer": "b",
+    "explanation": "El Plan prioriza la investigacion traslacional para que los avances cientificos lleguen a la practica clinica.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 129,
+    "correct_answer": "b",
+    "explanation": "Estos son los cuatro criterios fundamentales del modelo de evaluacion del Plan.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 130,
+    "correct_answer": "b",
+    "explanation": "El Plan promueve estas soluciones habitacionales para las diferentes etapas de la vida.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 131,
+    "correct_answer": "b",
+    "explanation": "Segun la Memoria Economica, Farmacia es el programa con mayor dotacion presupuestaria fuera de Osakidetza.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 132,
+    "correct_answer": "b",
+    "explanation": "Las \"comunidades amigables\" buscan esta adaptacion integral del entorno.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 133,
+    "correct_answer": "b",
+    "explanation": "En salud digital, el Plan destaca la medicina de precision como concepto transformador.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 134,
+    "correct_answer": "b",
+    "explanation": "La Intersectorialidad se define como esta colaboracion interdepartamental.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 135,
+    "correct_answer": "b",
+    "explanation": "El Plan considera la evidencia cientifica como fundamento esencial de las politicas.",
+    "topic": "PLAN DE SALUD DE EUSKADI 2030"
+  },
+  {
+    "number": 136,
+    "correct_answer": "b",
+    "explanation": "El Diagnostico identifica este factor como motor de la demanda ciudadana de un papel mas activo.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 137,
+    "correct_answer": "b",
+    "explanation": "El Diagnostico senala que los flujos migratorios incorporan perfiles epidemiologicos nuevos.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 138,
+    "correct_answer": "c",
+    "explanation": "El Diagnostico destaca la jubilacion inminente de grandes cohortes como desafio critico.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 139,
+    "correct_answer": "b",
+    "explanation": "El Diagnostico advierte de la aparicion de nuevos vectores y patogenos ligados al cambio climatico.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 140,
+    "correct_answer": "d",
+    "explanation": "El Diagnostico propone indicadores orientados a resultados y sostenibilidad.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 141,
+    "correct_answer": "c",
+    "explanation": "Los Valores Fundamentales del Pacto constituyen este fundamento etico y social.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 142,
+    "correct_answer": "c",
+    "explanation": "La Corresponsabilidad es un Valor Fundamental explicito del Pacto, junto con Universalidad y Equidad.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 143,
+    "correct_answer": "b",
+    "explanation": "El principio de Innovacion se aplica de manera integral, no solo a tecnologia o clinica.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 144,
+    "correct_answer": "a",
+    "explanation": "La \"Orientacion al Valor\" prioriza resultados relevantes optimizando costes.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 145,
+    "correct_answer": "c",
+    "explanation": "Verificado con el indice del LIBRO-4 \"Lineas Estrategicas\" del Pacto Vasco de Salud (junio 2025): los seis bloques son I. Prevencion y Promocion de la Salud; II. Atencion a la Enfermedad; III. Areas Prioritarias de Salud; IV. Calidad, Innovacion y Sostenibilidad; V. Desarrollo de los Profesionales de la Salud; VI. Gobernanza.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 146,
+    "correct_answer": "d",
+    "explanation": "La Atencion Primaria se posiciona como pilar fundamental del sistema.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 147,
+    "correct_answer": "b",
+    "explanation": "La Linea de Cronicidad prioriza la autonomia y la corresponsabilidad del paciente cronico.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 148,
+    "correct_answer": "b",
+    "explanation": "La Linea de Atencion Sociosanitaria busca la mejora de la coordinacion entre ambos sistemas.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 149,
+    "correct_answer": "a",
+    "explanation": "La Linea de Salud Mental pone el foco en la prevencion y deteccion precoz juvenil.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 150,
+    "correct_answer": "c",
+    "explanation": "La Linea de Digitalizacion busca estos tres objetivos transformadores.",
+    "topic": "PACTO VASCO DE SALUD DE EUSKADI"
+  },
+  {
+    "number": 151,
+    "correct_answer": "c",
+    "explanation": "Este es el Objetivo General de la Estrategia 20-30.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 152,
+    "correct_answer": "d",
+    "explanation": "Es el principio hipocratico de referencia en la Estrategia de Seguridad del Paciente.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 153,
+    "correct_answer": "c",
+    "explanation": "Confirmado por fuentes oficiales del Gobierno Vasco (euskadi.eus, 2023): \"La Estrategia de Seguridad del paciente 2030 de Osakidetza refuerza todas sus lineas de accion e incorpora dos nuevas: emergencias y prevencion del suicidio.\"",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 154,
+    "correct_answer": "d",
+    "explanation": "El incidente de seguridad que ocasiona dano a la persona atendida se denomina Evento Adverso.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 155,
+    "correct_answer": "c",
+    "explanation": "Segun la tabla de Lineas de Accion Corporativas (pag. 20 del documento): L1 = Gestion de incidentes de seguridad; **L2 = Atencion a las segundas y terceras victimas**. La opcion d) \"Gestion de incidentes\" corresponde a L1, no a L2.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 156,
+    "correct_answer": "b",
+    "explanation": "El Objetivo Especifico 1 se centra en impulsar la cultura de seguridad a traves de formacion y sensibilizacion.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 157,
+    "correct_answer": "b",
+    "explanation": "La Linea L8 esta dedicada especificamente a la prevencion de infecciones asociadas a la asistencia.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 158,
+    "correct_answer": "c",
+    "explanation": "El estudio EVADUR determino que los pacientes atendidos por sistemas de emergencia (061/112) presentan mayor porcentaje de incidentes.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 159,
+    "correct_answer": "a",
+    "explanation": "La formacion en factores humanos (comunicacion, trabajo en equipo, toma de decisiones) es una prioridad.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 160,
+    "correct_answer": "c",
+    "explanation": "L6 trata de radiacion ionizante, NO del sistema de utilizacion del medicamento. L5, L7 y L14 si estan relacionadas con medicacion/transfusion.",
+    "topic": "ESTRATEGIA DE SEGURIDAD DEL PACIENTE EN OSAKIDETZA 2030"
+  },
+  {
+    "number": 161,
+    "correct_answer": "c",
+    "explanation": "Segun el diagnostico del II Plan para la Igualdad de Mujeres y Hombres en Osakidetza 2025-2028, la plantilla total de Osakidetza en enero de 2025 se componia de un 80% de mujeres y un 20% de hombres.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 162,
+    "correct_answer": "d",
+    "explanation": "La meta de Capacitacion en Igualdad tiene como objetivo principal esta formacion integral.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 163,
+    "correct_answer": "c",
+    "explanation": "El II Plan para la Igualdad es aprobado por el Consejo de Administracion de Osakidetza.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 164,
+    "correct_answer": "d",
+    "explanation": "El \"techo de cristal\" define la barrera invisible que dificulta el acceso de mujeres a puestos de mayor responsabilidad.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 165,
+    "correct_answer": "c",
+    "explanation": "La meta de Corresponsabilidad tiene este objetivo cuantificado.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 166,
+    "correct_answer": "b",
+    "explanation": "El I Plan, como primer plan estrategico, se centro en sentar las bases.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 167,
+    "correct_answer": "c",
+    "explanation": "La Meta 5 se centra en la reduccion de la brecha retributiva.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 168,
+    "correct_answer": "a",
+    "explanation": "El II Plan establece esta linea de actuacion prioritaria ante la violencia machista.",
+    "topic": "II PLAN PARA LA IGUALDAD DE MUJERES Y HOMBRES EN OSAKIDETZA 2025-2028"
+  },
+  {
+    "number": 169,
+    "correct_answer": "c",
+    "explanation": "El III Plan establece la prioridad del euskera en los mensajes audiovisuales bilingues.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 170,
+    "correct_answer": "c",
+    "explanation": "El Plan preve el registro de la lengua preferente para comunicaciones orales.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 171,
+    "correct_answer": "c",
+    "explanation": "La campana \"Aukeratu zeure hizkuntza/Elige tu lengua\" se planifica para el primer ano del Plan.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 172,
+    "correct_answer": "a",
+    "explanation": "El Plan garantiza la recepcion en euskera a toda la ciudadania vascohablante, tanto en modo presencial como telefonico.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 173,
+    "correct_answer": "a",
+    "explanation": "Los escritos individualizados de respuesta utilizaran la lengua elegida por cada persona.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 174,
+    "correct_answer": "b",
+    "explanation": "El simbolo tiene usos mas amplios que la mera identificacion individual; se utiliza tambien en senalizacion y otros elementos.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 175,
+    "correct_answer": "c",
+    "explanation": "El Plan se refiere especificamente a estos cuatro servicios de atencion primaria para la propuesta de servicios en euskera.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 176,
+    "correct_answer": "c",
+    "explanation": "El Plan exige la disponibilidad bilingue de informacion y servicios digitales.",
+    "topic": "III PLAN DE NORMALIZACION DEL USO DEL EUSKERA EN OSAKIDETZA 2022-2028"
+  },
+  {
+    "number": 177,
+    "correct_answer": "d",
+    "explanation": "Segun el Resumen Ejecutivo del POIE, el cancer fue responsable de aproximadamente el 28% de los fallecimientos en Euskadi en 2023.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 178,
+    "correct_answer": "b",
+    "explanation": "El POIE identifica estas como las localizaciones mas frecuentes por sexo en el periodo 2015-2019.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 179,
+    "correct_answer": "a",
+    "explanation": "Esta es una de las aspiraciones definidas en la Vision del POIE.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 180,
+    "correct_answer": "c",
+    "explanation": "La Mision del POIE busca generar valor en terminos de mejores resultados en salud.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 181,
+    "correct_answer": "b",
+    "explanation": "La \"Centralidad de la persona y humanizacion\" incluye la perspectiva de genero y la atencion a la diversidad.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 182,
+    "correct_answer": "c",
+    "explanation": "La evaluacion del POE 2018-2023 identifico esta area de mejora prioritaria.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 183,
+    "correct_answer": "d",
+    "explanation": "PROMs = Patient Reported Outcome Measures (Medidas de Resultados Reportadas por Pacientes).",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 184,
+    "correct_answer": "c",
+    "explanation": "El POIE se alinea con esta prioridad estrategica del Plan de Salud de Euskadi 2030.",
+    "topic": "PLAN ONCOLOGICO INTEGRAL DE EUSKADI (POIE) 2025-2030"
+  },
+  {
+    "number": 185,
+    "correct_answer": "c",
+    "explanation": "Art. 1 de la LO 3/2021 define este doble objeto: derecho individual y obligacion publica.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 186,
+    "correct_answer": "c",
+    "explanation": "Art. 5 de la LO 3/2021 establece estos requisitos alternativos de vinculacion con Espana.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 187,
+    "correct_answer": "c",
+    "explanation": "La LO 3/2021 define la eutanasia como la administracion directa de una sustancia a la persona paciente por parte del personal sanitario competente.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 188,
+    "correct_answer": "c",
+    "explanation": "Art. 5.1.d de la LO 3/2021 establece estos dos supuestos alternativos con el requisito comun de sufrimiento intolerable.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 189,
+    "correct_answer": "b",
+    "explanation": "Art. 8 de la LO 3/2021: el facultativo responsable debe consultar al paciente al menos cada 15 dias con constancia en la historia clinica.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 190,
+    "correct_answer": "c",
+    "explanation": "Art. 16 de la LO 3/2021 reconoce al personal sanitario directamente implicado el derecho a la objecion de conciencia.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 191,
+    "correct_answer": "b",
+    "explanation": "Art. 3.b de la LO 3/2021 define el padecimiento grave, cronico e imposibilitante haciendo referencia a la autonomia fisica y la capacidad de expresion.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 192,
+    "correct_answer": "a",
+    "explanation": "Art. 10 de la LO 3/2021: la comunicacion de la resolucion favorable a la Comision de Garantia y Evaluacion debe realizarse en un plazo breve para permitir la verificacion.",
+    "topic": "LEY ORGANICA 3/2021, DE 24 DE MARZO - REGULACION DE LA EUTANASIA"
+  },
+  {
+    "number": 193,
+    "correct_answer": "b",
+    "explanation": "Art. 1 de la Ley 53/1984 establece como principio general la incompatibilidad, con excepciones tasadas.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 194,
+    "correct_answer": "b",
+    "explanation": "Art. 3 de la Ley 53/1984: la compatibilidad para un segundo puesto publico requiere autorizacion y supuestos legalmente previstos.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 195,
+    "correct_answer": "c",
+    "explanation": "Art. 11 de la Ley 53/1984 establece como requisito imprescindible la preservacion de la imparcialidad e independencia.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 196,
+    "correct_answer": "b",
+    "explanation": "Art. 1 de la Ley 53/1984 establece el principio de percepcion unica, con excepciones legales.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 197,
+    "correct_answer": "c",
+    "explanation": "Art. 13 de la Ley 53/1984: el incumplimiento del regimen de incompatibilidades es constitutivo de falta disciplinaria.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 198,
+    "correct_answer": "a",
+    "explanation": "Art. 19 de la Ley 53/1984 exceptua del regimen general las actividades docentes y de investigacion en los terminos establecidos.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 199,
+    "correct_answer": "c",
+    "explanation": "Art. 3 de la Ley 53/1984 exige que la compatibilidad se autorice en supuestos legales y sin alterar el puesto principal.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  },
+  {
+    "number": 200,
+    "correct_answer": "b",
+    "explanation": "La finalidad principal de la Ley 53/1984 es asegurar la plena dedicacion del personal publico y su imparcialidad.",
+    "topic": "LEY 53/1984, DE 26 DE DICIEMBRE - INCOMPATIBILIDADES DEL PERSONAL AL SERVICIO DE LAS ADMINISTRACIONES PUBLICAS"
+  }
+]

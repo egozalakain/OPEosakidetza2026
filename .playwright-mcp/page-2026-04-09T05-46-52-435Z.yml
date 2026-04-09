@@ -1,0 +1,67 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - heading "Your new project was created in 628 ms." [level=1] [ref=e151]:
+          - text: Your new project was created in
+          - generic [ref=e152]: 628 ms
+          - text: .
+        - paragraph [ref=e153]: If you blinked, you probably missed it.
+      - generic [ref=e154]:
+        - generic [ref=e155]:
+          - heading "Connect your app with one command" [level=4] [ref=e156]
+          - generic [ref=e157]:
+            - text: Run this command in your terminal to launch our AI-guided setup process.
+            - link "Learn more →" [ref=e158] [cursor=pointer]:
+              - /url: https://neon.tech/docs/get-started-with-neon/neonctl
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - generic [ref=e163]:
+              - textbox [ref=e164]
+              - generic [ref=e166]:
+                - generic:
+                  - generic:
+                    - generic: npx neonctl@latest init
+            - button "Copy snippet" [ref=e170] [cursor=pointer]:
+              - img [ref=e172]
+              - text: Copy snippet
+          - paragraph [ref=e174]: This will automatically configure Neon's AI-development tooling (MCP server, skills, IDE extensions) and walk your agent through the 'Get started with Neon' workflow.
+      - generic [ref=e177]: Or
+      - generic [ref=e179]:
+        - heading "Connect your app manually" [level=4] [ref=e180]
+        - generic [ref=e181]: Copy and paste your production branch's connection details into your app's .env file
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - button "Connection string" [ref=e184] [cursor=pointer]
+            - button "Connection parameters" [ref=e185] [cursor=pointer]
+          - generic [ref=e186]:
+            - generic [ref=e189]:
+              - textbox [ref=e190]
+              - generic [ref=e192]:
+                - generic:
+                  - generic:
+                    - generic: postgresql://neondb_owner:npg_jElZx4Dvk8uN@ep-odd-rice
+                    - generic: "-alp1wuf7.c-3.eu-central-1.aws.neon.tech/neondb"
+                    - generic: "?sslmode=require"
+            - generic [ref=e194]:
+              - button "Copy snippet" [ref=e196] [cursor=pointer]:
+                - img [ref=e198]
+                - text: Copy snippet
+              - button "Hide password" [active] [ref=e207] [cursor=pointer]:
+                - img [ref=e209]
+                - text: Hide password
+    - generic [ref=e79]:
+      - img [ref=e82]
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - heading "Region" [level=2] [ref=e87]
+          - generic [ref=e88]: AWS Europe Central 1 (Frankfurt)
+        - generic [ref=e89]:
+          - heading "Your free plan includes:" [level=2] [ref=e90]
+          - list [ref=e91]:
+            - listitem [ref=e92]: 0.5 GB storage
+            - listitem [ref=e93]: Scales to zero when inactive
+            - listitem [ref=e94]: Autoscaling up to 2 CU
+            - listitem [ref=e95]: 10 branches per project
+  - button "Go to project" [ref=e206] [cursor=pointer]:
+    - generic [ref=e104]: Go to project

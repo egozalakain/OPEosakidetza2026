@@ -1,0 +1,52 @@
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e21] [cursor=pointer]:
+    - img [ref=e22]
+  - alert [ref=e25]
+  - generic [ref=e26]:
+    - navigation [ref=e27]:
+      - generic [ref=e29]:
+        - link "OPE Quiz" [ref=e30] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e31]:
+          - link "Inicio" [ref=e32] [cursor=pointer]:
+            - /url: /
+          - link "Nuevo Examen" [ref=e33] [cursor=pointer]:
+            - /url: /examen/nuevo
+          - link "Estadisticas" [ref=e34] [cursor=pointer]:
+            - /url: /estadisticas
+          - link "Historial" [ref=e35] [cursor=pointer]:
+            - /url: /historial
+        - generic [ref=e36]:
+          - button "Cambiar a modo oscuro" [ref=e37]:
+            - img [ref=e38]
+          - button "Salir" [ref=e40]
+    - main [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - heading "Panel de Control" [level=1] [ref=e44]
+          - paragraph [ref=e45]: Bienvenido a tu preparacion OPE Osakidetza
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - paragraph [ref=e48]: Examenes realizados
+            - paragraph [ref=e49]: "0"
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: Tasa de acierto
+            - paragraph [ref=e52]: 0%
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: Preguntas respondidas
+            - paragraph [ref=e55]: "0"
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Preguntas debiles
+            - paragraph [ref=e58]: "0"
+            - paragraph [ref=e59]: Error > 50%
+        - generic [ref=e60]:
+          - heading "Acciones rapidas" [level=2] [ref=e61]
+          - generic [ref=e62]:
+            - link "Nuevo Examen" [ref=e63] [cursor=pointer]:
+              - /url: /examen/nuevo
+              - img [ref=e64]
+              - text: Nuevo Examen
+            - link "Reforzar Puntos Debiles" [ref=e66] [cursor=pointer]:
+              - /url: /examen/nuevo?mode=weak
+              - img [ref=e67]
+              - text: Reforzar Puntos Debiles

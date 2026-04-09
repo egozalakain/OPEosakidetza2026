@@ -1,6 +1,5 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { db } from "@/db";
 import { exams, examAnswers, questionStats } from "@/db/schema";
 import { eq, and, sql } from "drizzle-orm";
@@ -77,8 +76,8 @@ export async function createExam(config: ExamConfig) {
       });
   }
 
-  // 8. Redirect to exam page
-  redirect(`/examen/${exam.id}`);
+  // 8. Return exam ID for client-side navigation
+  return { examId: exam.id };
 }
 
 export async function submitAnswer(

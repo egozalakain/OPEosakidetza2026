@@ -1,0 +1,57 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - link "OPE Quiz" [ref=e6] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e7]:
+          - link "Inicio" [ref=e8] [cursor=pointer]:
+            - /url: /
+          - link "Nuevo Examen" [ref=e9] [cursor=pointer]:
+            - /url: /examen/nuevo
+          - link "Estadisticas" [ref=e10] [cursor=pointer]:
+            - /url: /estadisticas
+          - link "Historial" [ref=e11] [cursor=pointer]:
+            - /url: /historial
+        - generic [ref=e12]:
+          - button "Toggle theme" [ref=e13]
+          - button "Salir" [ref=e15]
+    - main [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - heading "Pregunta 1 / 10" [level=1] [ref=e19]
+          - button "Finalizar" [ref=e21]
+        - generic [ref=e22]:
+          - button "1" [ref=e23] [cursor=pointer]
+          - button "2" [ref=e24] [cursor=pointer]
+          - button "3" [ref=e25] [cursor=pointer]
+          - button "4" [ref=e26] [cursor=pointer]
+          - button "5" [ref=e27] [cursor=pointer]
+          - button "6" [ref=e28] [cursor=pointer]
+          - button "7" [ref=e29] [cursor=pointer]
+          - button "8" [ref=e30] [cursor=pointer]
+          - button "9" [ref=e31] [cursor=pointer]
+          - button "10" [ref=e32] [cursor=pointer]
+        - generic [ref=e33]:
+          - paragraph [ref=e34]: Pregunta 29
+          - paragraph [ref=e35]: "La pérdida de la condición de personal estatutario de los servicios de salud se produce cuando la incapacidad permanente sea declarada:"
+          - generic [ref=e36]:
+            - button "A)En grado de incapacidad permanente total para la profesión habitual." [ref=e37]:
+              - generic [ref=e38]: A)
+              - text: En grado de incapacidad permanente total para la profesión habitual.
+            - button "B)En grado de incapacidad absoluta para todo trabajo." [ref=e39]:
+              - generic [ref=e40]: B)
+              - text: En grado de incapacidad absoluta para todo trabajo.
+            - button "C)En grado de gran invalidez." [ref=e41]:
+              - generic [ref=e42]: C)
+              - text: En grado de gran invalidez.
+            - button "D)Todas las respuestas son correctas." [ref=e43]:
+              - generic [ref=e44]: D)
+              - text: Todas las respuestas son correctas.
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - button "Anterior" [disabled] [ref=e47]
+            - button "Marcar duda" [ref=e48]
+          - button "Siguiente" [ref=e50]
+  - button "Open Next.js Dev Tools" [ref=e56] [cursor=pointer]:
+    - img [ref=e57]
