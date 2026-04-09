@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/examen/nuevo", label: "Nuevo Examen" },
   { href: "/estadisticas", label: "Estadisticas" },
   { href: "/historial", label: "Historial" },
+  { href: "/admin/audit", label: "Accesos" },
 ];
 
 export function Navbar() {
