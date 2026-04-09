@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { signIn } from "next-auth/react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
@@ -10,25 +9,54 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [clientIp, setClientIp] = useState("unknown");
+
+  useEffect(() => {
+    fetch("/api/client-info")
+      .then((r) => r.json())
+      .then((d) => setClientIp(d.ip))
+      .catch(() => setClientIp("unknown"));
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
     setLoading(true);
 
-    const result = await signIn("credentials", {
-      username,
-      password,
-      redirect: false,
-    });
+    try {
+      // Get CSRF token
+      const csrfRes = await fetch("/api/auth/csrf");
+      const { csrfToken } = await csrfRes.json();
 
-    setLoading(false);
+      // Submit credentials
+      const res = await fetch("/api/auth/callback/credentials", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          username,
+          password,
+          csrfToken,
+          json: "true",
+          clientIp,
+          clientUserAgent: navigator.userAgent,
+        }),
+        redirect: "follow",
+      });
 
-    if (result?.error) {
-      setError("Usuario o contrasena incorrectos");
-    } else {
-      router.push("/");
-      router.refresh();
+      // Check if login succeeded by checking session
+      const sessionRes = await fetch("/api/auth/session");
+      const session = await sessionRes.json();
+
+      if (session?.user) {
+        router.push("/");
+        router.refresh();
+      } else {
+        setError("Usuario o contrasena incorrectos");
+        setLoading(false);
+      }
+    } catch {
+      setError("Error de conexion");
+      setLoading(false);
     }
   }
 
@@ -41,7 +69,7 @@ export default function LoginPage() {
               OPE Osakidetza Quiz
             </h1>
             <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-              Inicia sesión para continuar
+              Inicia sesion para continuar
             </p>
           </div>
 
@@ -70,7 +98,7 @@ export default function LoginPage() {
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
               >
-                Contraseña
+                Contrasena
               </label>
               <input
                 id="password"
@@ -95,7 +123,7 @@ export default function LoginPage() {
               disabled={loading}
               className="w-full rounded-lg bg-blue-600 hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed text-white font-medium py-2 px-4 text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
-              {loading ? "Iniciando sesión..." : "Iniciar sesión"}
+              {loading ? "Iniciando sesion..." : "Iniciar sesion"}
             </button>
           </form>
         </div>
