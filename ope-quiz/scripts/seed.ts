@@ -26,6 +26,8 @@ interface QuestionRecord {
   option_d: string;
   correct_answer: string;
   explanation: string | null;
+  disputed?: boolean;
+  disputed_note?: string | null;
 }
 
 async function seed() {
@@ -63,6 +65,8 @@ async function seed() {
         optionD: q.option_d,
         correctAnswer: q.correct_answer,
         explanation: q.explanation ?? null,
+        disputed: q.disputed ?? false,
+        disputedNote: q.disputed_note ?? null,
       }))
     )
     .returning({ id: questions.id });

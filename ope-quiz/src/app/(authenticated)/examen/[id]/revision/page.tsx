@@ -34,6 +34,8 @@ export default async function ReviewPage({
     selectedAnswer: row.answer.selectedAnswer,
     flagged: row.answer.flagged ?? false,
     explanation: row.question.explanation,
+    disputed: row.question.disputed ?? false,
+    disputedNote: row.question.disputedNote ?? null,
     isCorrect: row.answer.isCorrect,
   }));
 

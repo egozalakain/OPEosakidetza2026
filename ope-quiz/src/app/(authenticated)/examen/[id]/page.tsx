@@ -44,6 +44,8 @@ export default async function ExamPage({
     optionD: row.question.optionD,
     correctAnswer: row.question.correctAnswer,
     explanation: row.question.explanation,
+    disputed: row.question.disputed ?? false,
+    disputedNote: row.question.disputedNote ?? null,
   }));
 
   // For sequential study, resume from first unanswered question within current block

@@ -11,6 +11,8 @@ interface ReviewQuestionCardProps {
   selectedAnswer: string | null;
   explanation: string | null;
   flagged: boolean;
+  disputed?: boolean;
+  disputedNote?: string | null;
 }
 
 export function ReviewQuestionCard({
@@ -24,6 +26,8 @@ export function ReviewQuestionCard({
   selectedAnswer,
   explanation,
   flagged,
+  disputed,
+  disputedNote,
 }: ReviewQuestionCardProps) {
   const isCorrect = selectedAnswer === correctAnswer;
   const isBlank = selectedAnswer === null;
@@ -98,6 +102,19 @@ export function ReviewQuestionCard({
           <p className="text-sm text-blue-800 dark:text-blue-300">
             {explanation}
           </p>
+        </div>
+      )}
+
+      {disputed && (
+        <div className="mt-3 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700">
+          <p className="text-sm font-semibold text-amber-800 dark:text-amber-300 mb-1">
+            Respuesta discutida
+          </p>
+          {disputedNote && (
+            <p className="text-sm text-amber-700 dark:text-amber-400">
+              {disputedNote}
+            </p>
+          )}
         </div>
       )}
     </div>

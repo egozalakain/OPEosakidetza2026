@@ -28,6 +28,8 @@ export const questions = pgTable("questions", {
   optionD: text("option_d").notNull(),
   correctAnswer: char("correct_answer", { length: 1 }).notNull(),
   explanation: text("explanation"),
+  disputed: boolean("disputed").default(false),
+  disputedNote: text("disputed_note"),
 });
 
 export const exams = pgTable("exams", {

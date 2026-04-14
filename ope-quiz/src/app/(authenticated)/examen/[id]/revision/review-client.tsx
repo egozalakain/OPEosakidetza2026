@@ -16,6 +16,8 @@ interface ReviewQuestion {
   selectedAnswer: string | null;
   flagged: boolean;
   explanation: string | null;
+  disputed?: boolean;
+  disputedNote?: string | null;
   isCorrect: boolean | null;
 }
 
@@ -84,6 +86,8 @@ export function ReviewClient({
               selectedAnswer={q.selectedAnswer}
               flagged={q.flagged}
               explanation={q.explanation}
+              disputed={q.disputed}
+              disputedNote={q.disputedNote}
             />
           ))}
         </div>

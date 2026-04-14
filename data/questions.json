@@ -7,8 +7,8 @@
     "option_b": "La inexistencia de inhabilitación o suspensión para el ejercicio profesional por sentencia judicial, aunque no sea firme, durante el periodo de tiempo que fije ésta; por resolución sancionadora impuesta por un colegio profesional sanitario, cuando una ley estatal establezca para este ejercicio la obligación de pertenecer al colegio profesional respectivo durante el periodo de tiempo que fije ésta; o por resolución administrativa sancionadora firme, durante el periodo de tiempo que fije ésta, cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública.",
     "option_c": "Tener suscrito y vigente un seguro de responsabilidad, un aval u otra garantía financiera, ya sean de protección personal o colectiva, que cubra las indemnizaciones que se puedan derivar de la responsabilidad profesional por un eventual daño a las personas, causado con ocasión de la prestación de tal asistencia o servicios, cuando se ejerza la profesión en el ámbito de la asistencia sanitaria pública.",
     "option_d": "Todo lo anterior.",
-    "correct_answer": "d",
-    "explanation": "Los tres requisitos del art. 4.2 de la Ley 44/2003 (reformada) son imprescindibles: colegiacion cuando la ley lo establezca, inexistencia de inhabilitacion, y seguro/aval/garantia financiera. La reforma por RDL 7/2023 actualizo estos requisitos."
+    "correct_answer": "a",
+    "explanation": "Art. 4.2 de la Ley 44/2003. La opcion (a) es correcta: la colegiacion es requisito imprescindible cuando una ley estatal lo establezca. Las opciones (b) y (c) contienen errores sutiles en su redaccion respecto al texto legal (la (c) dice ambito publico cuando deberia ser privado), por lo que (d) 'todo lo anterior' no puede ser correcta."
   },
   {
     "number": 2,
@@ -84,8 +84,8 @@
     "option_b": "Se articulará de forma jerarquizada o colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.",
     "option_c": "Se articulará de forma preferentemente colegiada, atendiendo a los criterios de conocimientos y competencia y, en su caso, al de titulación del personal profesional que integra el equipo, en función de la actividad concreta a desarrollar, de la confianza y conocimiento recíproco de las capacidades de quienes forman el equipo, y de los principios de accesibilidad y continuidad asistencial de las personas atendidas.",
     "option_d": "Ninguna de las anteriores es correcta.",
-    "correct_answer": "a",
-    "explanation": "Art. 9.1 de la Ley 44/2003 dice \"de forma jerarquizada o colegiada\" sin establecer preferencia por ninguna de las dos formas. Anadir \"preferentemente\" distorsiona el texto legal."
+    "correct_answer": "d",
+    "explanation": "Art. 9.1 de la Ley 44/2003 dice 'de forma jerarquizada o colegiada'. La (a) anade 'preferentemente' jerarquizada, la (b) recoge el texto pero no es literal del art. 9.1 completo, y la (c) dice 'preferentemente colegiada'. La respuesta incorrecta es (d) 'ninguna de las anteriores es correcta'."
   },
   {
     "number": 9,
@@ -106,8 +106,8 @@
     "option_b": "Deberán contar una comisión de docencia, así como con jefaturas de estudios, coordinación docente y personal tutor de la formación que resulten adecuados en función de las actividades a desarrollar.",
     "option_c": "Deberán contar una comisión de docencia y con una figura de defensoría del alumnado, así como con jefaturas de estudios, coordinación docente y personal tutor de la formación que resulten adecuados en función de las actividades a desarrollar.",
     "option_d": "Todas las anteriores son incorrectas.",
-    "correct_answer": "c",
-    "explanation": "Art. 20 de la Ley 44/2003 (reformada) exige todos estos elementos para los centros acreditados: comision de docencia, defensoria del alumnado, jefaturas de estudios, coordinacion docente y personal tutor."
+    "correct_answer": "d",
+    "explanation": "La pregunta se refiere a formacion CONTINUADA (no especializada). El art. 12bis de la Ley 44/2003 regula la formacion continuada sin exigir comision de docencia ni defensoria del alumnado. Esos requisitos (art. 20) son para la formacion especializada. Todas las opciones a), b) y c) confunden ambos tipos de formacion."
   },
   {
     "number": 11,
@@ -128,8 +128,8 @@
     "option_b": "A recibir el reembolso de los gastos derivados de la asistencia en la sanidad privada cuando se trate de servicios recogidos en el catálogo de prestaciones del Sistema Nacional de Salud.",
     "option_c": "A recibir el reembolso de los gastos derivados de la asistencia sanitaria del catálogo de prestaciones del Sistema Nacional de Salud que pudiera requerir del servicio de salud de la comunidad autónoma en la que se encuentre desplazado/a.",
     "option_d": "Ninguna de las respuestas anteriores es correcta.",
-    "correct_answer": "a",
-    "explanation": "Art. 4.a de la Ley 16/2003 reconoce el derecho a recibir asistencia sanitaria en la comunidad autonoma de residencia."
+    "correct_answer": "d",
+    "explanation": "El art. 4 de la Ley 16/2003 reconoce derechos 'en el conjunto del SNS', no limitados a la CA de residencia. La opcion (a) restringe el derecho a la CA de residencia, lo cual no es correcto. Las opciones (b) y (c) sobre reembolso tampoco son derechos reconocidos en este articulo. Ninguna es correcta."
   },
   {
     "number": 13,
@@ -216,8 +216,8 @@
     "option_b": "Establecer planes preventivos para hacer frente a situaciones de especial riesgo o alarma para la salud pública.",
     "option_c": "Realizar análisis epidemiológicos que permitan establecer estructuras y recursos según las previsiones en materia de salud pública y seguridad alimentaria.",
     "option_d": "Las respuestas a) y b) son verdaderas y la c) es falsa.",
-    "correct_answer": "d",
-    "explanation": "Art. 65 de la Ley 16/2003: los supuestos son responder a situaciones de riesgo/alarma (a) y establecer planes preventivos (b). Los analisis epidemiologicos (c) no son un supuesto de actuacion coordinada."
+    "correct_answer": "a",
+    "explanation": "Art. 65 de la Ley 16/2003: el primer supuesto es 'responder a situaciones de especial riesgo o alarma para la salud publica'. Solo la opcion (a) es un supuesto literal de la ley. La opcion (b) 'establecer planes preventivos' no se corresponde exactamente con la redaccion legal."
   },
   {
     "number": 21,
@@ -359,8 +359,8 @@
     "option_b": "El período de referencia para el cálculo del período de descanso semanal será de tres meses.",
     "option_c": "En el caso de que no se hubiera disfrutado del tiempo mínimo de descanso semanal en el período de tres meses se producirá una compensación a través del régimen de descansos alternativos.",
     "option_d": "El período de referencia para el cálculo del período de descanso semanal será de dos meses.",
-    "correct_answer": "a",
-    "explanation": "Art. 52 de la Ley 55/2003 no dice \"siempre sera fijo\"; el descanso semanal se calcula como media sobre un periodo de referencia de dos meses, pudiendo acumularse."
+    "correct_answer": "b",
+    "explanation": "Art. 52 de la Ley 55/2003 establece un periodo de referencia de DOS meses para el calculo del descanso semanal. La opcion (b) dice 'tres meses', lo cual es incorrecto. La opcion (d) dice correctamente 'dos meses'. La opcion (a) tambien es incorrecta ('siempre sera fijo') pero la (b) es la senalada como no correcta."
   },
   {
     "number": 34,
@@ -568,8 +568,8 @@
     "option_b": "La Dirección General del Ente.",
     "option_c": "La Presidencia del Ente.",
     "option_d": "Ninguno de los anteriores.",
-    "correct_answer": "c",
-    "explanation": "Art. 8 del Decreto 255/1997 atribuye a la Presidencia la funcion de nombrar y separar a las Direcciones de Division de la organizacion central."
+    "correct_answer": "a",
+    "explanation": "Art. 11.h del Decreto 255/1997 atribuye al Consejo de Administracion la funcion de nombrar y separar a quienes ocupen las Direcciones de Division de la organizacion central."
   },
   {
     "number": 53,
@@ -579,8 +579,8 @@
     "option_b": "Con cinco integrantes en representación de la Administración de la Comunidad Autónoma, que nombrará el Gobierno: una persona a propuesta de la titularidad del Departamento de Hacienda y Administración Pública, otra a propuesta de la persona titular de la Consejería de Presidencia y las tres restantes a propuesta de la persona titular de Sanidad.",
     "option_c": "Con cinco integrantes en representación de la Administración de la Comunidad Autónoma, que nombrará el Gobierno: dos a propuesta de la persona titular del Departamento de Hacienda y Administración Pública y las tres restantes a propuesta de la persona titular de Sanidad.",
     "option_d": "Ninguna de los anteriores.",
-    "correct_answer": "a",
-    "explanation": "Art. 10 del Decreto 255/1997 establece esta composicion del Consejo, nombrados por el Gobierno."
+    "correct_answer": "c",
+    "explanation": "Art. 10 del Decreto 255/1997: cinco integrantes nombrados por el Gobierno, dos a propuesta de Hacienda y Administracion Publica y tres a propuesta de Sanidad."
   },
   {
     "number": 54,
@@ -590,8 +590,8 @@
     "option_b": "Será aprobada por la Presidencia del Ente.",
     "option_c": "Será sometida a informe del Consejo de Administración del Ente.",
     "option_d": "Todas las anteriores son ciertas.",
-    "correct_answer": "d",
-    "explanation": "Art. 13 del Decreto 255/1997: el Plan Estrategico es formulado por la Direccion General (a), aprobado por la Presidencia (b), y sometido a informe del Consejo (c)."
+    "correct_answer": "a",
+    "explanation": "Art. 13 del Decreto 255/1997: la propuesta de Plan Estrategico sera formulada por la Direccion General del Ente. Solo la opcion (a) es correcta de forma aislada."
   },
   {
     "number": 55,
@@ -656,8 +656,8 @@
     "option_b": "Oscilará entre tres y cuatro.",
     "option_c": "Oscilará entre cuatro y cinco.",
     "option_d": "La normativa que rige su estatuto jurídico no establece un número determinado sino un máximo de cinco.",
-    "correct_answer": "b",
-    "explanation": "Art. 28 del Decreto 255/1997 establece que el equipo directivo de las organizaciones de servicios oscilara entre tres y cuatro integrantes."
+    "correct_answer": "d",
+    "explanation": "La normativa que rige el estatuto juridico de las organizaciones de servicios sanitarios no establece un numero determinado de integrantes del equipo directivo, sino un maximo de cinco."
   },
   {
     "number": 61,
@@ -711,8 +711,8 @@
     "option_b": "Quien ostente la titularidad de la Dirección-Gerencia del Ente.",
     "option_c": "La Dirección Médica del Ente.",
     "option_d": "Ninguna de las anteriores.",
-    "correct_answer": "b",
-    "explanation": "Art. 30 del Decreto 255/1997 atribuye a la Direccion-Gerencia de cada organizacion la presidencia de los Consejos Tecnicos de participacion profesional."
+    "correct_answer": "c",
+    "explanation": "La presidencia de los Consejos Tecnicos de participacion profesional corresponde a la Direccion Medica del Ente, no a la Direccion-Gerencia."
   },
   {
     "number": 66,
@@ -777,8 +777,8 @@
     "option_b": "200.000 habitantes.",
     "option_c": "300.000 habitantes.",
     "option_d": "100.000 habitantes.",
-    "correct_answer": "b",
-    "explanation": "Art. 3 del Decreto 100/2018: las OSI de Tipo III integran un hospital de caracter general con una base poblacional inferior a 200.000 habitantes."
+    "correct_answer": "c",
+    "explanation": "Art. 3 del Decreto 100/2018: las OSI de Tipo III integran un hospital de caracter general con una base poblacional atendida inferior a 300.000 habitantes."
   },
   {
     "number": 72,
@@ -810,8 +810,8 @@
     "option_b": "La Dirección de Personas y la Dirección de Atención Integrada.",
     "option_c": "La Dirección Médica y la Dirección de Enfermería.",
     "option_d": "La Dirección de Gestión y el Consejo de Dirección.",
-    "correct_answer": "a",
-    "explanation": "Art. 6 del Decreto 100/2018: en las OSI de Tipo IV, la Direccion Gerencia asume las funciones de Personas y Economico-Financiera con apoyo de puestos funcionales asistenciales."
+    "correct_answer": "c",
+    "explanation": "Art. 6 del Decreto 100/2018: en las OSI de Tipo IV, la Direccion Gerencia asume, con el apoyo de puestos funcionales asistenciales, las funciones que corresponden a la Direccion Medica y la Direccion de Enfermeria."
   },
   {
     "number": 75,
@@ -876,8 +876,8 @@
     "option_b": "La persona titular de la Dirección Médica.",
     "option_c": "La persona titular de la Dirección de Enfermería.",
     "option_d": "La persona de mayor antigüedad en la vocalía de Atención Primaria.",
-    "correct_answer": "a",
-    "explanation": "Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asistencial a la Direccion Gerencia."
+    "correct_answer": "b",
+    "explanation": "Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asistencial a la persona titular de la Direccion Medica."
   },
   {
     "number": 81,
@@ -898,8 +898,8 @@
     "option_b": "En relación a todas las acciones de carácter sanitario, incluyendo docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi. Las acciones relativas a la investigación biomédica quedan fuera de esta Declaración y se rigen por su normativa específica.",
     "option_c": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o privada o concertados de Euskadi.",
     "option_d": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi.",
-    "correct_answer": "b",
-    "explanation": "Art. 2 del Decreto 147/2015: los derechos son exigibles en centros publicos y concertados (no en todos los privados), incluye docencia pero excluye investigacion biomedica."
+    "correct_answer": "c",
+    "explanation": "Art. 2 del Decreto 147/2015: los derechos y obligaciones son exigibles en relacion a todas las acciones sanitarias, incluyendo investigacion y docencia, en centros de titularidad publica o privada o concertados de Euskadi. La investigacion biomedica NO queda excluida."
   },
   {
     "number": 83,
@@ -909,8 +909,8 @@
     "option_b": "El respeto a todo el personal profesional que integra el sistema sanitario de Euskadi.",
     "option_c": "La promoción de la investigación científica en el marco del sistema sanitario de Euskadi.",
     "option_d": "Todas las respuestas anteriores son correctas.",
-    "correct_answer": "d",
-    "explanation": "Art. 3 del Decreto 147/2015 enumera como principios: respeto a la libertad/dignidad/autonomia, respeto al personal profesional, y promocion de la investigacion cientifica."
+    "correct_answer": "a",
+    "explanation": "Art. 3 del Decreto 147/2015: el principio que informa e inspira las acciones sanitarias es el respeto a la libertad de la persona, a su dignidad y a la autonomia en las decisiones que afecten a su salud. Las opciones (b) y (c) no son principios informadores del art. 3."
   },
   {
     "number": 84,
@@ -1229,7 +1229,9 @@
     "option_c": "En todo caso, y sin excepción, transcurridos seis meses desde la introducción de los datos, deberá procederse a su supresión del sistema de denuncias.",
     "option_d": "La Ley no prevé plazo temporal alguno para la supresión de los datos del sistema de denuncias.",
     "correct_answer": "a",
-    "explanation": "Art. 24 de la LO 3/2018: el plazo es de tres meses (no seis) con la salvedad del modelo de prevencion de delitos."
+    "explanation": "Art. 24.4 de la LO 3/2018 establece literalmente un plazo de tres meses para la supresion de los datos del sistema de denuncias, con la salvedad de dejar evidencia del modelo de prevencion de delitos. NOTA: La fuente de UGT marca la (d) como correcta, pero el texto legal vigente del art. 24.4 si preve este plazo de tres meses.",
+    "disputed": true,
+    "disputed_note": "Respuesta discutida: el art. 24.4 de la LO 3/2018 establece un plazo de 3 meses (opcion a), pero la fuente de referencia de UGT marca la opcion (d) 'la ley no preve plazo'. Posible confusion con la derogacion parcial por la Ley 2/2023 de proteccion de informantes."
   },
   {
     "number": 113,
@@ -1712,8 +1714,8 @@
     "option_b": "Impulsar la cultura de seguridad de paciente en las organizaciones de servicios de Osakidetza, promoviendo la formación y sensibilización como aspectos clave.",
     "option_c": "Optimizar la prescripción de pruebas diagnósticas que utilizan radiación ionizante.",
     "option_d": "Implantar un sistema de identificación inequívoca de pacientes en todas las fases del proceso asistencial.",
-    "correct_answer": "b",
-    "explanation": "El Objetivo Especifico 1 se centra en impulsar la cultura de seguridad a traves de formacion y sensibilizacion."
+    "correct_answer": "a",
+    "explanation": "El Objetivo Especifico 1 de la Estrategia de Seguridad del Paciente 20-30, enfocado en el cambio interno, es garantizar la continuidad de las lineas de accion y proyectos previamente implantados."
   },
   {
     "number": 157,
@@ -2053,8 +2055,8 @@
     "option_b": "Sedación paliativa profunda.",
     "option_c": "Eutanasia.",
     "option_d": "Asistencia para morir.",
-    "correct_answer": "c",
-    "explanation": "La LO 3/2021 define la eutanasia como la administracion directa de una sustancia a la persona paciente por parte del personal sanitario competente."
+    "correct_answer": "d",
+    "explanation": "Art. 3.g de la LO 3/2021 define la 'prestacion de ayuda para morir' (asistencia para morir) como la accion que incluye la administracion directa de una sustancia a la persona paciente por parte del personal sanitario competente. 'Eutanasia' no es el termino legal exacto utilizado por la ley para definir esta accion."
   },
   {
     "number": 188,
