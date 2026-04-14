@@ -2,7 +2,8 @@
 ## Categorias A, B y C1
 
 **Fuente de preguntas:** 200-Galdera-sorta_TEMARIO-COMUN_cas.pdf  
-**Normativa de referencia:** Bibliografia del Temario Comun (19 normas y documentos)
+**Normativa de referencia:** Bibliografia del Temario Comun (19 normas y documentos)  
+**Verificado contra:** RESPUESTAS-T.-ESPECIFICO-COMUN-A-BC1.pdf (UGT, abril 2026) - 18 respuestas corregidas, 1 disputada (preg. 112)
 
 ---
 
@@ -10,46 +11,46 @@
 
 | Preg. | Resp. | Preg. | Resp. | Preg. | Resp. | Preg. | Resp. | Preg. | Resp. |
 |-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
-| 1 | d | 41 | a | 81 | a | 121 | c | 161 | c |
-| 2 | b | 42 | c | 82 | b | 122 | b | 162 | d |
-| 3 | a | 43 | a | 83 | d | 123 | c | 163 | c |
+| 1 | a | 41 | a | 81 | a | 121 | c | 161 | c |
+| 2 | b | 42 | c | 82 | c | 122 | b | 162 | d |
+| 3 | a | 43 | a | 83 | a | 123 | c | 163 | c |
 | 4 | a | 44 | d | 84 | d | 124 | b | 164 | d |
 | 5 | c | 45 | b | 85 | d | 125 | b | 165 | c |
 | 6 | c | 46 | c | 86 | a | 126 | d | 166 | b |
 | 7 | b | 47 | a | 87 | b | 127 | c | 167 | c |
-| 8 | a | 48 | b | 88 | a | 128 | b | 168 | a |
+| 8 | d | 48 | b | 88 | a | 128 | b | 168 | a |
 | 9 | c | 49 | a | 89 | d | 129 | b | 169 | c |
-| 10 | c | 50 | c | 90 | a | 130 | b | 170 | c |
+| 10 | d | 50 | c | 90 | a | 130 | b | 170 | c |
 | 11 | b | 51 | d | 91 | c | 131 | b | 171 | c |
-| 12 | a | 52 | c | 92 | b | 132 | b | 172 | a |
-| 13 | a | 53 | a | 93 | a | 133 | b | 173 | a |
-| 14 | d | 54 | d | 94 | d | 134 | b | 174 | b |
+| 12 | d | 52 | a | 92 | b | 132 | b | 172 | a |
+| 13 | a | 53 | c | 93 | a | 133 | b | 173 | a |
+| 14 | d | 54 | a | 94 | d | 134 | b | 174 | b |
 | 15 | d | 55 | b | 95 | c | 135 | b | 175 | c |
 | 16 | d | 56 | d | 96 | c | 136 | b | 176 | c |
 | 17 | b | 57 | b | 97 | c | 137 | b | 177 | d |
 | 18 | a | 58 | b | 98 | a | 138 | c | 178 | b |
 | 19 | c | 59 | a | 99 | a | 139 | b | 179 | a |
-| 20 | d | 60 | b | 100 | a | 140 | d | 180 | c |
+| 20 | a | 60 | d | 100 | a | 140 | d | 180 | c |
 | 21 | b | 61 | a | 101 | b | 141 | c | 181 | b |
 | 22 | c | 62 | a | 102 | d | 142 | c | 182 | c |
 | 23 | a | 63 | c | 103 | b | 143 | b | 183 | d |
 | 24 | c | 64 | b | 104 | a | 144 | a | 184 | c |
-| 25 | b | 65 | b | 105 | c | 145 | c | 185 | c |
+| 25 | b | 65 | c | 105 | c | 145 | c | 185 | c |
 | 26 | d | 66 | d | 106 | b | 146 | d | 186 | c |
-| 27 | d | 67 | b | 107 | c | 147 | b | 187 | c |
+| 27 | d | 67 | b | 107 | c | 147 | b | 187 | d |
 | 28 | a | 68 | c | 108 | d | 148 | b | 188 | c |
 | 29 | d | 69 | b | 109 | b | 149 | a | 189 | b |
 | 30 | b | 70 | c | 110 | b | 150 | c | 190 | c |
-| 31 | a | 71 | b | 111 | c | 151 | c | 191 | b |
+| 31 | a | 71 | c | 111 | c | 151 | c | 191 | b |
 | 32 | c | 72 | b | 112 | a | 152 | d | 192 | a |
-| 33 | a | 73 | b | 113 | c | 153 | c | 193 | b |
-| 34 | d | 74 | a | 114 | c | 154 | d | 194 | b |
+| 33 | b | 73 | b | 113 | c | 153 | c | 193 | b |
+| 34 | d | 74 | c | 114 | c | 154 | d | 194 | b |
 | 35 | a | 75 | b | 115 | b | 155 | c | 195 | c |
-| 36 | d | 76 | b | 116 | c | 156 | b | 196 | b |
+| 36 | d | 76 | b | 116 | c | 156 | a | 196 | b |
 | 37 | a | 77 | c | 117 | b | 157 | b | 197 | c |
 | 38 | b | 78 | b | 118 | b | 158 | c | 198 | a |
 | 39 | c | 79 | b | 119 | b | 159 | a | 199 | c |
-| 40 | b | 80 | a | 120 | b | 160 | c | 200 | b |
+| 40 | b | 80 | b | 120 | b | 160 | c | 200 | b |
 
 ---
 
@@ -59,8 +60,8 @@
 
 ### LEY 44/2003, DE 21 DE NOVIEMBRE, DE ORDENACION DE LAS PROFESIONES SANITARIAS (Preguntas 1-10)
 
-**1. Respuesta: d) Todo lo anterior.**
-Los tres requisitos del art. 4.2 de la Ley 44/2003 (reformada) son imprescindibles: colegiacion cuando la ley lo establezca, inexistencia de inhabilitacion, y seguro/aval/garantia financiera. La reforma por RDL 7/2023 actualizo estos requisitos.
+**1. Respuesta: a) La colegiacion, cuando una ley estatal establezca esta obligacion.**
+Art. 4.2 de la Ley 44/2003. La opcion (a) es correcta: la colegiacion es requisito imprescindible cuando una ley estatal lo establezca. Las opciones (b) y (c) contienen errores sutiles en su redaccion respecto al texto legal (la (c) dice ambito publico cuando deberia ser privado), por lo que (d) "todo lo anterior" no puede ser correcta.
 
 **2. Respuesta: b) Seguro de responsabilidad, aval u otra garantia financiera, de proteccion personal o colectiva, para la asistencia sanitaria privada.**
 Art. 4.2.c de la Ley 44/2003 establece este requisito especificamente para el ejercicio en el ambito privado. La opcion a) es incorrecta porque excluye el aval y la garantia colectiva.
@@ -80,14 +81,14 @@ Art. 4.7 de la Ley 44/2003 exige que la renuncia quede con constancia formal, no
 **7. Respuesta: b) Cada tres anos como minimo.**
 Art. 4.6 de la Ley 44/2003 establece que los centros sanitarios revisaran el cumplimiento de requisitos del personal "cada tres anos como minimo."
 
-**8. Respuesta: a) "Preferentemente, de forma jerarquizada" (INCORRECTA).**
-Art. 9.1 de la Ley 44/2003 dice "de forma jerarquizada o colegiada" sin establecer preferencia por ninguna de las dos formas. Anadir "preferentemente" distorsiona el texto legal.
+**8. Respuesta: d) Ninguna de las anteriores es correcta (INCORRECTA).**
+Art. 9.1 de la Ley 44/2003 dice "de forma jerarquizada o colegiada". La (a) anade "preferentemente" jerarquizada, la (b) recoge el texto pero no es literal completo, y la (c) dice "preferentemente colegiada". La respuesta incorrecta es (d) "ninguna de las anteriores es correcta".
 
 **9. Respuesta: c) Deber de proporcionar informacion sobre formacion profesional y demandas de responsabilidad administrativa.**
 Art. 5 de la Ley 44/2003 no incluye como principio general el deber de informar sobre "demandas de responsabilidad que hayan derivado en responsabilidades administrativas." Los deberes reales son: atencion adecuada, uso racional de recursos, respeto a dignidad e intimidad.
 
-**10. Respuesta: c) Comision de docencia, defensoria del alumnado, jefaturas de estudios, coordinacion docente y personal tutor.**
-Art. 20 de la Ley 44/2003 (reformada) exige todos estos elementos para los centros acreditados: comision de docencia, defensoria del alumnado, jefaturas de estudios, coordinacion docente y personal tutor.
+**10. Respuesta: d) Todas las anteriores son incorrectas.**
+La pregunta se refiere a formacion CONTINUADA (no especializada). El art. 12bis de la Ley 44/2003 regula la formacion continuada sin exigir comision de docencia ni defensoria del alumnado. Esos requisitos (art. 20) son para la formacion especializada. Todas las opciones a), b) y c) confunden ambos tipos de formacion.
 
 ---
 
@@ -96,8 +97,8 @@ Art. 20 de la Ley 44/2003 (reformada) exige todos estos elementos para los centr
 **11. Respuesta: b) A los servicios sanitarios de financiacion publica. Tambien a los privados en lo referente a control de salud publica y garantias de informacion, seguridad y calidad.**
 Art. 1 de la Ley 16/2003. Se aplica a servicios publicos y, respecto a los privados, solo en materia de salud publica e informacion/seguridad/calidad.
 
-**12. Respuesta: a) A recibir asistencia sanitaria en su comunidad autonoma de residencia.**
-Art. 4.a de la Ley 16/2003 reconoce el derecho a recibir asistencia sanitaria en la comunidad autonoma de residencia.
+**12. Respuesta: d) Ninguna de las respuestas anteriores es correcta.**
+El art. 4 de la Ley 16/2003 reconoce derechos "en el conjunto del SNS", no limitados a la CA de residencia. La opcion (a) restringe el derecho a la CA de residencia, lo cual no es correcto. Las opciones (b) y (c) sobre reembolso tampoco son derechos reconocidos en este articulo.
 
 **13. Respuesta: a) Cartera comun basica de servicios asistenciales, cartera comun suplementaria y cartera comun de servicios accesorios.**
 Art. 8.1 de la Ley 16/2003 articula la cartera comun en estas tres modalidades.
@@ -120,8 +121,8 @@ Art. 11.3 de la Ley 16/2003 establece este criterio para la exclusion.
 **19. Respuesta: c) La aptitud del personal profesional sanitario para integrar y aplicar conocimientos, habilidades y actitudes asociados a las buenas practicas de su profesion.**
 Art. 42 de la Ley 16/2003 define asi la competencia profesional.
 
-**20. Respuesta: d) Las respuestas a) y b) son verdaderas y la c) es falsa.**
-Art. 65 de la Ley 16/2003: los supuestos son responder a situaciones de riesgo/alarma (a) y establecer planes preventivos (b). Los analisis epidemiologicos (c) no son un supuesto de actuacion coordinada.
+**20. Respuesta: a) Responder a situaciones de especial riesgo o alarma para la salud publica.**
+Art. 65 de la Ley 16/2003: el primer supuesto es "responder a situaciones de especial riesgo o alarma para la salud publica". Solo la opcion (a) es un supuesto literal de la ley. La opcion (b) "establecer planes preventivos" no se corresponde exactamente con la redaccion legal.
 
 ---
 
@@ -163,8 +164,8 @@ Art. 54 de la Ley 55/2003 establece que el periodo nocturno tendra una duracion 
 **32. Respuesta: c) Podra compatibilizar las funciones sanitarias y docente.**
 Art. 71 de la Ley 55/2003 permite la compatibilidad entre funciones sanitarias y docentes, atendiendo a la legislacion vigente.
 
-**33. Respuesta: a) "El personal tendra derecho a un periodo minimo que siempre sera fijo..." (INCORRECTA).**
-Art. 52 de la Ley 55/2003 no dice "siempre sera fijo"; el descanso semanal se calcula como media sobre un periodo de referencia de dos meses, pudiendo acumularse.
+**33. Respuesta: b) "El periodo de referencia para el calculo del periodo de descanso semanal sera de tres meses" (INCORRECTA).**
+Art. 52 de la Ley 55/2003 establece un periodo de referencia de DOS meses para el calculo del descanso semanal. La opcion (b) dice "tres meses", lo cual es incorrecto.
 
 **34. Respuesta: d) Anualmente, vacacion retribuida no inferior a 30 dias naturales, o al tiempo que proporcionalmente corresponda en funcion del tiempo de servicios.**
 Art. 53 de la Ley 55/2003 establece el derecho a 30 dias naturales o la parte proporcional. No puede sustituirse por compensacion economica.
@@ -228,14 +229,14 @@ Art. 26 de la Ley 8/1997 establece estos cuatro instrumentos de clasificacion de
 **51. Respuesta: d) Quien ostente la titularidad del Departamento de Sanidad.**
 Art. 5 del Decreto 255/1997: la presidencia del ente publico corresponde al/la titular del Departamento de Sanidad.
 
-**52. Respuesta: c) La Presidencia del Ente.**
-Art. 8 del Decreto 255/1997 atribuye a la Presidencia la funcion de nombrar y separar a las Direcciones de Division de la organizacion central.
+**52. Respuesta: a) El Consejo de Administracion del Ente.**
+Art. 11.h del Decreto 255/1997 atribuye al Consejo de Administracion la funcion de nombrar y separar a quienes ocupen las Direcciones de Division de la organizacion central.
 
-**53. Respuesta: a) Cinco integrantes: una persona de Hacienda, otra de Bienestar Social y tres de Sanidad.**
-Art. 10 del Decreto 255/1997 establece esta composicion del Consejo, nombrados por el Gobierno.
+**53. Respuesta: c) Cinco integrantes: dos a propuesta de Hacienda y Administracion Publica y tres a propuesta de Sanidad.**
+Art. 10 del Decreto 255/1997: cinco integrantes nombrados por el Gobierno, dos a propuesta de Hacienda y Administracion Publica y tres a propuesta de Sanidad.
 
-**54. Respuesta: d) Todas las anteriores son ciertas.**
-Art. 13 del Decreto 255/1997: el Plan Estrategico es formulado por la Direccion General (a), aprobado por la Presidencia (b), y sometido a informe del Consejo (c).
+**54. Respuesta: a) Sera formulada por la Direccion General del Ente.**
+Art. 13 del Decreto 255/1997: la propuesta de Plan Estrategico sera formulada por la Direccion General del Ente.
 
 **55. Respuesta: b) La Presidencia.**
 Art. 8 del Decreto 255/1997: corresponde a la Presidencia convocar, presidir, suspender y levantar las sesiones del Consejo de Administracion y decidir empates con voto de calidad.
@@ -252,8 +253,8 @@ Art. 18 del Decreto 255/1997: la promocion de acuerdos con la sanidad privada no
 **59. Respuesta: a) Las facultades atribuidas expresamente a la organizacion central del Ente Publico y las competencias propias de otras instancias.**
 Art. 24 del Decreto 255/1997 establece que las organizaciones de servicios ejercen todas las facultades excepto las atribuidas a la organizacion central.
 
-**60. Respuesta: b) Oscilara entre tres y cuatro.**
-Art. 28 del Decreto 255/1997 establece que el equipo directivo de las organizaciones de servicios oscilara entre tres y cuatro integrantes.
+**60. Respuesta: d) La normativa no establece un numero determinado sino un maximo de cinco.**
+La normativa que rige el estatuto juridico de las organizaciones de servicios sanitarios no establece un numero determinado de integrantes del equipo directivo, sino un maximo de cinco.
 
 **61. Respuesta: a) La organizacion central de administracion y gestion corporativa.**
 Art. 18 del Decreto 255/1997 atribuye a la organizacion central la representacion del ente publico en la negociacion colectiva del Acuerdo Marco.
@@ -267,8 +268,8 @@ Art. 32 del Decreto 255/1997 permite la descentralizacion en ambas materias (eco
 **64. Respuesta: b) La organizacion central de administracion y gestion corporativa.**
 Art. 18 del Decreto 255/1997: las compras centralizadas y suministros integrados corresponden a la organizacion central.
 
-**65. Respuesta: b) Quien ostente la titularidad de la Direccion-Gerencia.**
-Art. 30 del Decreto 255/1997 atribuye a la Direccion-Gerencia de cada organizacion la presidencia de los Consejos Tecnicos de participacion profesional.
+**65. Respuesta: c) La Direccion Medica del Ente.**
+La presidencia de los Consejos Tecnicos de participacion profesional corresponde a la Direccion Medica del Ente, no a la Direccion-Gerencia.
 
 ---
 
@@ -289,8 +290,8 @@ Art. 3 del Decreto 100/2018 define asi las OSI de clase monografica.
 **70. Respuesta: c) Unidades o servicios calificados de referencia para el conjunto del sistema sanitario vasco.**
 Art. 3 del Decreto 100/2018: las OSI de Tipo I tienen hospitales universitarios y unidades/servicios de referencia para todo el sistema vasco.
 
-**71. Respuesta: b) 200.000 habitantes.**
-Art. 3 del Decreto 100/2018: las OSI de Tipo III integran un hospital de caracter general con una base poblacional inferior a 200.000 habitantes.
+**71. Respuesta: c) 300.000 habitantes.**
+Art. 3 del Decreto 100/2018: las OSI de Tipo III integran un hospital de caracter general con una base poblacional atendida inferior a 300.000 habitantes.
 
 **72. Respuesta: b) El Consejo Clinico Asistencial, el Consejo Social y la Comision Sociosanitaria.**
 Art. 5 del Decreto 100/2018 establece estos tres organos de participacion en la estructura organizativa de las OSI.
@@ -298,8 +299,8 @@ Art. 5 del Decreto 100/2018 establece estos tres organos de participacion en la 
 **73. Respuesta: b) Las Direcciones Medica, de Atencion Integrada, de Enfermeria, de Personas, Economico-Financiera y de Gestion.**
 Art. 5.2 del Decreto 100/2018 detalla la composicion del equipo directivo de las OSI con estas direcciones funcionales.
 
-**74. Respuesta: a) La Direccion de Personas y la Direccion Economico-Financiera.**
-Art. 6 del Decreto 100/2018: en las OSI de Tipo IV, la Direccion Gerencia asume las funciones de Personas y Economico-Financiera con apoyo de puestos funcionales asistenciales.
+**74. Respuesta: c) La Direccion Medica y la Direccion de Enfermeria.**
+Art. 6 del Decreto 100/2018: en las OSI de Tipo IV, la Direccion Gerencia asume, con el apoyo de puestos funcionales asistenciales, las funciones que corresponden a la Direccion Medica y la Direccion de Enfermeria.
 
 **75. Respuesta: b) El Consejo Clinico Asistencial.**
 Art. 5 del Decreto 100/2018: el Consejo Clinico Asistencial es un organo de PARTICIPACION, no de direccion. Los organos de direccion son las diversas Direcciones funcionales.
@@ -316,8 +317,8 @@ Art. 8.m del Decreto 100/2018 atribuye a la Direccion Gerencia la funcion de "or
 **79. Respuesta: b) Con el ambito comunitario y socio-sanitario.**
 Art. 12 del Decreto 100/2018: la Direccion de Atencion Integrada coordina, ademas de con primaria y hospitalaria, con el ambito comunitario y sociosanitario.
 
-**80. Respuesta: a) La persona titular de la Direccion Gerencia.**
-Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asistencial a la Direccion Gerencia.
+**80. Respuesta: b) La persona titular de la Direccion Medica.**
+Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asistencial a la persona titular de la Direccion Medica.
 
 ---
 
@@ -326,11 +327,11 @@ Art. 19.1 del Decreto 100/2018 atribuye la presidencia del Consejo Clinico Asist
 **81. Respuesta: a) Todas las personas que accedan o utilicen las prestaciones y servicios sanitarios del sistema sanitario de Euskadi.**
 Art. 1 del Decreto 147/2015: la titularidad no se limita a nacidos o empadronados, sino a toda persona que acceda al sistema.
 
-**82. Respuesta: b) En relacion a acciones sanitarias, incluyendo docencia, en centros de titularidad publica o concertados. La investigacion biomedica queda fuera.**
-Art. 2 del Decreto 147/2015: los derechos son exigibles en centros publicos y concertados (no en todos los privados), incluye docencia pero excluye investigacion biomedica.
+**82. Respuesta: c) En relacion a todas las acciones sanitarias, incluyendo investigacion y docencia, en centros de titularidad publica o privada o concertados de Euskadi.**
+Art. 2 del Decreto 147/2015: los derechos y obligaciones son exigibles en relacion a todas las acciones sanitarias, incluyendo investigacion y docencia, en centros de titularidad publica o privada o concertados de Euskadi.
 
-**83. Respuesta: d) Todas las respuestas anteriores son correctas.**
-Art. 3 del Decreto 147/2015 enumera como principios: respeto a la libertad/dignidad/autonomia, respeto al personal profesional, y promocion de la investigacion cientifica.
+**83. Respuesta: a) El respeto a la libertad de la persona, a su dignidad y a la autonomia en las decisiones que afecten a su salud.**
+Art. 3 del Decreto 147/2015: el principio que informa e inspira las acciones sanitarias es el respeto a la libertad de la persona, a su dignidad y a la autonomia en las decisiones que afecten a su salud. Las opciones (b) y (c) no son principios informadores del art. 3.
 
 **84. Respuesta: d) 1. Infancia y adolescencia. 2. Salud sexual y reproductiva. 3. Personas mayores. 4. Final de la vida.**
 Art. 4 del Decreto 147/2015 configura estas cuatro fases de la vida con necesidades especificas.
@@ -428,8 +429,8 @@ Art. 14 de la LO 3/2018: no siempre es obligatorio aportar documentacion, solo "
 **111. Respuesta: c) Los datos seran suprimidos en el plazo maximo de un mes, salvo para acreditar la comision de actos contra la integridad de personas, bienes o instalaciones.**
 Art. 22.3 de la LO 3/2018: la excepcion permite conservar datos mas alla del mes cuando sea necesario acreditar hechos delictivos.
 
-**112. Respuesta: a) Transcurridos tres meses desde la introduccion, debera procederse a la supresion, salvo para dejar evidencia del modelo de prevencion.**
-Art. 24 de la LO 3/2018: el plazo es de tres meses (no seis) con la salvedad del modelo de prevencion de delitos.
+**112. Respuesta: a) Transcurridos tres meses desde la introduccion, debera procederse a la supresion, salvo para dejar evidencia del modelo de prevencion.** *(RESPUESTA DISCUTIDA)*
+Art. 24.4 de la LO 3/2018 establece literalmente un plazo de tres meses para la supresion. NOTA: La fuente de UGT marca la (d) como correcta ("la ley no preve plazo"), pero el texto legal vigente del art. 24.4 si preve este plazo. Posible confusion con la derogacion parcial por la Ley 2/2023 de proteccion de informantes.
 
 ---
 
@@ -576,8 +577,8 @@ El incidente de seguridad que ocasiona dano a la persona atendida se denomina Ev
 **155. Respuesta: c) Atencion a las segundas y terceras victimas.**
 Segun la tabla de Lineas de Accion Corporativas (pag. 20 del documento): L1 = Gestion de incidentes de seguridad; **L2 = Atencion a las segundas y terceras victimas**. La opcion d) "Gestion de incidentes" corresponde a L1, no a L2.
 
-**156. Respuesta: b) Impulsar la cultura de seguridad de paciente, promoviendo la formacion y sensibilizacion.**
-El Objetivo Especifico 1 se centra en impulsar la cultura de seguridad a traves de formacion y sensibilizacion.
+**156. Respuesta: a) Garantizar la continuidad de las lineas de accion y proyectos previamente implantados.**
+El Objetivo Especifico 1 de la Estrategia de Seguridad del Paciente 20-30, enfocado en el cambio interno, es garantizar la continuidad de las lineas de accion y proyectos previamente implantados.
 
 **157. Respuesta: b) Prevencion y control de las infecciones relacionadas con la asistencia sanitaria.**
 La Linea L8 esta dedicada especificamente a la prevencion de infecciones asociadas a la asistencia.
@@ -685,8 +686,8 @@ Art. 1 de la LO 3/2021 define este doble objeto: derecho individual y obligacion
 **186. Respuesta: c) Ser mayor de edad y tener la nacionalidad espanola, residencia legal o certificado de empadronamiento que acredite mas de 12 meses en territorio espanol.**
 Art. 5 de la LO 3/2021 establece estos requisitos alternativos de vinculacion con Espana.
 
-**187. Respuesta: c) Eutanasia.**
-La LO 3/2021 define la eutanasia como la administracion directa de una sustancia a la persona paciente por parte del personal sanitario competente.
+**187. Respuesta: d) Asistencia para morir.**
+Art. 3.g de la LO 3/2021 define la "prestacion de ayuda para morir" (asistencia para morir) como la accion que incluye la administracion directa de una sustancia a la persona paciente por parte del personal sanitario competente. "Eutanasia" no es el termino legal exacto utilizado por la ley para definir esta accion.
 
 **188. Respuesta: c) Padecer una enfermedad grave e incurable o un padecimiento grave, cronico e imposibilitante, causantes de un sufrimiento intolerable.**
 Art. 5.1.d de la LO 3/2021 establece estos dos supuestos alternativos con el requisito comun de sufrimiento intolerable.
@@ -733,4 +734,4 @@ La finalidad principal de la Ley 53/1984 es asegurar la plena dedicacion del per
 
 ---
 
-*Documento generado como material de estudio para la OPE Osakidetza 2026. Respuestas basadas en la legislacion y documentos vigentes de la bibliografia del temario comun, verificadas con las fuentes oficiales del Gobierno Vasco (euskadi.eus) y Osakidetza.*
+*Documento generado como material de estudio para la OPE Osakidetza 2026. Respuestas basadas en la legislacion y documentos vigentes de la bibliografia del temario comun. Verificadas contra el PDF de respuestas de UGT (RESPUESTAS-T.-ESPECIFICO-COMUN-A-BC1.pdf, abril 2026): 18 respuestas corregidas, 1 respuesta disputada (pregunta 112).*
