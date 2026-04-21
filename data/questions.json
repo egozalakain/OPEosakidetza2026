@@ -129,7 +129,9 @@
     "option_c": "A recibir el reembolso de los gastos derivados de la asistencia sanitaria del catálogo de prestaciones del Sistema Nacional de Salud que pudiera requerir del servicio de salud de la comunidad autónoma en la que se encuentre desplazado/a.",
     "option_d": "Ninguna de las respuestas anteriores es correcta.",
     "correct_answer": "d",
-    "explanation": "El art. 4 de la Ley 16/2003 reconoce derechos 'en el conjunto del SNS', no limitados a la CA de residencia. La opcion (a) restringe el derecho a la CA de residencia, lo cual no es correcto. Las opciones (b) y (c) sobre reembolso tampoco son derechos reconocidos en este articulo. Ninguna es correcta."
+    "explanation": "UGT indica (d) argumentando que el art. 4 de la Ley 16/2003 reconoce derechos 'en el conjunto del SNS' y que las opciones (a), (b) y (c) no son correctas. ESK en cambio indica (a). El texto literal del art. 4.a menciona la asistencia sanitaria en la CA de residencia, por lo que ambas interpretaciones son defendibles.",
+    "disputed": true,
+    "disputed_note": "Respuesta discutida: UGT indica (d), ESK indica (a). Discrepancia entre fuentes sindicales sobre la interpretacion del art. 4 de la Ley 16/2003."
   },
   {
     "number": 13,
@@ -360,7 +362,9 @@
     "option_c": "En el caso de que no se hubiera disfrutado del tiempo mínimo de descanso semanal en el período de tres meses se producirá una compensación a través del régimen de descansos alternativos.",
     "option_d": "El período de referencia para el cálculo del período de descanso semanal será de dos meses.",
     "correct_answer": "b",
-    "explanation": "Art. 52 de la Ley 55/2003 establece un periodo de referencia de DOS meses para el calculo del descanso semanal. La opcion (b) dice 'tres meses', lo cual es incorrecto. La opcion (d) dice correctamente 'dos meses'. La opcion (a) tambien es incorrecta ('siempre sera fijo') pero la (b) es la senalada como no correcta."
+    "explanation": "UGT indica (b) como respuesta no correcta porque dice 'tres meses' cuando el art. 52 de la Ley 55/2003 establece un periodo de referencia de DOS meses. La opcion (a) tambien es incorrecta ('siempre sera fijo'). ESK considera esta pregunta IMPUGNABLE porque tiene dos opciones incorrectas (a y b) cuando la pregunta pide solo una.",
+    "disputed": true,
+    "disputed_note": "Pregunta posiblemente impugnable segun ESK: tiene dos opciones incorrectas (a y b) cuando la pregunta pide senalar 'la que no es correcta' en singular. UGT marca (b) como respuesta."
   },
   {
     "number": 34,
@@ -481,7 +485,9 @@
     "option_c": "El Departamento competente en materia de sanidad debe elaborar anualmente y remitir al Parlamento un informe con la evaluación de los objetivos y determinaciones del Plan de Salud de Euskadi.",
     "option_d": "Son correctas las respuestas a) y c).",
     "correct_answer": "d",
-    "explanation": "Art. 14 de la Ley 8/1997: el Plan de Salud de Euskadi es aprobado por el Parlamento Vasco (a) y el Departamento elabora un informe ANUAL de evaluacion (c), no semestral."
+    "explanation": "UGT indica (d): el Plan de Salud de Euskadi es aprobado por el Parlamento Vasco (a) y el Departamento elabora un informe ANUAL de evaluacion (c). ESK considera la pregunta IMPUGNABLE (recientemente corregida a impugnable, antes indicaban C).",
+    "disputed": true,
+    "disputed_note": "Pregunta posiblemente impugnable segun ESK. UGT mantiene (d) como respuesta correcta basandose en el art. 14 de la Ley 8/1997."
   },
   {
     "number": 45,
@@ -899,7 +905,9 @@
     "option_c": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o privada o concertados de Euskadi.",
     "option_d": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi.",
     "correct_answer": "c",
-    "explanation": "Art. 2 del Decreto 147/2015: los derechos y obligaciones son exigibles en relacion a todas las acciones sanitarias, incluyendo investigacion y docencia, en centros de titularidad publica o privada o concertados de Euskadi. La investigacion biomedica NO queda excluida."
+    "explanation": "UGT indica (c) entendiendo que los derechos son exigibles en todos los centros publicos, privados y concertados e incluyen investigacion y docencia. ESK indica (d) limitando el ambito a publicos y concertados. La diferencia clave es si aplica a centros privados no concertados y si incluye investigacion biomedica.",
+    "disputed": true,
+    "disputed_note": "Respuesta discutida con tres interpretaciones distintas: UGT indica (c), ESK indica (d). La redaccion del art. 2 del Decreto 147/2015 es ambigua sobre el ambito de aplicacion a centros privados."
   },
   {
     "number": 83,
@@ -1228,10 +1236,10 @@
     "option_b": "En todo caso, transcurridos seis meses desde la introducción de los datos, deberá procederse a su supresión del sistema de denuncias, salvo que la finalidad de la conservación sea dejar evidencia del funcionamiento del modelo de prevención de la comisión de delitos.",
     "option_c": "En todo caso, y sin excepción, transcurridos seis meses desde la introducción de los datos, deberá procederse a su supresión del sistema de denuncias.",
     "option_d": "La Ley no prevé plazo temporal alguno para la supresión de los datos del sistema de denuncias.",
-    "correct_answer": "a",
-    "explanation": "Art. 24.4 de la LO 3/2018 establece literalmente un plazo de tres meses para la supresion de los datos del sistema de denuncias, con la salvedad de dejar evidencia del modelo de prevencion de delitos. NOTA: La fuente de UGT marca la (d) como correcta, pero el texto legal vigente del art. 24.4 si preve este plazo de tres meses.",
+    "correct_answer": "d",
+    "explanation": "Las fuentes sindicales UGT y ESK coinciden en la opcion (d): la ley no preve plazo temporal. Probablemente se considera que la LO 3/2018 fue modificada por la Ley 2/2023 de proteccion de informantes, que establece un regimen distinto. NOTA: el texto literal del art. 24.4 LO 3/2018 si menciona un plazo de tres meses (opcion a), por lo que la respuesta sigue siendo tecnicamente discutible.",
     "disputed": true,
-    "disputed_note": "Respuesta discutida: el art. 24.4 de la LO 3/2018 establece un plazo de 3 meses (opcion a), pero la fuente de referencia de UGT marca la opcion (d) 'la ley no preve plazo'. Posible confusion con la derogacion parcial por la Ley 2/2023 de proteccion de informantes."
+    "disputed_note": "Respuesta discutida: UGT y ESK (esta ultima marcandola como dudosa) coinciden en la opcion (d). Sin embargo, el art. 24.4 LO 3/2018 establece literalmente un plazo de 3 meses (opcion a). La discrepancia puede deberse a la modificacion por la Ley 2/2023 de proteccion de informantes."
   },
   {
     "number": 113,
@@ -1561,7 +1569,9 @@
     "option_c": "La Corresponsabilidad.",
     "option_d": "El Plurilingüismo como eje central de la atención.",
     "correct_answer": "c",
-    "explanation": "La Corresponsabilidad es un Valor Fundamental explicito del Pacto, junto con Universalidad y Equidad."
+    "explanation": "UGT indica (c) 'La Corresponsabilidad' como Valor Fundamental del Pacto Vasco de Salud junto con Universalidad y Equidad. ESK considera esta pregunta IMPUGNABLE desde la publicacion inicial.",
+    "disputed": true,
+    "disputed_note": "Pregunta posiblemente impugnable segun ESK. UGT mantiene (c) como respuesta correcta, pero el listado de Valores Fundamentales del Pacto Vasco de Salud podria incluir otros conceptos."
   },
   {
     "number": 143,
@@ -1715,7 +1725,9 @@
     "option_c": "Optimizar la prescripción de pruebas diagnósticas que utilizan radiación ionizante.",
     "option_d": "Implantar un sistema de identificación inequívoca de pacientes en todas las fases del proceso asistencial.",
     "correct_answer": "a",
-    "explanation": "El Objetivo Especifico 1 de la Estrategia de Seguridad del Paciente 20-30, enfocado en el cambio interno, es garantizar la continuidad de las lineas de accion y proyectos previamente implantados."
+    "explanation": "UGT indica (a) 'garantizar la continuidad de las lineas de accion previamente implantadas' como Objetivo Especifico 1. ESK indica (b) 'impulsar la cultura de seguridad'. Ambos son objetivos que aparecen en la Estrategia; la asignacion al OE1 depende de la interpretacion del documento.",
+    "disputed": true,
+    "disputed_note": "Respuesta discutida: UGT indica (a), ESK indica (b). Ambos objetivos aparecen en la Estrategia de Seguridad del Paciente 20-30; la discrepancia esta en cual es el Objetivo Especifico numero 1."
   },
   {
     "number": 157,
