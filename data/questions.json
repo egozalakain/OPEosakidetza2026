@@ -128,10 +128,10 @@
     "option_b": "A recibir el reembolso de los gastos derivados de la asistencia en la sanidad privada cuando se trate de servicios recogidos en el catálogo de prestaciones del Sistema Nacional de Salud.",
     "option_c": "A recibir el reembolso de los gastos derivados de la asistencia sanitaria del catálogo de prestaciones del Sistema Nacional de Salud que pudiera requerir del servicio de salud de la comunidad autónoma en la que se encuentre desplazado/a.",
     "option_d": "Ninguna de las respuestas anteriores es correcta.",
-    "correct_answer": "d",
-    "explanation": "UGT indica (d) argumentando que el art. 4 de la Ley 16/2003 reconoce derechos 'en el conjunto del SNS' y que las opciones (a), (b) y (c) no son correctas. ESK en cambio indica (a). El texto literal del art. 4.a menciona la asistencia sanitaria en la CA de residencia, por lo que ambas interpretaciones son defendibles.",
+    "correct_answer": "a",
+    "explanation": "El art. 4.b de la Ley 16/2003 reconoce el derecho 'a recibir asistencia sanitaria en su comunidad autonoma de residencia en un tiempo maximo'. ESK marca (a) como correcta. UGT considera (d) porque la opcion (a) omite la referencia al 'tiempo maximo'. En caso de duda adoptamos la interpretacion de ESK.",
     "disputed": true,
-    "disputed_note": "Respuesta discutida: UGT indica (d), ESK indica (a). Discrepancia entre fuentes sindicales sobre la interpretacion del art. 4 de la Ley 16/2003."
+    "disputed_note": "Respuesta discutida: UGT indica (d), ESK indica (a). La opcion (a) recoge la esencia del art. 4.b pero omite 'en un tiempo maximo'. Adoptamos ESK al ser interpretacion mas reciente."
   },
   {
     "number": 13,
@@ -904,10 +904,10 @@
     "option_b": "En relación a todas las acciones de carácter sanitario, incluyendo docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi. Las acciones relativas a la investigación biomédica quedan fuera de esta Declaración y se rigen por su normativa específica.",
     "option_c": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o privada o concertados de Euskadi.",
     "option_d": "En relación a todas las acciones de carácter sanitario, incluyendo investigación y docencia, que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad pública o concertados que integran el sistema sanitario de Euskadi.",
-    "correct_answer": "c",
-    "explanation": "UGT indica (c) entendiendo que los derechos son exigibles en todos los centros publicos, privados y concertados e incluyen investigacion y docencia. ESK indica (d) limitando el ambito a publicos y concertados. La diferencia clave es si aplica a centros privados no concertados y si incluye investigacion biomedica.",
+    "correct_answer": "d",
+    "explanation": "Texto literal del art. 2.2 del Decreto 147/2015: 'Los derechos y obligaciones establecidos son exigibles en relacion a todas las acciones de caracter sanitario, sean de promocion, prevencion, asistencial o de INVESTIGACION Y DOCENCIA que se desarrollen en los centros, servicios o establecimientos sanitarios de titularidad PUBLICA O CONCERTADOS que integran el sistema sanitario de Euskadi'. La opcion (d) coincide literalmente. La opcion (c) de UGT incluye erroneamente 'privada'.",
     "disputed": true,
-    "disputed_note": "Respuesta discutida con tres interpretaciones distintas: UGT indica (c), ESK indica (d). La redaccion del art. 2 del Decreto 147/2015 es ambigua sobre el ambito de aplicacion a centros privados."
+    "disputed_note": "Respuesta discutida: UGT indica (c), ESK indica (d). El texto literal del art. 2.2 del Decreto 147/2015 coincide con la opcion (d): 'titularidad publica o concertados que integran el sistema sanitario de Euskadi', sin mencion a 'privada'."
   },
   {
     "number": 83,
@@ -1724,10 +1724,10 @@
     "option_b": "Impulsar la cultura de seguridad de paciente en las organizaciones de servicios de Osakidetza, promoviendo la formación y sensibilización como aspectos clave.",
     "option_c": "Optimizar la prescripción de pruebas diagnósticas que utilizan radiación ionizante.",
     "option_d": "Implantar un sistema de identificación inequívoca de pacientes en todas las fases del proceso asistencial.",
-    "correct_answer": "a",
-    "explanation": "UGT indica (a) 'garantizar la continuidad de las lineas de accion previamente implantadas' como Objetivo Especifico 1. ESK indica (b) 'impulsar la cultura de seguridad'. Ambos son objetivos que aparecen en la Estrategia; la asignacion al OE1 depende de la interpretacion del documento.",
+    "correct_answer": "b",
+    "explanation": "Ambas opciones aparecen como objetivos en la Estrategia de Seguridad del Paciente 20-30. UGT indica (a) 'garantizar la continuidad de las lineas de accion previamente implantadas'. ESK indica (b) 'impulsar la cultura de seguridad'. En caso de duda adoptamos la interpretacion de ESK al ser la mas reciente.",
     "disputed": true,
-    "disputed_note": "Respuesta discutida: UGT indica (a), ESK indica (b). Ambos objetivos aparecen en la Estrategia de Seguridad del Paciente 20-30; la discrepancia esta en cual es el Objetivo Especifico numero 1."
+    "disputed_note": "Respuesta discutida: UGT indica (a), ESK indica (b). Ambos objetivos aparecen en la Estrategia de Seguridad del Paciente 20-30; adoptamos ESK al ser la interpretacion mas reciente."
   },
   {
     "number": 157,
