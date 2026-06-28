@@ -39,6 +39,7 @@ export async function POST(request: Request) {
         questionSelection: config.questionSelection,
         topicFilter: config.topicFilter,
         totalQuestions: selectedQuestions.length,
+        shuffleOptions: config.shuffleOptions,
       })
       .returning({ id: exams.id });
 

@@ -46,7 +46,7 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
           timerMode: effectiveTimerMode,
           timerSeconds:
             effectiveTimerMode === "countdown" ? timerMinutes * 60 : null,
-          shuffleOptions: isStudy ? true : shuffleOptions,
+          shuffleOptions,
         }),
       });
       const data = await res.json();
@@ -167,19 +167,23 @@ export function ExamConfigForm({ defaultMode }: ExamConfigFormProps) {
         </Section>
       )}
 
-      {/* Shuffle options */}
-      {!isStudy && (
-        <Section title="Opciones de respuesta">
-          <ToggleGroup
-            options={[
-              { value: "false", label: "Orden original" },
-              { value: "true", label: "Mezclar opciones" },
-            ]}
-            selected={String(shuffleOptions)}
-            onChange={(v) => setShuffleOptions(v === "true")}
-          />
-        </Section>
-      )}
+      {/* Shuffle options — available in both modes; defaults to keeping the
+          battery order (which matches how the real Osakidetza exam works). */}
+      <Section title="Opciones de respuesta">
+        <ToggleGroup
+          options={[
+            { value: "false", label: "Orden original" },
+            { value: "true", label: "Mezclar opciones" },
+          ]}
+          selected={String(shuffleOptions)}
+          onChange={(v) => setShuffleOptions(v === "true")}
+        />
+        <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+          {shuffleOptions
+            ? "Las opciones a/b/c/d se mostraran en orden aleatorio."
+            : "Las opciones se mantienen en el orden original de la bateria."}
+        </p>
+      </Section>
 
       {/* Error */}
       {error && (

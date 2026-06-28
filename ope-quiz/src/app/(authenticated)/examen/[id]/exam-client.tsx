@@ -174,8 +174,9 @@ export function ExamClient({
   const currentQuestion = questions[state.currentIndex];
   const currentAnswer = state.answers[currentQuestion.questionId];
 
-  // Option shuffle
-  const shouldShuffle = !isExam || (shuffleOptions ?? false);
+  // Option shuffle: every mode keeps the battery order by default; only shuffles
+  // when the user explicitly opts in (shuffleOptions). Applies to study and exam alike.
+  const shouldShuffle = shuffleOptions ?? false;
 
   function shuffle<T>(arr: T[]): T[] {
     const result = [...arr];
