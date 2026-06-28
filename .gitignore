@@ -1,0 +1,8 @@
+# Tooling / temporales
+.playwright-mcp/
+__pycache__/
+*.pyc
+
+# Validación: PDFs grandes/con copyright (se mantienen resultados/ y scripts/)
+validacion-orden/examenes/
+validacion-orden/baterias/

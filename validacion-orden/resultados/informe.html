@@ -1,0 +1,231 @@
+<title>Validación: ¿coincide el orden de respuestas del examen con la batería? · OPE Osakidetza 2026</title>
+<meta name="description" content="Informe de validación forense: el orden de las opciones de los exámenes OPE Osakidetza 2026 frente a la batería oficial publicada, común y específico.">
+<style>
+  :root{
+    --ink:#141d26; --ink-soft:#1d2a36;
+    --paper:#f5f7f5; --surface:#ffffff;
+    --text:#2b3640; --muted:#5d6b78; --faint:#8a96a1;
+    --line:#dce2dd; --line-strong:#c4cdc6;
+    --ok:#1d7a57; --ok-soft:#e8f2ec;
+    --warn:#a8650f; --warn-soft:#f8efe1;
+    --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono","Cascadia Code",Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);
+    line-height:1.6;-webkit-font-smoothing:antialiased;font-size:17px}
+  .wrap{max-width:780px;margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--faint);font-weight:600}
+  h1{font-size:clamp(26px,4.4vw,40px);line-height:1.12;letter-spacing:-.02em;
+    margin:.5rem 0 0;color:var(--ink);text-wrap:balance;font-weight:780}
+  h2{font-size:13px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin:0 0 1rem}
+  p{margin:0 0 1rem;max-width:64ch}
+  strong{color:var(--ink)}
+  /* header */
+  header{padding:56px 0 28px;border-bottom:1px solid var(--line)}
+  /* verdict */
+  .verdict{background:var(--ink);color:#eef2f0;margin-top:0;
+    border-radius:2px;overflow:hidden}
+  .verdict-in{padding:34px 32px}
+  .verdict .label{font-family:var(--mono);font-size:11px;letter-spacing:.22em;
+    text-transform:uppercase;color:#7e93a0}
+  .verdict .answer{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin:10px 0 6px}
+  .verdict .yes{font-size:clamp(48px,9vw,76px);font-weight:820;letter-spacing:-.03em;
+    color:#fff;line-height:.9}
+  .verdict .qual{font-size:17px;color:#aec0bf;max-width:42ch}
+  .verdict p{color:#c7d2cf;margin:.4rem 0 0;max-width:60ch}
+  .verdict .accentbar{height:4px;background:linear-gradient(90deg,var(--ok) 0 78%,var(--warn) 78% 100%)}
+  /* stat strip */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:2px;margin:26px 0 8px;overflow:hidden}
+  .stat{background:var(--surface);padding:18px 16px}
+  .stat .n{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--ink);
+    font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .stat .n.ok{color:var(--ok)}
+  .stat .k{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.3}
+  @media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}}
+  section{padding:38px 0;border-bottom:1px solid var(--line)}
+  .lead{font-size:19px;color:var(--ink-soft)}
+  /* two facts */
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:680px){.facts{grid-template-columns:1fr}}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:22px}
+  .card .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ok);font-weight:600}
+  .card h3{margin:.5rem 0 .6rem;font-size:18px;color:var(--ink);letter-spacing:-.01em}
+  .card p{font-size:15px;color:var(--muted);margin:0}
+  .card .big{font-family:var(--mono);font-size:15px;color:var(--text);margin-top:.7rem;
+    padding-top:.7rem;border-top:1px dashed var(--line-strong)}
+  .card .big b{color:var(--ink)}
+  /* table */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:2px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+  th,td{padding:11px 14px;text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono)}
+  th:first-child,td:first-child{text-align:left;font-family:var(--sans)}
+  thead th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);
+    font-weight:600;border-bottom:1px solid var(--line-strong)}
+  tbody tr+tr td{border-top:1px solid var(--line)}
+  tbody td{color:var(--text)}
+  .zero{color:var(--ok);font-weight:600}
+  tfoot td{border-top:2px solid var(--line-strong);font-weight:700;color:var(--ink)}
+  tfoot td.zero{color:var(--ok)}
+  /* caveat */
+  .caveat{background:var(--warn-soft);border:1px solid #ecd8b8;border-left:3px solid var(--warn);
+    border-radius:2px;padding:22px 24px}
+  .caveat .tag{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--warn);font-weight:700}
+  .caveat h3{margin:.5rem 0 .6rem;color:#5e3c08;font-size:18px}
+  .caveat p{color:#6b4a18;max-width:62ch}
+  .caveat .ex{font-family:var(--mono);font-size:13.5px;background:#fff;border:1px solid #ecd8b8;
+    border-radius:2px;padding:12px 14px;margin-top:.6rem;color:#5e3c08}
+  /* study */
+  .study{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  @media(max-width:680px){.study{grid-template-columns:1fr}}
+  .opt{border:1px solid var(--line);border-radius:2px;padding:18px 20px;background:var(--surface)}
+  .opt h4{margin:0 0 .4rem;font-size:15px;color:var(--ink)}
+  .opt .pct{font-family:var(--mono);font-weight:600;color:var(--ok)}
+  .opt p{font-size:14.5px;color:var(--muted);margin:0}
+  /* sources */
+  .src{columns:2;column-gap:32px;font-size:14px;color:var(--muted)}
+  @media(max-width:620px){.src{columns:1}}
+  .src div{break-inside:avoid;margin-bottom:.7rem;padding-left:14px;position:relative}
+  .src div::before{content:"";position:absolute;left:0;top:9px;width:5px;height:5px;
+    background:var(--line-strong);border-radius:50%}
+  .src b{color:var(--text);font-weight:600}
+  footer{padding:30px 0 60px;color:var(--faint);font-size:13px;font-family:var(--mono)}
+  .kicker{color:var(--ok);font-weight:600}
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Informe de validación · OPE Osakidetza 2023·24·25 · ekaina 2026</div>
+    <h1>¿El orden de las respuestas del examen coincide con la batería publicada?</h1>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="verdict">
+    <div class="verdict-in">
+      <div class="label">Veredicto</div>
+      <div class="answer">
+        <span class="yes">SÍ</span>
+        <span class="qual">— con una salvedad de en torno al 1–2 % de preguntas que Osakidetza edita.</span>
+      </div>
+      <p>En el ~97–99 % de las preguntas, las opciones del examen son copia literal de la batería,
+      en el mismo orden y con la misma letra correcta — tanto en temario común como específico.
+      Y la letra es <strong style="color:#fff">estable entre modelos</strong>: A, B… solo barajan el
+      orden de las <em>preguntas</em>, nunca el de las <em>opciones</em>.</p>
+    </div>
+    <div class="accentbar"></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n ok">0</div><div class="k">opciones reordenadas en 497 preguntas cruzadas</div></div>
+    <div class="stat"><div class="n">497</div><div class="k">preguntas examen↔batería (5 categorías)</div></div>
+    <div class="stat"><div class="n ok">97,4%</div><div class="k">copia literal, mismo orden</div></div>
+    <div class="stat"><div class="n">0</div><div class="k">reordenamientos entre modelos A/B (7 categorías)</div></div>
+  </div>
+
+  <section>
+    <h2>Dos hechos verificados</h2>
+    <div class="facts">
+      <div class="card">
+        <div class="tag">Entre modelos A / B</div>
+        <h3>Barajan preguntas, no opciones</h3>
+        <p>Comparando la misma pregunta entre el Modelo A y el Modelo B, las cuatro opciones aparecen
+        siempre en idéntico orden. Lo único que cambia es la posición de la pregunta en el cuadernillo.</p>
+        <div class="big">P.&nbsp;1 del Modelo&nbsp;A = P.&nbsp;67 del Modelo&nbsp;B<br>
+        <b>0</b> reordenamientos de opciones · 7 categorías</div>
+      </div>
+      <div class="card">
+        <div class="tag">Examen vs batería</div>
+        <h3>Copia literal, misma letra</h3>
+        <p>Cruzando los cuadernillos oficiales contra la batería oficial, cada pregunta o se copia
+        verbatim (misma letra correcta) o se edita. <strong>Nunca</strong> se queda igual pero con las
+        opciones reordenadas.</p>
+        <div class="big"><b>0</b> de 497 preguntas con opciones reordenadas<br>
+        común + específico · TEL, TCAE, Celador, Enfermería, Admin</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Examen oficial vs batería oficial · por categoría</h2>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Categoría</th><th>Cruzadas</th><th>Verbatim</th><th>Reordenadas</th><th>Editadas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Técnico Esp. Laboratorio</td><td>105</td><td>104</td><td class="zero">0</td><td>1</td></tr>
+          <tr><td>Aux. Enfermería (TCAE)</td><td>108</td><td>106</td><td class="zero">0</td><td>2</td></tr>
+          <tr><td>Celador/a</td><td>95</td><td>94</td><td class="zero">0</td><td>1</td></tr>
+          <tr><td>Enfermería</td><td>110</td><td>109</td><td class="zero">0</td><td>1</td></tr>
+          <tr><td>Administrativo/a</td><td>79</td><td>71</td><td class="zero">0</td><td>8 *</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total</td><td>497</td><td>484</td><td class="zero">0</td><td>13</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p style="font-size:13.5px;color:var(--faint);margin-top:12px;font-family:var(--mono)">
+      * Admin infla «editadas»: su batería se leyó incompleta (162/200), así que varias son
+      emparejamientos a la pregunta equivocada, no ediciones reales. La tasa de edición genuina ≈ 1 %.</p>
+  </section>
+
+  <section>
+    <div class="caveat">
+      <div class="tag">La salvedad</div>
+      <h3>Osakidetza edita una minoría de preguntas (~1–2 %)</h3>
+      <p>En ese pequeño porcentaje, reescribe el enunciado o sustituye algún distractor: la batería deja
+      de ser referencia literal y la letra puede no coincidir. También hay preguntas con respuesta
+      <strong>disputada</strong> (la clave oficial difiere de la que marcan las plataformas) — pero eso
+      es desacuerdo sobre cuál es la correcta, no un reordenamiento.</p>
+      <div class="ex"><b>Caso real — TCAE, «¿Cuál NO es característica de la enfermedad crónica?»</b><br>
+      Batería: …/ Tratamiento: eficaz &nbsp;→&nbsp; Examen: …/ Vivencia de la crisis elevada y corta
+      &nbsp;(distractor sustituido + reordenado)</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Qué significa para tu estudio</h2>
+    <p class="lead">El examen es un <strong>conjunto cerrado</strong>: la batería común + la específica
+    de tu categoría. No hay nada fuera de ahí.</p>
+    <div class="study">
+      <div class="opt">
+        <h4>Estudiar por la <span class="pct">letra</span></h4>
+        <p>Funciona en ~98 % de las preguntas y es <strong>robusto entre modelos</strong> (no las
+        barajan). Falla solo en el ~1–2 % editado o disputado.</p>
+      </div>
+      <div class="opt">
+        <h4>Estudiar por <span class="pct">contenido</span></h4>
+        <p>Cubre el <strong>100 %</strong>, incluido ese ~1–2 %. Es la opción totalmente a prueba de
+        ediciones y de cualquier sorpresa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo se ha comprobado</h2>
+    <p>Cruce programático (comparación de texto, emparejamiento difuso + detección biyectiva de
+    permutaciones de opciones) sobre documentos oficiales. La fuente de modelos A/B se validó antes
+    contra el cuadernillo oficial para descartar artefactos.</p>
+    <div class="src">
+      <div><b>Exámenes oficiales</b> — cuadernillos de Osakidetza redistribuidos por ESK (9 categorías).</div>
+      <div><b>Baterías oficiales</b> — portal osakidetza.euskadi.eus (común 200/300 + específicas por categoría).</div>
+      <div><b>Modelos A y B</b> — cuadernillos de OsakiPrep, validados como fieles al oficial (98/100, 0 permutaciones).</div>
+      <div><b>FAQ oficial</b> — «Todas las preguntas… serán extraídas del conjunto de preguntas publicadas (batería)».</div>
+      <div><b>Foros / sindicatos</b> — «los modelos A y B contienen las mismas preguntas en distinto orden»; las impugnaciones citan el nº de batería.</div>
+      <div><b>Verificación adversarial</b> — el caso señalado en foro (Admin P58↔batería) resultó verbatim, mismo orden: era disputa de clave, no reordenamiento.</div>
+    </div>
+  </section>
+
+  <footer>
+    Datos y scripts reproducibles en <span class="kicker">validacion-orden/</span> ·
+    resultados completos en resultados/RESULTADOS.md
+  </footer>
+
+</div>
